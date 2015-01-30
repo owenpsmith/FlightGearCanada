@@ -7,12 +7,16 @@ function prepareList() {
         if (this == event.target) {
             $(this).toggleClass('expanded');
             $(this).children('ul').toggle();
+            return false;
         }
-        return false;
+        else
+        {
+        	return true;
+        }
     })
     .addClass('collapsed')
     .children('ul').hide();
-
+    
     //Create the button funtionality
     $('#expandList')
     .unbind('click')
@@ -27,7 +31,7 @@ function prepareList() {
         $('.collapsed').removeClass('expanded');
         $('.collapsed').children('ul').hide();
     })
-
+    
 };
 
 
