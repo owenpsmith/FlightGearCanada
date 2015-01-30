@@ -1,3 +1,6 @@
+/********************/
+/* EXPANDABLE LIST  */
+/********************/
 #listContainer{
   margin-top:15px;
 }
@@ -6,13 +9,15 @@
     list-style: none;
     margin:0;
     padding:0;
+    cursor: pointer;
 }
-
 #expList p {
     margin:0;
     display:block;
 }
-
+#expList p:hover {
+    background-color:#121212;
+}
 #expList li {
     line-height:140%;
     text-indent:0px;
@@ -37,9 +42,16 @@
 .listControl{
   margin-bottom: 15px;
 }
-.listControl li.trigger {
-    border: 1px solid #555555;
-    color: #555555;
+.listControl a {
+	background-color: #585858;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#585858), to(#3d3d3d));
+	background-image: -webkit-linear-gradient(top, #585858, #3d3d3d);
+	background-image: -moz-linear-gradient(top, #585858, #3d3d3d);
+	background-image: -ms-linear-gradient(top, #585858, #3d3d3d);
+	background-image: -o-linear-gradient(top, #585858, #3d3d3d);
+	background-image: linear-gradient(top, #585858, #3d3d3d);
+
+    color: #ffffff;
     cursor: pointer;
     height: 1.5em;
     line-height: 1.5em;
@@ -47,7 +59,11 @@
     padding: 4px 10px;
 }
 .listControl a:hover {
-    background-color:#555555;
-    color:#222222;
-    font-weight:normal;
+	background-color : #40A4E4;
+	background-image : -webkit-gradient(linear, left top, left bottom, from(#3070A0), to(#205080));
+	background-image : -webkit-linear-gradient(top, #3070A0, #205277);
+	background-image : -moz-linear-gradient(top, #3070A0, #205277);
+	background-image : -ms-linear-gradient(top, #3070A0, #205277);
+	background-image : -o-linear-gradient(top, #3070A0, #205277);
+	background-image : linear-gradient(top, #3070A0, #205277);
 }

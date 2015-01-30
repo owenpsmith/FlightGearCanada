@@ -18,13 +18,14 @@ function prepareList() {
     .unbind('click')
     .click( function() {
         $('.collapsed').addClass('expanded');
-        $('.collapsed').children().show();
+        $('.collapsed').children('ul').show();
     })
+
     $('#collapseList')
     .unbind('click')
     .click( function() {
         $('.collapsed').removeClass('expanded');
-        $('.collapsed').children().hide();
+        $('.collapsed').children('ul').hide();
     })
 
 };
