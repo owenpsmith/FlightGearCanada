@@ -6,7 +6,7 @@ function prepareList() {
     .click( function(event) {
         if (this == event.target) {
             $(this).toggleClass('expanded');
-            $(this).children('ul').toggle('medium');
+            $(this).children('ul').toggle();
         }
         return false;
     })
@@ -18,15 +18,15 @@ function prepareList() {
     .unbind('click')
     .click( function() {
         $('.collapsed').addClass('expanded');
-        $('.collapsed').children().show('medium');
+        $('.collapsed').children().show();
     })
     $('#collapseList')
     .unbind('click')
     .click( function() {
         $('.collapsed').removeClass('expanded');
-        $('.collapsed').children().hide('medium');
+        $('.collapsed').children().hide();
     })
-    
+
 };
 
 

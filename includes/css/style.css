@@ -40,18 +40,60 @@ nav#menu a {
 
 nav#menu a#currentPage {
 
-	background-color: #40A4E4;
-	background-image: -webkit-gradient(linear, left top, left bottom, from(#3070A0), to(#205080));
-	background-image: -webkit-linear-gradient(top, #3070A0, #205277);
-	background-image: -moz-linear-gradient(top, #3070A0, #205277);
-	background-image: -ms-linear-gradient(top, #3070A0, #205277);
-	background-image: -o-linear-gradient(top, #3070A0, #205277);
-	background-image: linear-gradient(top, #3070A0, #205277);
+	background-color : #40A4E4;
+	background-image : -webkit-gradient(linear, left top, left bottom, from(#3070A0), to(#205080));
+	background-image : -webkit-linear-gradient(top, #3070A0, #205277);
+	background-image : -moz-linear-gradient(top, #3070A0, #205277);
+	background-image : -ms-linear-gradient(top, #3070A0, #205277);
+	background-image : -o-linear-gradient(top, #3070A0, #205277);
+	background-image : linear-gradient(top, #3070A0, #205277);
 
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#3070A0, endColorstr=#205277);
 }
 
-section {
+nav#menu a#language {
 	clear : left;
+	float : right;
+	height : 30px;
+	line-height : 30px;
+	width : initial;
+	padding-left : 10px;
+	padding-right : 10px;
+	background-color : #4060a0;
+	background-image : none;
+}
+
+nav#menu a#language:after {
+	clear : both;
+}
+
+
+section {
 	margin : 20px;
 }
+
+div#livery {
+	width : 640px;
+	height : 252px;
+	border : 1px solid black;
+}
+
+div#livery:after {
+	clear : left;
+}
+
+div#livery img {
+	float : left;
+}
+
+div#livery div {
+	float : left;
+	padding : 10px;
+}
+
+div#livery div:after {
+	clear : left;
+}
+
+
+
