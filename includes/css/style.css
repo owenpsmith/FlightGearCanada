@@ -72,30 +72,31 @@ section {
 	margin : 20px;
 }
 
-div#livery {
+li#livery {
 	width : 640px;
 	height : 252px;
 	border : 1px solid black;
+	margin-left : 0px;
 }
 
-div#livery:after {
+li#livery:after {
 	clear : left;
 }
 
-div#livery img {
+li#livery img {
 	float : left;
 }
 
-div#livery div {
+li#livery div {
 	float : left;
 	padding : 10px;
 }
 
-div#livery div:after {
+li#livery div:after {
 	clear : left;
 }
 
-div#livery a {
+li#livery a {
 
 	background-color: #585858;
 	background-image: -webkit-gradient(linear, left top, left bottom, from(#585858), to(#3d3d3d));
@@ -115,7 +116,7 @@ div#livery a {
     padding: 4px 10px;
 }
 
-div#livery a:hover {
+li#livery a:hover {
 
 	background-color : #40A4E4;
 	background-image : -webkit-gradient(linear, left top, left bottom, from(#3070A0), to(#205080));
