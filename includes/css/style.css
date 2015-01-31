@@ -72,11 +72,11 @@ section {
 	margin : 20px;
 }
 
-li#livery {
+li ul li#livery {
 	width : 640px;
-	height : 252px;
-	border : 1px solid black;
-	margin-left : 0px;
+	height : 254px;
+	border : 2px solid black;
+    padding-left: 0px;
 }
 
 li#livery:after {
@@ -111,8 +111,6 @@ li#livery a {
     cursor: pointer;
     height: 1.5em;
     line-height: 1.5em;
-    margin-right: 5px;
-    margin-top : 20px;
     padding: 4px 10px;
 }
 
@@ -131,8 +129,6 @@ li#livery a:hover {
     cursor: pointer;
     height: 1.5em;
     line-height: 1.5em;
-    margin-right: 50px;
-    margin-top : 20px;
     padding: 4px 10px;
 }
 
