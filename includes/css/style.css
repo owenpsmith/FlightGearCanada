@@ -72,8 +72,14 @@ section {
 	margin : 20px;
 }
 
+li h3 {
+	margin-top : 0px;
+	margin-bottom : 0px;
+	font-size : 12pt;
+}
+
 li ul li#livery {
-	width : 640px;
+	width : 720px;
 	height : 254px;
 	border : 2px solid black;
     padding-left: 0px;
@@ -85,11 +91,12 @@ li#livery:after {
 
 li#livery img {
 	float : left;
+	border-right : 2px solid black;
 }
 
 li#livery div {
 	float : left;
-	padding : 10px;
+	padding : 20px;
 }
 
 li#livery div:after {
