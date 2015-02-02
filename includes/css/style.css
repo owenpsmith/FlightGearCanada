@@ -72,38 +72,42 @@ section {
 	margin : 20px;
 }
 
-li h3 {
+li.liveryGroup ul {
+	margin-left : 20px;
+}
+
+li.liveryGroup h3 {
 	margin-top : 0px;
 	margin-bottom : 0px;
 	font-size : 12pt;
 }
 
-li ul li#livery {
+li ul li.livery {
 	width : 720px;
 	height : 254px;
 	border : 2px solid black;
     padding-left: 0px;
 }
 
-li#livery:after {
+li.livery:after {
 	clear : left;
 }
 
-li#livery img {
+li.livery img {
 	float : left;
 	border-right : 2px solid black;
 }
 
-li#livery div {
+li.livery div {
 	float : left;
 	padding : 20px;
 }
 
-li#livery div:after {
+li.livery div:after {
 	clear : left;
 }
 
-li#livery a {
+li.livery a {
 
 	background-color: #585858;
 	background-image: -webkit-gradient(linear, left top, left bottom, from(#585858), to(#3d3d3d));
@@ -121,7 +125,7 @@ li#livery a {
     padding: 4px 10px;
 }
 
-li#livery a:hover {
+li.livery a:hover {
 
 	background-color : #40A4E4;
 	background-image : -webkit-gradient(linear, left top, left bottom, from(#3070A0), to(#205080));

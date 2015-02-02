@@ -5,17 +5,17 @@
   margin-top:15px;
 }
 
-#expList ul, li {
+.expList ul, li {
     list-style: none;
     margin:0;
     padding:0;
     cursor: pointer;
 }
-#expList p {
+.expList p {
     margin:0;
     display:block;
 }
-#expList li {
+.expList li {
     line-height:140%;
     text-indent:0px;
     background-position: 1px 8px;
@@ -23,16 +23,22 @@
     background-repeat: no-repeat;
 }
 
+li.liveryGroup.expanded {
+	margin-bottom : 20px;
+}
+
+
+
 /* Collapsed state for list element */
-#expList .collapsed {
+.expList .collapsed {
     background-image: url(../images/collapsed.png);
 }
 /* Expanded state for list element
 /* NOTE: This class must be located UNDER the collapsed one */
-#expList .expanded {
+.expList .expanded {
     background-image: url(../images/expanded.png);
 }
-#expList {
+.expList {
     clear: both;
 }
 
