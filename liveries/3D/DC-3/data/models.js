@@ -38,7 +38,7 @@ var Models = [
     setup: {eye: [-33.60, 16.02, -28.20], poi: [2.85, 2.12, 0.00], up:[-0.04, 0.98, 0.16], fov: 45} },
 
   {name: "Douglas DC-3", author: "Owen Smith",
-    file: "Model/DC-3/model.ac", thumbnail: "model/DC-3/thumbnail.jpg",
+    file: "model/DC-3/model.ac", thumbnail: "model/DC-3/thumbnail.jpg",
     setup: {eye: [20.0, 10.0, 40.0], poi: [0.0, 0.0, 0.0], up:[0.0, 1.0, 0.0], fov: 20} }
     
 ];
