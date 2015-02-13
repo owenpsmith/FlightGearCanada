@@ -21,6 +21,7 @@ THE SOFTWARE.
 */
 
 var Models = [
+
   {name: "Boeing 777-200ER", author: "Justin Smithies / Syd Adams",
     file: "model/777/777-200ER.ac", thumbnail: "model/777/thumbnail.png",
     setup: {eye: [-28.07, -48.23, 23.66], poi: [6.86, 3.30, -0.02], up:[-0.70, 0.50, 0.50], fov: 45} },
@@ -38,6 +39,6 @@ var Models = [
 
   {name: "Douglas DC-3", author: "Owen Smith",
     file: "Model/DC-3/model.ac", thumbnail: "model/DC-3/thumbnail.jpg",
-    setup: {eye: [-28.07, -48.23, 23.66], poi: [6.86, 3.30, -0.02], up:[-0.70, 0.50, 0.50], fov: 45} }
+    setup: {eye: [20.0, 10.0, 40.0], poi: [0.0, 0.0, 0.0], up:[0.0, 1.0, 0.0], fov: 20} }
     
 ];
