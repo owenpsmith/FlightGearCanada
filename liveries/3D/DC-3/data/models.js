@@ -22,17 +22,22 @@ THE SOFTWARE.
 
 var Models = [
   {name: "Boeing 777-200ER", author: "Justin Smithies / Syd Adams",
-    file: "models/777/777-200ER.ac", thumbnail: "models/777/thumbnail.png",
+    file: "model/777/777-200ER.ac", thumbnail: "model/777/thumbnail.png",
     setup: {eye: [-28.07, -48.23, 23.66], poi: [6.86, 3.30, -0.02], up:[-0.70, 0.50, 0.50], fov: 45} },
     
   {name: "Boeing 707", author: "Innis Cunningham",
-    file: "models/707/707.ac", thumbnail: "models/707/thumbnail.png",
+    file: "model/707/707.ac", thumbnail: "model/707/thumbnail.png",
     setup: {eye: [-35.33, 11.98, -23.03], poi: [2.04, 3.48, 0.00], up:[-0.28, 0.84, 0.45], fov: 45} },
     
   {name: "H-60", author: "Unknown",
-    file: "models/H-60/H-60.ac", thumbnail: "models/H-60/thumbnail.png"},
+    file: "model/H-60/H-60.ac", thumbnail: "model/H-60/thumbnail.png"},
   
   {name: "Tupolev 154", author: "Ilia Pavlenko / Ilja Moderau / Denis Okan / Mike Savchenk",
-    file: "models/tu154/tu154B.ac", thumbnail: "models/tu154/thumbnail.png",
-    setup: {eye: [-33.60, 16.02, -28.20], poi: [2.85, 2.12, 0.00], up:[-0.04, 0.98, 0.16], fov: 45} }
+    file: "model/tu154/tu154B.ac", thumbnail: "model/tu154/thumbnail.png",
+    setup: {eye: [-33.60, 16.02, -28.20], poi: [2.85, 2.12, 0.00], up:[-0.04, 0.98, 0.16], fov: 45} },
+
+  {name: "Douglas DC-3", author: "Owen Smith",
+    file: "Model/DC-3/model.ac", thumbnail: "model/DC-3/thumbnail.jpg",
+    setup: {eye: [-28.07, -48.23, 23.66], poi: [6.86, 3.30, -0.02], up:[-0.70, 0.50, 0.50], fov: 45} }
+    
 ];
