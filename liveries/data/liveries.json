@@ -11,6 +11,102 @@ var Types =
 var Liveries = 
 [
 	{
+		operator:"Buffalo Airways",
+		typeId:  "DC-3",
+		author:  "Brett Harrison",
+		updated: "2012-07-18",
+		desc:    "",
+		thumb:   "http://liveries.flightgear.org/thumbs/819.jpg",
+		zip:     "http://liveries.flightgear.org/download/Douglas/DC-3/BFL.zip",
+		texture: "3D/textures/DC-3/BFL/"
+		acLink:  ""
+		acDesc:  "",
+	},
+	{
+		operator:"Canadian Coast Guard",
+		typeId:  "DC-3",
+		author:  "Owen Smith",
+		updated: "2015-02-01",
+		desc:    "",
+		thumb:   "data/C-FDTH_thumb.jpg",
+		zip:     "data/C-FDTH.zip",
+		texture: "3D/textures/DC-3/C-FDTH/"
+		acLink:  ""
+		acDesc:  "",
+	},
+	{
+		operator:"Canadian Pacific Airlines",
+		typeId:  "DC-3",
+		author:  "Owen Smith",
+		updated: "2015-02-01",
+		desc:    "",
+		thumb:   "data/CPC_Canadian_Pacific_thumb.jpg",
+		zip:     "data/CPC_Canadian_Pacific.zip",
+		texture: "3D/textures/DC-3/CPC_Canadian_Pacific/"
+		acLink:  ""
+		acDesc:  "",
+	},
+	{
+		operator:"CP Air",
+		typeId:  "DC-3",
+		author:  "Brett Harrison",
+		updated: "2012-07-18",
+		desc:    "",
+		thumb:   "http://liveries.flightgear.org/thumbs/820.jpg",
+		zip:     "http://liveries.flightgear.org/download/Douglas/DC-3/CPC.zip",
+		texture: "3D/textures/DC-3/CPC/"
+		acLink:  ""
+		acDesc:  "",
+	},
+	{
+		operator:"Northwest Territorial Airways",
+		typeId:  "DC-3",
+		author:  "Brett Harrison",
+		updated: "2011-11-02",
+		desc:    "",
+		thumb:   "http://liveries.flightgear.org/thumbs/637.jpg",
+		zip:     "http://liveries.flightgear.org/download/Douglas/DC-3/C-GWIR.zip",
+		texture: "3D/textures/DC-3/C-GWIR/"
+		acLink:  ""
+		acDesc:  "",
+	},
+	{
+		operator:"Pacific Western Airlines",
+		typeId:  "DC-3",
+		author:  "Owen Smith",
+		updated: "2015-02-01",
+		desc:    "old",
+		thumb:   "data/PWA_old_thumb.jpg",
+		zip:     "data/PWA_old.zip",
+		texture: "3D/textures/DC-3/PWA_old/"
+		acLink:  ""
+		acDesc:  "",
+	},
+	{
+		operator:"Pacific Western Airlines",
+		typeId:  "DC-3",
+		author:  "Owen Smith",
+		updated: "2015-02-01",
+		desc:    "new",
+		thumb:   "data/PWA_new_thumb.jpg",
+		zip:     "data/PWA_new.zip",
+		texture: "3D/textures/DC-3/PWA_new/"
+		acLink:  ""
+		acDesc:  "",
+	},
+	{
+		operator:"Queen Charlotte Airlines",
+		typeId:  "DC-3",
+		author:  "Owen Smith",
+		updated: "2015-02-01",
+		desc:    "",
+		thumb:   "data/CF-HCF_thumb.jpg",
+		zip:     "data/CF-HCF.zip",
+		texture: "3D/textures/DC-3/CF-HCF/"
+		acLink:  ""
+		acDesc:  "",
+	},
+	{
 		operator:"Royal Canadian Air Force",
 		typeId:  "DC-3",
 		author:  "Owen Smith",
@@ -19,6 +115,18 @@ var Liveries =
 		thumb:   "data/RCAF_CAF_thumb.jpg",
 		zip:     "data/RCAF_CAF.zip",
 		texture: "3D/textures/DC-3/RCAF_CAF/"
+		acLink:  ""
+		acDesc:  "",
+	},
+	{
+		operator:"Trans Canada Airlines",
+		typeId:  "DC-3",
+		author:  "Owen Smith",
+		updated: "2015-02-01",
+		desc:    "",
+		thumb:   "data/ACA_TCA_thumb.jpg",
+		zip:     "data/ACA_TCA.zip",
+		texture: "3D/textures/DC-3/ACA_TCA/"
 		acLink:  ""
 		acDesc:  "",
 	}
