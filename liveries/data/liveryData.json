@@ -132,7 +132,7 @@ var Liveries =
 	}
 ];
 
-<li class="liveryGroup"><h3>Airbus A320</h3>
+/*<li class="liveryGroup"><h3>Airbus A320</h3>
 	<ul>
 		<li class="livery"><img src="http://liveries.flightgear.org/thumbs/8.jpg" /><div>
 			<p><b>Operator:</b>Air Canada</p>
