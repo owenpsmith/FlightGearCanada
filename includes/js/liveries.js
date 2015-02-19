@@ -1,31 +1,48 @@
 
-var liveries;
-var types;
-var operators;
-var authors;
+// data
+var types     = [];
+var liveries  = [];
 
-function loadLiveryData() {
+// indexes
+var operators = [];
+var authors   = [];
 
-	// load file
+function loadData() {
+	alert("load aircraft data");
+	// load aircraft type data
+	$.getJSON( "data/aircraftData.json", function(typeData) {
+		types = typeData.types;
+		alert("aircraft data loaded: " + types[0].id);
+		types.sort(function (a, b) {
+			var varA = a.modelName.toUpperCase();
+			var varB = b.modelName.toUpperCase();
+			return (varA < varB) ? -1 : (varA > varB) ? 1 : 0;
+		});
+	});
+
+	alert("load livery data");
+	// load livery data
 	$.getJSON( "data/liveryData.json", function(liveries) {
+		alert("livery data loaded");
 
-	// make sorted list of types
-	$.each( data, function( key, val ) {
-		// if item not in list, insert in alphabetical order
-		items.push( "<li id='" + key + "'>" + val + "</li>" );
+		//create indexes
+		$.each(liveries, function(key, val) {
+			if (operators.indexOf(val.operator) == -1) {
+				operators.push(val.operator);
+			}
+			if (authors.indexOf(val.author) == -1) {
+				authors.push(val.author);
+			}
+		});
+
+		// sort indexes
+		operators.sort();
+		authors.sort();
 	});
-	
-	// make sorted list of operators
-	$.each( data, function( key, val ) {
-		items.push( "<li id='" + key + "'>" + val + "</li>" );
-	});
-	
-	// make sorted list of authors
-	$.each( data, function( key, val ) {
-		items.push( "<li id='" + key + "'>" + val + "</li>" );
-	});
-	
-};
+
+//	alert("operators = " + operators);
+//	alert(authors);
+}
 
 
 function populateWidgets() {
@@ -47,36 +64,31 @@ function populateWidgets() {
 	$.each( data, function( key, val ) {
 		items.push( "<li id='" + key + "'>" + val + "</li>" );
 	});
-	
-
 };
 
 
 function displayAllByType() {
 
 	// default to view all by type
-	
-	
 
 	// Callbacks
 	$('#expandList').unbind('click').click( function() {
 		$('.collapsed').addClass('expanded');
 		$('.collapsed').children('ul').show();
-	})
+	});
 
 	$('#collapseList').unbind('click').click( function() {
 		$('.collapsed').removeClass('expanded');
 		$('.collapsed').children('ul').hide();
-	})
+	});
 };
 
 
-
-
 $(document).ready( function() {
+	alert("ready");
 
-	loadLiveryData();
-	
-	populateWidgets();
-	
+	loadData();
+
+	//populateWidgets();
+
 });
