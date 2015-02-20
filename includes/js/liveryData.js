@@ -67,3 +67,10 @@ function loadData() {
 	});
 }
 
+function getLiveriesByType()
+{
+	// build livery heirarchy by type/operator, add filters later
+
+	return liveries;
+}
+
