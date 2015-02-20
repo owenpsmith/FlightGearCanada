@@ -128,6 +128,8 @@ function getLiveriesByOperator()
 	
 	$.each(operatorIndex,function(key, thisOperator) 
 	{
+		console.log("Next operator");
+
 		// clear group array
 		liveryGroup.length = 0;
 		

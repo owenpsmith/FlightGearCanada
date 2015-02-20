@@ -43,13 +43,15 @@ var displayLiveriesByOperator = function()
 	
 	$.each(liveriesByOperator,     function(key, thisOperator)
 	{
-		console.log("Generating HTML for "                  + thisOperator[0].operator);
+		console.log("Generating HTML(2) for next Operator");
+		
 		newHTML += "\t\t\t\t<li class=\"liveryGroup\"><h3>" + thisOperator[0].operator + "</h3>\n";
 		newHTML += "\t\t\t\t\t<ul>\n";
 	
 		$.each(thisOperator,     function(key, thisType)
 		{
-			console.log("Generating HTML for " + thisType.modelName);
+			console.log("Generating HTML(2) for " + thisType.operator + " : " + thisType.modelName);
+			
 			newHTML += "\t\t\t\t\t\t<li class=\"livery\"><img src=\"" + thisType.thumb + "\" /><div>\n";
 			newHTML += "\t\t\t\t\t\t\t<p><b>Type    :</b>"            + thisType.modelName + "</p>\n";
 			newHTML += "\t\t\t\t\t\t\t<p><b>Author  :</b>"            + thisType.author    + "</p>\n";
