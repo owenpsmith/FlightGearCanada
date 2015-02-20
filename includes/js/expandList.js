@@ -35,9 +35,3 @@ function prepareList() {
 };
 
 
-/**************************************************************/
-/* Functions to execute on loading the document               */
-/**************************************************************/
-$(document).ready( function() {
-    prepareList()
-});
