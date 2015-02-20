@@ -45,7 +45,6 @@ function loadData() {
 		});
 		alert("model data added");
 
-
 		//create indexes
 		$.each(liveries, function(key, val) {
 			if (typeIndex.indexOf(val.modelName) == -1) {
@@ -66,9 +65,6 @@ function loadData() {
 		authorIndex.sort();
 		alert("indexes sorted");
 	});
-
-//	alert("operators = " + operators);
-//	alert(authors);
 }
 
 

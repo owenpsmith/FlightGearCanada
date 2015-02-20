@@ -1,10 +1,172 @@
 { "types" :
 	[
 		{
+			"id"        : "A320",
+			"modelName" : "Airbus A320",
+			"modelPath" : "",
+			"setup"     : ""		
+		},
+		{
+			"id"        : "A330-343",
+			"modelName" : "Airbus A330-343",
+			"modelPath" : "",
+			"setup"     : ""		
+		},
+		{
+			"id"        : "T-6-II",
+			"modelName" : "Beechcraft T-6 Texan II",
+			"modelPath" : "",
+			"setup"     : ""		
+		},
+		{
+			"id"        : "B1900D",
+			"modelName" : "Beechcraft B1900D",
+			"modelPath" : "",
+			"setup"     : ""		
+		},
+		{
+			"id"        : "UH-1",
+			"modelName" : "Bell UH-1",
+			"modelPath" : "",
+			"setup"     : ""		
+		},
+		{
+			"id"        : "707",
+			"modelName" : "Boeing 707",
+			"modelPath" : "",
+			"setup"     : ""		
+		},
+		{
+			"id"        : "737-200",
+			"modelName" : "Boeing 737-200",
+			"modelPath" : "",
+			"setup"     : ""		
+		},
+		{
+			"id"        : "DHC-2",
+			"modelName" : "Boeing 737-800",
+			"modelPath" : "",
+			"setup"     : ""		
+		},
+		{
+			"id"        : "747-400",
+			"modelName" : "Boeing 747-400",
+			"modelPath" : "",
+			"setup"     : ""		
+		},
+		{
+			"id"        : "767-300",
+			"modelName" : "Boeing 767-300",
+			"modelPath" : "",
+			"setup"     : ""		
+		},
+		{
+			"id"        : "777-200LR",
+			"modelName" : "Boeing 777-200LR",
+			"modelPath" : "",
+			"setup"     : ""		
+		},
+		{
+			"id"        : "787",
+			"modelName" : "Boeing 787",
+			"modelPath" : "",
+			"setup"     : ""		
+		},
+		{
+			"id"        : "C-17",
+			"modelName" : "Boeing C-17",
+			"modelPath" : "",
+			"setup"     : ""		
+		},
+		{
+			"id"        : "CRJ-200",
+			"modelName" : "Bombardier CRJ-200",
+			"modelPath" : "",
+			"setup"     : ""		
+		},
+		{
+			"id"        : "CRJ-700ER",
+			"modelName" : "Bombardier CRJ-700ER",
+			"modelPath" : "",
+			"setup"     : ""		
+		},
+		{
+			"id"        : "DHC-1",
+			"modelName" : "DeHavilland Canada DHC-1 Chipmunk",
+			"modelPath" : "",
+			"setup"     : ""		
+		},
+		{
+			"id"        : "DHC-2",
+			"modelName" : "DeHavilland Canada DHC-2 Beaver",
+			"modelPath" : "",
+			"setup"     : ""		
+		},
+		{
+			"id"        : "DHC-3",
+			"modelName" : "DeHavilland Canada DHC-3 Otter",
+			"modelPath" : "",
+			"setup"     : ""		
+		},
+		{
+			"id"        : "DHC-4",
+			"modelName" : "DeHavilland Canada DHC-4 Caribou",
+			"modelPath" : "",
+			"setup"     : ""		
+		},
+		{
+			"id"        : "DHC-6",
+			"modelName" : "DeHavilland Canada DHC-6 Twin Otter",
+			"modelPath" : "",
+			"setup"     : ""		
+		},
+		{
+			"id"        : "DHC-8",
+			"modelName" : "DeHavilland Canada DHC-8 Dash 8",
+			"modelPath" : "",
+			"setup"     : ""		
+		},
+		{
 			"id"        : "DC-3",
 			"modelName" : "Douglas DC-3",
 			"modelPath" : "3D/models/DC-3.ac",
 			"setup"     : { "eye": [20.0, 10.0, 40.0], "poi": [0.0, 0.0, 0.0], "up":[0.0, 1.0, 0.0], "fov": 20}		
+		},
+		{
+			"id"        : "DC-10-30",
+			"modelName" : "Douglas DC-10-30",
+			"modelPath" : "",
+			"setup"     : ""		
+		},
+		{
+			"id"        : "ERJ-190",
+			"modelName" : "Embraer ERJ-190",
+			"modelPath" : "",
+			"setup"     : ""		
+		},
+		{
+			"id"        : "G-21",
+			"modelName" : "Grumman G-21 Goose",
+			"modelPath" : "",
+			"setup"     : ""		
+		},
+		{
+			"id"        : "F-104",
+			"modelName" : "Lockheed F-104 Starfighter",
+			"modelPath" : "",
+			"setup"     : ""		
+		},
+		{
+			"id"        : "T-6",
+			"modelName" : "North American T-6 Texan",
+			"modelPath" : "",
+			"setup"     : ""		
+		},
+		{
+			"id"        : "S.E.5",
+			"modelName" : "Royal Aircraft Factory S.E.5",
+			"modelPath" : "",
+			"setup"     : ""		
 		}
 	]
 }
