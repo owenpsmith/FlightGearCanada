@@ -118,3 +118,42 @@ function getLiveriesByType()
 	return liveriesByType;
 }
 
+function getLiveriesByOperator()
+{
+	console.log("getLiveriesByOperator()");
+
+	// build livery heirarchy by operator/type
+	var liveriesByOperator = [];
+	var liveryGroup        = [];
+	
+	$.each(operatorIndex,function(key, thisOperator) 
+	{
+		// clear group array
+		liveryGroup.length = 0;
+		
+		$.each(typeIndex,        function(key, thisType)
+		{
+			$.each(liveries,       function(key, thisLivery)
+			{
+				if ((thisLivery.operator  == thisOperator) &&
+				    (thisLivery.modelName == thisType))
+				{
+					// add to this group
+					liveryGroup.push(thisLivery);
+					console.log("added " + thisLivery.operator + ":" + thisLivery.modelName);
+				}
+			});
+		});
+		
+		// add group to type array
+		if (liveryGroup.length > 0)
+		{
+			liveriesByOperator.push(liveryGroup);
+		}
+	});
+
+	alert("getLiveriesByOperator - EXIT");
+
+	return liveriesByOperator;
+}
+
