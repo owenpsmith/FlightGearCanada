@@ -24,12 +24,9 @@ function addModelData(livery)
 
 function loadData(dataLoadedCallback)
 {
-	console.log("loadData()");
-
 	// load aircraft data
 	$.getJSON( "data/aircraftData.json", function(typeData)
 	{
-		console.log("typeData loaded");
 		types = typeData.types;
 
 		types.sort(function (a, b)
@@ -42,13 +39,11 @@ function loadData(dataLoadedCallback)
 		// load livery data
 		$.getJSON( "data/liveryData.json", function(liveryData)
 		{
-			console.log("liveryData loaded");
 			liveries = liveryData.liveries;
 
 			// populate type data into livery data
 			$.each(liveries, function(key, val)
 			{
-				console.log("adding livery " + val.operator);
 				addModelData(val);
 			});
 
@@ -73,7 +68,6 @@ function loadData(dataLoadedCallback)
 			typeIndex.sort();
 			operatorIndex.sort();
 			authorIndex.sort();
-			console.log("load data complete 1");
 
 			dataLoadedCallback();
 		});
@@ -143,5 +137,33 @@ function getLiveriesByOperator()
 	});
 
 	return liveriesByOperator;
+}
+
+function getLiveriesByAuthor()
+{
+	// build livery heirarchy by operator/type
+	var liveriesByAuthor = [];
+
+	$.each(authorIndex, function(key, thisAuthor)
+	{
+		var liveryGroup = [];
+
+		$.each(liveries, function(key, thisLivery)
+		{
+			if (thisLivery.author  == thisAuthor)
+			{
+				// add to this group
+				liveryGroup.push(thisLivery);
+			}
+		});
+
+		// add group to author array
+		if (liveryGroup.length > 0)
+		{
+			liveriesByAuthor.push(liveryGroup);
+		}
+	});
+
+	return liveriesByAuthor;
 }
 
