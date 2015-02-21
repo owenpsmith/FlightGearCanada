@@ -22,6 +22,7 @@ function addModelData(livery)
 	});
 }
 
+
 function loadData(dataLoadedCallback)
 {
 	// load aircraft data
@@ -65,9 +66,15 @@ function loadData(dataLoadedCallback)
 			});
 
 			// sort indexes
-			typeIndex.sort();
-			operatorIndex.sort();
-			authorIndex.sort();
+			typeIndex.sort(function (a, b) {
+				return a.toLowerCase().localeCompare(b.toLowerCase());
+			});
+			operatorIndex.sort(function (a, b) {
+				return a.toLowerCase().localeCompare(b.toLowerCase());
+			});
+			authorIndex.sort(function (a, b) {
+				return a.toLowerCase().localeCompare(b.toLowerCase());
+			});
 
 			dataLoadedCallback();
 		});
@@ -150,7 +157,10 @@ function getLiveriesByAuthor()
 
 		$.each(liveries, function(key, thisLivery)
 		{
-			if (thisLivery.author  == thisAuthor)
+			var thisLiveryAuthor = thisLivery.author;
+//			if (thisLivery.author == thisAuthor)
+			if (thisLiveryAuthor == thisAuthor)
+//			if ("hello1" == "hello2")
 			{
 				// add to this group
 				liveryGroup.push(thisLivery);
