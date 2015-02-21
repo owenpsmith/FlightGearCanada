@@ -8,9 +8,9 @@ var typeIndex     = [];
 var operatorIndex = [];
 var authorIndex   = [];
 
-function addModelData(livery) 
+function addModelData(livery)
 {
-	$.each(types, function(key, val) 
+	$.each(types, function(key, val)
 	{
 		if (val.id == livery.typeId)
 		{
@@ -22,12 +22,12 @@ function addModelData(livery)
 	});
 }
 
-function loadData(dataLoadedCallback) 
+function loadData(dataLoadedCallback)
 {
 	console.log("loadData()");
-	
+
 	// load aircraft data
-	$.getJSON( "data/aircraftData.json", function(typeData) 
+	$.getJSON( "data/aircraftData.json", function(typeData)
 	{
 		console.log("typeData loaded");
 		types = typeData.types;
@@ -38,7 +38,7 @@ function loadData(dataLoadedCallback)
 			var varB = b.modelName.toUpperCase();
 			return (varA < varB) ? -1 : (varA > varB) ? 1 : 0;
 		});
-		
+
 		// load livery data
 		$.getJSON( "data/liveryData.json", function(liveryData)
 		{
@@ -53,17 +53,17 @@ function loadData(dataLoadedCallback)
 			});
 
 			//create indexes
-			$.each(liveries, function(key, val) 
+			$.each(liveries, function(key, val)
 			{
-				if (typeIndex.indexOf(val.modelName) == -1) 
+				if (typeIndex.indexOf(val.modelName) == -1)
 				{
 					typeIndex.push(val.modelName);
 				}
-				if (operatorIndex.indexOf(val.operator) == -1) 
+				if (operatorIndex.indexOf(val.operator) == -1)
 				{
 					operatorIndex.push(val.operator);
 				}
-				if (authorIndex.indexOf(val.author) == -1) 
+				if (authorIndex.indexOf(val.author) == -1)
 				{
 					authorIndex.push(val.author);
 				}
@@ -74,7 +74,7 @@ function loadData(dataLoadedCallback)
 			operatorIndex.sort();
 			authorIndex.sort();
 			console.log("load data complete 1");
-			
+
 			dataLoadedCallback();
 		});
 	});
@@ -83,17 +83,13 @@ function loadData(dataLoadedCallback)
 
 function getLiveriesByType()
 {
-	console.log("getLiveriesByType()");
-
 	// build livery heirarchy by type/operator
 	var liveriesByType = [];
-	var liveryGroup    = [];
-	
-	$.each(typeIndex,     function(key, thisType) 
+
+	$.each(typeIndex,     function(key, thisType)
 	{
-		// clear group array
-		liveryGroup.length = 0;
-		
+		var liveryGroup    = [];
+
 		$.each(operatorIndex, function(key, thisOperator)
 		{
 			$.each(liveries,       function(key, thisLivery)
@@ -103,11 +99,10 @@ function getLiveriesByType()
 				{
 					// add to this group
 					liveryGroup.push(thisLivery);
-					console.log("added " + thisType + ":" + thisOperator);
 				}
 			});
 		});
-		
+
 		// add group to type array
 		if (liveryGroup.length > 0)
 		{
@@ -120,41 +115,32 @@ function getLiveriesByType()
 
 function getLiveriesByOperator()
 {
-	console.log("getLiveriesByOperator()");
-
 	// build livery heirarchy by operator/type
 	var liveriesByOperator = [];
-	var liveryGroup        = [];
-	
-	$.each(operatorIndex,function(key, thisOperator) 
-	{
-		console.log("Next operator");
 
-		// clear group array
-		liveryGroup.length = 0;
-		
-		$.each(typeIndex,        function(key, thisType)
+	$.each(operatorIndex, function(key, thisOperator)
+	{
+		var liveryGroup = [];
+
+		$.each(typeIndex, function(key, thisType)
 		{
-			$.each(liveries,       function(key, thisLivery)
+			$.each(liveries, function(key, thisLivery)
 			{
 				if ((thisLivery.operator  == thisOperator) &&
 				    (thisLivery.modelName == thisType))
 				{
 					// add to this group
 					liveryGroup.push(thisLivery);
-					console.log("added " + thisLivery.operator + ":" + thisLivery.modelName);
 				}
 			});
 		});
-		
+
 		// add group to type array
 		if (liveryGroup.length > 0)
 		{
 			liveriesByOperator.push(liveryGroup);
 		}
 	});
-
-	alert("getLiveriesByOperator - EXIT");
 
 	return liveriesByOperator;
 }
