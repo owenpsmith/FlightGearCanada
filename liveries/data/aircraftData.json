@@ -13,14 +13,14 @@
 			"setup"     : ""		
 		},
 		{
-			"id"        : "T-6-II",
-			"modelName" : "Beechcraft T-6 Texan II",
+			"id"        : "B1900D",
+			"modelName" : "Beechcraft B1900D",
 			"modelPath" : "",
 			"setup"     : ""		
 		},
 		{
-			"id"        : "B1900D",
-			"modelName" : "Beechcraft B1900D",
+			"id"        : "T-6-II",
+			"modelName" : "Beechcraft T-6 Texan II",
 			"modelPath" : "",
 			"setup"     : ""		
 		},
@@ -43,7 +43,7 @@
 			"setup"     : ""		
 		},
 		{
-			"id"        : "DHC-2",
+			"id"        : "737-800",
 			"modelName" : "Boeing 737-800",
 			"modelPath" : "",
 			"setup"     : ""		
