@@ -8,6 +8,10 @@ var typeIndex     = [];
 var operatorIndex = [];
 var authorIndex   = [];
 
+var liveriesByType     = [];
+var liveriesByOperator = [];
+var liveriesByAuthor   = [];
+
 function addModelData(livery)
 {
 	$.each(types, function(key, val)
@@ -84,95 +88,98 @@ function loadData(dataLoadedCallback)
 
 function getLiveriesByType()
 {
-	// build livery heirarchy by type/operator
-	var liveriesByType = [];
-
-	$.each(typeIndex,     function(key, thisType)
+	if (liveriesByType.length <= 0)
 	{
-		var liveryGroup    = [];
-
-		$.each(operatorIndex, function(key, thisOperator)
+		// build livery heirarchy by type/operator
+		$.each(typeIndex,     function(key, thisType)
 		{
-			$.each(liveries,       function(key, thisLivery)
+			var liveryGroup    = [];
+
+			$.each(operatorIndex, function(key, thisOperator)
 			{
-				if ((thisLivery.modelName == thisType) &&
-				    (thisLivery.operator  == thisOperator))
+				$.each(liveries,       function(key, thisLivery)
 				{
-					// add to this group
-					liveryGroup.push(thisLivery);
-				}
+					if ((thisLivery.modelName == thisType) &&
+						(thisLivery.operator  == thisOperator))
+					{
+						// add to this group
+						liveryGroup.push(thisLivery);
+					}
+				});
 			});
-		});
 
-		// add group to type array
-		if (liveryGroup.length > 0)
-		{
-			liveriesByType.push(liveryGroup);
-		}
-	});
+			// add group to type array
+			if (liveryGroup.length > 0)
+			{
+				liveriesByType.push(liveryGroup);
+			}
+		});
+	}
 
 	return liveriesByType;
 }
 
 function getLiveriesByOperator()
 {
-	// build livery heirarchy by operator/type
-	var liveriesByOperator = [];
-
-	$.each(operatorIndex, function(key, thisOperator)
+	if (liveriesByOperator.length <= 0)
 	{
-		var liveryGroup = [];
-
-		$.each(typeIndex, function(key, thisType)
+		// build livery heirarchy by operator/type
+		$.each(operatorIndex, function(key, thisOperator)
 		{
-			$.each(liveries, function(key, thisLivery)
+			var liveryGroup = [];
+
+			$.each(typeIndex, function(key, thisType)
 			{
-				if ((thisLivery.operator  == thisOperator) &&
-				    (thisLivery.modelName == thisType))
+				$.each(liveries, function(key, thisLivery)
 				{
-					// add to this group
-					liveryGroup.push(thisLivery);
-				}
+					if ((thisLivery.operator  == thisOperator) &&
+						(thisLivery.modelName == thisType))
+					{
+						// add to this group
+						liveryGroup.push(thisLivery);
+					}
+				});
 			});
-		});
 
-		// add group to type array
-		if (liveryGroup.length > 0)
-		{
-			liveriesByOperator.push(liveryGroup);
-		}
-	});
+			// add group to type array
+			if (liveryGroup.length > 0)
+			{
+				liveriesByOperator.push(liveryGroup);
+			}
+		});
+	}
 
 	return liveriesByOperator;
 }
 
 function getLiveriesByAuthor()
 {
-	// build livery heirarchy by operator/type
-	var liveriesByAuthor = [];
-
-	$.each(authorIndex, function(key, thisAuthor)
+	if (liveriesByAuthor.length <= 0)
 	{
-		var liveryGroup = [];
-
-		$.each(liveries, function(key, thisLivery)
+		// build livery heirarchy by author
+		$.each(authorIndex, function(key, thisAuthor)
 		{
-			var thisLiveryAuthor = thisLivery.author;
-//			if (thisLivery.author == thisAuthor)
-			if (thisLiveryAuthor == thisAuthor)
-//			if ("hello1" == "hello2")
+			var liveryGroup = [];
+
+			$.each(liveries, function(key, thisLivery)
 			{
-				// add to this group
-				liveryGroup.push(thisLivery);
+				var thisLiveryAuthor = thisLivery.author;
+	// orig		if (thisLivery.author == thisAuthor)
+				if (thisLiveryAuthor == thisAuthor)
+	//			if ("hello1" == "hello2")
+				{
+					// add to this group
+					liveryGroup.push(thisLivery);
+				}
+			});
+
+			// add group to author array
+			if (liveryGroup.length > 0)
+			{
+				liveriesByAuthor.push(liveryGroup);
 			}
 		});
-
-		// add group to author array
-		if (liveryGroup.length > 0)
-		{
-			liveriesByAuthor.push(liveryGroup);
-		}
-	});
+	}
 
 	return liveriesByAuthor;
 }
