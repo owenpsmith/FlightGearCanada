@@ -82,7 +82,7 @@ li.liveryGroup h3 {
 	font-size : 12pt;
 }
 
-li ul li.livery {
+ul li.livery {
 	width : 800px;
 	height : 254px;
 	border : 2px solid black;

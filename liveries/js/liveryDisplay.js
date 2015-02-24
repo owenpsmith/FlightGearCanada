@@ -2,7 +2,7 @@
 
 var displayLiveriesByType = function()
 {
-	var newHTML = ""
+	var newHTML = "";
 
 	var liveriesByType = getLiveriesByType();
 
@@ -32,7 +32,7 @@ var displayLiveriesByType = function()
 
 var displayLiveriesByOperator = function()
 {
-	var newHTML = ""
+	var newHTML = "";
 
 	var liveriesByOperator = getLiveriesByOperator();
 
@@ -62,7 +62,7 @@ var displayLiveriesByOperator = function()
 
 var displayLiveriesByAuthor = function()
 {
-	var newHTML = ""
+	var newHTML = "";
 
 	var liveriesByAuthor = getLiveriesByAuthor();
 
@@ -91,6 +91,27 @@ var displayLiveriesByAuthor = function()
 	prepareList();
 }
 
+var displayLiveriesByAll = function()
+{
+	var newHTML = "";
+
+	$.each(liveries, function(key, thisLivery)
+	{
+		newHTML += "\t\t\t\t\t\t<li class=\"livery\"><img src=\"" + thisLivery.thumb + "\" /><div>\n";
+		newHTML += "\t\t\t\t\t\t\t<p><b>Type    :</b>"            + thisLivery.modelName + "</p>\n";
+		newHTML += "\t\t\t\t\t\t\t<p><b>Operator:</b>"            + thisLivery.operator  + "</p>\n";
+		newHTML += "\t\t\t\t\t\t\t<p><b>Author  :</b>"            + thisLivery.author    + "</p>\n";
+		newHTML += "\t\t\t\t\t\t\t<p><b>Updated :</b>"            + thisLivery.updated   + "</p>\n";
+		newHTML += "\t\t\t\t\t\t\t<br>\n";
+		newHTML += "\t\t\t\t\t\t\t<a class=\"link\" href=\""      + thisLivery.zip + "\">Download</a>\n";
+		newHTML += "\t\t\t\t\t\t</div></li>\n";
+	});
+
+	$('#liveryContainer').html(newHTML);
+
+	prepareList();
+}
+
 
 // button handlers
 $('#byTypeBtn').click(function()
@@ -106,6 +127,11 @@ $('#byOperatorBtn').click(function()
 $('#byAuthorBtn').click(function()
 {
 	displayLiveriesByAuthor();
+});
+
+$('#byAllBtn').click(function()
+{
+	displayLiveriesByAll();
 });
 
 
