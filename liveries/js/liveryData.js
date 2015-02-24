@@ -163,10 +163,7 @@ function getLiveriesByAuthor()
 
 			$.each(liveries, function(key, thisLivery)
 			{
-				var thisLiveryAuthor = thisLivery.author;
-	// orig		if (thisLivery.author == thisAuthor)
-				if (thisLiveryAuthor == thisAuthor)
-	//			if ("hello1" == "hello2")
+				if (thisLivery.author == thisAuthor)
 				{
 					// add to this group
 					liveryGroup.push(thisLivery);

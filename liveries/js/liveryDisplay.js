@@ -71,7 +71,7 @@ var displayLiveriesByAuthor = function()
 		newHTML += "\t\t\t\t<li class=\"liveryGroup\"><h3>" + thisAuthor[0].author + "</h3>\n";
 		newHTML += "\t\t\t\t\t<ul>\n";
 
-		$.each(liveries, function(key, thisLivery)
+		$.each(thisAuthor, function(key, thisLivery)
 		{
 			newHTML += "\t\t\t\t\t\t<li class=\"livery\"><img src=\"" + thisLivery.thumb + "\" /><div>\n";
 			newHTML += "\t\t\t\t\t\t\t<p><b>Type    :</b>"            + thisLivery.modelName + "</p>\n";
