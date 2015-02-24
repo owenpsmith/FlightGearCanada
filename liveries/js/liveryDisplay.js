@@ -8,7 +8,7 @@ var displayLiveriesByType = function()
 
 	$.each(liveriesByType, function(key, thisType)
 	{
-		newHTML += "\t\t\t\t<li class=\"liveryGroup\"><h3>" + thisType[0].modelName + "</h3>\n";
+		newHTML += "\t\t\t\t<li class=\"liveryGroup\"><h3>" + thisType[0].modelName + " (" + thisType.length + ")</h3>\n";
 		newHTML += "\t\t\t\t\t<ul>\n";
 
 		$.each(thisType, function(key, thisOperator)
@@ -38,7 +38,7 @@ var displayLiveriesByOperator = function()
 
 	$.each(liveriesByOperator, function(key, thisOperator)
 	{
-		newHTML += "\t\t\t\t<li class=\"liveryGroup\"><h3>" + thisOperator[0].operator + "</h3>\n";
+		newHTML += "\t\t\t\t<li class=\"liveryGroup\"><h3>" + thisOperator[0].operator + " (" + thisOperator.length + ")</h3>\n";
 		newHTML += "\t\t\t\t\t<ul>\n";
 
 		$.each(thisOperator, function(key, thisType)
@@ -68,7 +68,7 @@ var displayLiveriesByAuthor = function()
 
 	$.each(liveriesByAuthor, function(key, thisAuthor)
 	{
-		newHTML += "\t\t\t\t<li class=\"liveryGroup\"><h3>" + thisAuthor[0].author + "</h3>\n";
+		newHTML += "\t\t\t\t<li class=\"liveryGroup\"><h3>" + thisAuthor[0].author + " (" + thisAuthor.length + ")</h3>\n";
 		newHTML += "\t\t\t\t\t<ul>\n";
 
 		$.each(thisAuthor, function(key, thisLivery)
@@ -94,6 +94,8 @@ var displayLiveriesByAuthor = function()
 var displayLiveriesByAll = function()
 {
 	var newHTML = "";
+
+	newHTML += "\t\t\t\t\t\t<h3>All Liveries (" + liveries.length + ")</h3>\n";
 
 	$.each(liveries, function(key, thisLivery)
 	{
