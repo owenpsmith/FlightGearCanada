@@ -8,7 +8,7 @@ var displayImageThumbnails = function()
 		newHTML += "\t\t\t\t<div class=\"thumbnail\"><a href=\"" + thisImage.image + "\"><img src=\"" + thisImage.thumb + "\" /></a></div>\n";
 	});
 
-	$('#welcome').html(newHTML);
+	$('#thumbnails').html(newHTML);
 
 }
 
