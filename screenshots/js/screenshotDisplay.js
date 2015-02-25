@@ -5,11 +5,13 @@ var displayImageThumbnails = function()
 
 	$.each(images, function(key, thisImage)
 	{
-		newHTML += "\t\t\t\t<div class=\"thumbnail\"><a href=\"" + thisImage.image + "\"><img src=\"" + thisImage.thumb + "\" /></a></div>\n";
+		newHTML += "\t\t\t\t<div class=\"thumbnail\">\n";
+		newHTML += "\t\t\t\t\t<a href=\"" + thisImage.image + "\"><img src=\"" + thisImage.thumb + "\" /></a>\n";
+		newHTML += "\t\t\t\t\t<p>" + thisImage.desc + "<\p>\n";
+		newHTML += "\t\t\t\t</div>\n";
 	});
 
 	$('#thumbnails').html(newHTML);
-
 }
 
 

@@ -9,8 +9,59 @@ section#thumbnails {
 div.thumbnail {
 	float      : left;
 	margin     : 5px;
-	padding    : 15px;
+	padding    : 14px;
 	background : #444444;
-	border     : 2px solid black;
 }
 
+div.thumbnail img {
+	margin     : 0px;
+	padding    : 0px;
+	max-width  : 300px;
+ 	text-align: center;
+ 	color      : #dddddd;
+	border     : 1px solid black;
+}
+
+div.thumbnail p {
+	margin     : 0px;
+	padding    : 0px;
+	max-width  : 300px;
+ 	text-align: center;
+ 	color      : #dddddd;
+}
+
+
+div.thumbnail:hover {
+	background : #777777;
+}
+
+@media screen and (max-width : 1391px) {
+
+	section#thumbnails {
+		width        : 1032px;
+	}
+
+}
+
+@media screen and (max-width : 1047px) {
+
+	section#thumbnails {
+		width        : 688px;
+	}
+
+}
+
+@media screen and (max-width : 704px) {
+
+	section#thumbnails {
+		width        : 344px;
+	}
+
+	div.thumbnail {
+		float      : left;
+		margin     : 0px;
+		padding    : 5px;
+		background : #444444;
+		border     : 1px solid black;
+	}
+}
