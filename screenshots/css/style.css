@@ -11,20 +11,21 @@ div.thumbnail {
 	margin     : 5px;
 	padding    : 14px;
 	background : #444444;
+	min-height : 277px;
 }
 
 div.thumbnail img {
 	margin     : 0px;
 	padding    : 0px;
 	max-width  : 300px;
- 	text-align: center;
+ 	text-align : center;
  	color      : #dddddd;
 	border     : 1px solid black;
 }
 
 div.thumbnail p {
 	margin     : 0px;
-	padding    : 0px;
+	padding    : 3px 0px 0px 0px;
 	max-width  : 300px;
  	text-align: center;
  	color      : #dddddd;
