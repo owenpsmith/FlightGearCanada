@@ -1,6 +1,6 @@
 
 var mode = "";
-var imageIndex = 0;
+var imageIndex = -1;
 var imageElement = 0;
 var $currentImage;
 var interval;
@@ -8,7 +8,6 @@ var interval;
 
 var displayImageThumbnails = function()
 {
-console.log("displayImageThumbnails() - ENTER");
 	var newHTML = "";
 
 	$.each(images, function(key, thisImage)
@@ -49,6 +48,7 @@ var showNextImage = function()
 		nextImage = images[imageIndex];
 
 		newHTML += "<img id=\"slideshow\" src=\"" + nextImage.image + "\" />";
+		newHTML += "<p>" + nextImage.desc + "<\p>\n";
 
 		if (imageElement == 1)
 		{
@@ -56,18 +56,16 @@ var showNextImage = function()
 
 			$('#image2').html(newHTML);
 			$('#image2').animate({opacity:1}, {duration:1000});
+			$('#image1').animate({opacity:0}, {duration:1000});
 		}
 		else
 		{
 			imageElement = 1;
 
 			$('#image1').html(newHTML);
+			$('#image1').animate({opacity:1}, {duration:1000});
 			$('#image2').animate({opacity:0}, {duration:1000});
 		}
-	}
-	else
-	{
-		clearInterval(interval);
 	}
 }
 
@@ -77,10 +75,8 @@ var displaySlideShow = function()
 {
 	var newHTML = "";
 
-	imageIndex = -1;
-
-	newHTML += "<div id='image1'>Hello 1</div>\n";
-	newHTML += "<div id='image2'>Hello 2</div>\n";
+	newHTML += "<div id='image1'></div>\n";
+	newHTML += "<div id='image2'></div>\n";
 
 	$thumbnailsTemp = $('#thumbnails');
 
@@ -94,6 +90,11 @@ var displaySlideShow = function()
 // button handlers
 $('#thumbsBtn').click(function()
 {
+	if (mode == "slideshow")
+	{
+		clearInterval(interval);
+	}
+
 	mode = "thumbnails";
 	displayImageThumbnails();
 });
