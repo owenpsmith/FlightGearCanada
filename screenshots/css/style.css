@@ -1,6 +1,24 @@
 
+div#fixedButtons {
+	margin-top   : 10px;
+	width        : 1376px;
+	margin-left  : auto;
+	margin-right : auto;
+}
+
+div#slidesButtons {
+	width        : 210px;
+	margin-left  : auto;
+	margin-right : auto;
+}
+
+div#buttons button {
+	margin-left  : auto;
+	margin-right : auto;
+}
 
 section#thumbnails {
+	margin-top   : 5px;
 	margin-left  : auto;
 	margin-right : auto;
 	width        : 1376px;
@@ -11,7 +29,7 @@ div.thumbnail {
 	margin     : 5px;
 	padding    : 14px;
 	background : #444444;
-	min-height : 277px;
+	min-height : 280px;
 }
 
 div.thumbnail img {
@@ -19,7 +37,6 @@ div.thumbnail img {
 	padding    : 0px;
 	max-width  : 300px;
  	text-align : center;
- 	color      : #dddddd;
 	border     : 1px solid black;
 }
 
@@ -27,16 +44,35 @@ div.thumbnail p {
 	margin     : 0px;
 	padding    : 3px 0px 0px 0px;
 	max-width  : 300px;
- 	text-align: center;
+ 	text-align : center;
  	color      : #dddddd;
 }
 
-
-div.thumbnail:hover {
+section#thumbnails div.thumbnail:hover {
 	background : #777777;
+ 	color      : #000000;
+}
+
+img#slideshow {
+	width        : 60%;
+	margin-left  : 20%;
+	margin-right : 20%;
+	border       : 2px solid #444444;
+}
+
+div#image1 {
+	position : absolute;
+}
+
+div#image2 {
+	position : absolute;
 }
 
 @media screen and (max-width : 1391px) {
+
+	div#fixedButtons {
+		width        : 1032px;
+	}
 
 	section#thumbnails {
 		width        : 1032px;
@@ -46,6 +82,10 @@ div.thumbnail:hover {
 
 @media screen and (max-width : 1047px) {
 
+	div#fixedButtons {
+		width        : 688px;
+	}
+
 	section#thumbnails {
 		width        : 688px;
 	}
@@ -53,6 +93,10 @@ div.thumbnail:hover {
 }
 
 @media screen and (max-width : 704px) {
+
+	div#fixedButtons {
+		width        : 344px;
+	}
 
 	section#thumbnails {
 		width        : 344px;
