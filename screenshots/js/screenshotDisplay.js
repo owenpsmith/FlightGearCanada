@@ -125,13 +125,17 @@ $('#playPauseBtn').click(function()
 {
 	if (interval != 0)
 	{
+		// slideshow is running so pause
 		clearInterval(interval);
 		interval = 0;
+		$('#playPauseBtn').text("Play");
 	}
 	else
 	{
+		// slideshow is not running so start
 		showNextImage(1);
 		interval = setInterval(ssTimerCallback, 5000);
+		$('#playPauseBtn').text("Pause");
 	}
 });
 
