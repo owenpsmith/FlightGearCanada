@@ -3,7 +3,7 @@ var mode = "";
 var imageIndex = -1;
 var imageElement = 0;
 var $currentImage;
-var interval;
+var interval = 0;
 
 
 var displayImageThumbnails = function()
@@ -21,8 +21,9 @@ var displayImageThumbnails = function()
 	$('#thumbnails').html(newHTML);
 }
 
-var showNextImage = function()
+var showNextImage = function(ssDirection)
 {
+	console.log("showNextImage()");
 	if (mode == "slideshow")
 	{
 		if (imageIndex < 0)
@@ -36,10 +37,14 @@ var showNextImage = function()
 		}
 		else
 		{
-			imageIndex++;
+			imageIndex += ssDirection;
 			if (imageIndex >= images.length)
 			{
 				imageIndex = 0;
+			}
+			if (imageIndex < 0)
+			{
+				imageIndex = images.length - 1;
 			}
 		}
 
@@ -69,6 +74,10 @@ var showNextImage = function()
 	}
 }
 
+var ssTimerCallback = function()
+{
+	showNextImage(1);
+}
 
 
 var displaySlideShow = function()
@@ -83,8 +92,8 @@ var displaySlideShow = function()
 	$thumbnailsTemp.html("");
 	$thumbnailsTemp.html(newHTML);
 
-	showNextImage();
-	interval = setInterval(showNextImage, 5000);
+	showNextImage(1);
+	interval = setInterval(ssTimerCallback, 5000);
 }
 
 // button handlers
@@ -93,6 +102,7 @@ $('#thumbsBtn').click(function()
 	if (mode == "slideshow")
 	{
 		clearInterval(interval);
+		interval = 0;
 	}
 
 	mode = "thumbnails";
@@ -106,10 +116,34 @@ $('#slidesBtn').click(function()
 });
 
 
+$('#prevBtn').click(function()
+{
+	showNextImage(-1);
+});
+
+$('#playPauseBtn').click(function()
+{
+	if (interval != 0)
+	{
+		clearInterval(interval);
+		interval = 0;
+	}
+	else
+	{
+		showNextImage(1);
+		interval = setInterval(ssTimerCallback, 5000);
+	}
+});
+
+$('#nextBtn').click(function()
+{
+	showNextImage(1);
+});
+
+
 // initialization
 var dataLoadedCallback = function()
 {
-console.log("dataLoadedCallback() - ENTER");
 	// default to view all by type
 	displayImageThumbnails();
 };
