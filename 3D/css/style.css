@@ -104,12 +104,3 @@ html, body {
   z-index: 2;
 }
 
-#adsense {
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  margin: 10px;
-  padding: 0px;
-  overflow: hidden;
-  z-index: 2;
-}

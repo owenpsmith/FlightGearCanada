@@ -16,6 +16,7 @@
 	<link type="text/css"  href="../includes/css/style.css"      rel="stylesheet">
 	<link type="text/css"  href="css/style.css"                  rel="stylesheet">
 	<link type="text/css"  href="../includes/css/expandList.css" rel="stylesheet">
+	<link type="text/css"  href="../3D/css/style.css"            rel="stylesheet">
 	<link type="image/png" href="../includes/images/favicon.ico" rel="icon">
 </head>
 
@@ -35,7 +36,7 @@
 	<section id="welcome">
 
 		<p>
-			<a href="../3D/DC-3/index.html">3D viewer test page</a>
+			<a id="3Dlink" href="">3D viewer test page</a>
 		</p>
 		<p>
 			<button id="byTypeBtn">Browse By Type</button>
@@ -56,10 +57,37 @@
 		</div>
 	</section>
 
+	<section id="3D">
+		<canvas height="699" width="1600" id="canvas"></canvas>
+
+		<div id="details"><p id="name">Tupolev 154</p></div>
+
+		<div id="gallery"></div>
+
+		<div id="text">
+			Powered by <a href="http://code.google.com/p/hangar/">Hangar</a>
+		</div>
+
+		<div style="display: none;" id="loading"></div>
+
+		<img style="left: 5px;"   title="Boeing 777-200ER" alt="Boeing 777-200ER" src="model/777/thumbnail.png"   class="thumbnail" id="img0">
+		<img style="left: 105px;" title="Boeing 707"       alt="Boeing 707"       src="model/707/thumbnail.png"   class="thumbnail" id="img1">
+		<img style="left: 205px;" title="H-60"             alt="H-60"             src="model/H-60/thumbnail.png"  class="thumbnail" id="img2">
+		<img style="left: 305px;" title="Tupolev 154"      alt="Tupolev 154"      src="model/tu154/thumbnail.png" class="thumbnail selected" id="img3">
+		<img style="left: 405px;" title="Douglas DC-3"     alt="Douglas DC-3"     src="model/DC-3/thumbnail.jpg"  class="thumbnail" id="img4">
+	</section>
+
 	<script type="text/javascript" src="../includes/js/jquery-1.4.2.min.js"></script>
 	<script type="text/javascript" src="../includes/js/expandList.js"></script>
 	<script type="text/javascript" src="js/liveryData.js"></script>
 	<script type="text/javascript" src="js/liveryDisplay.js"></script>
 
+	<script type="text/javascript" src="../3D/scripts/gl-matrix-min.js"></script>
+	<script type="text/javascript" src="../3D/scripts/hangar.js"></script>
+	<script type="text/javascript" src="../3D/data/models.json"></script>
+	<script type="text/javascript" src="../3D/scripts/display3D.js"></script>
+
 </body>
 </html>
+
+

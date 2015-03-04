@@ -136,6 +136,16 @@ $('#byAllBtn').click(function()
 	displayLiveriesByAll();
 });
 
+$('#3Dlink').click(function(e)
+{
+	e.preventDefault();
+	$('section#welcome').hide();
+	$('section#3D').show();
+console.log("load3D");
+	load3D();
+console.log("load3D - Done");
+});
+
 
 // initialization
 var dataLoadedCallback = function()
@@ -146,5 +156,6 @@ var dataLoadedCallback = function()
 
 $(document).ready( function()
 {
+	$('section#3D').hide();
 	loadData(dataLoadedCallback);
 });
