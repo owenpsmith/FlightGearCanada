@@ -5,23 +5,15 @@ var viewer;
 var current;
 
 function load3D(){
-console.log("load3D() - 1");
   canvas = document.getElementById("canvas");
-console.log("load3D() - 2");
   details = document.getElementById("details");
-console.log("load3D() - 3");
   loading = document.getElementById("loading");
-console.log("load3D() - 4");
   viewer = new HG.Viewer(canvas);
-console.log("load3D() - 5");
   current = 0;
 
   resize();
-console.log("load3D() - 6");
   createGallery(Models);
-console.log("load3D() - 7");
   showModel(Models[current]);
-console.log("load3D() - 8");
 };
 
 function resize(){
