@@ -48,8 +48,8 @@ html, body {
 .thumbnail {
   position: absolute;
   bottom: 5px;
-  width: 90px;
-  height: 90px;
+  width: 126px;
+  height:90px;
   margin: 5px;
   overflow: hidden;
   display: block;
