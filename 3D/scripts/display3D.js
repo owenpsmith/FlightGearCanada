@@ -67,10 +67,13 @@ function showModel(model)
 
 	details.innerHTML = "<p id='name'>" + model.name + "</p>";
 
+console.log("show");
 	viewer.show(model.file, model.setup, onLoaded);
+console.log("showed");
 };
 
 function onLoaded(){
+console.log("loaded");
 	loading.style.display = "none";
 };
 
