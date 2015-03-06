@@ -8,7 +8,8 @@ var displayLiveriesByType = function()
 
 	$.each(liveriesByType, function(key, thisType)
 	{
-		newHTML += "\t\t\t\t<li class=\"liveryGroup\"><h3>" + thisType[0].modelName + " (" + thisType.length + ")</h3>\n";
+		newHTML += "\t\t\t\t<li class=\"liveryGroup\"><h3>" + thisType[0].modelName + " (" + thisType.length + ")</h3>";
+		newHTML += "<a href=\"" + "\">View in 3D</a>\n";
 		newHTML += "\t\t\t\t\t<ul>\n";
 
 		$.each(thisType, function(key, thisOperator)
@@ -19,6 +20,9 @@ var displayLiveriesByType = function()
 			newHTML += "\t\t\t\t\t\t\t<p><b>Updated :</b>"            + thisOperator.updated  + "</p>\n";
 			newHTML += "\t\t\t\t\t\t\t<br>\n";
 			newHTML += "\t\t\t\t\t\t\t<a class=\"link\" href=\""      + thisOperator.zip + "\">Download</a>\n";
+			newHTML += "\t\t\t\t\t\t</div><div class=\"metaData\">";
+			newHTML += "\t\t\t\t\t\t\t<p class=\"acID\">" + thisType[0].modelId + "</p>";
+			newHTML += "\t\t\t\t\t\t\t<p class=\"livPath\">" + thisOperator.texture + "</p>";
 			newHTML += "\t\t\t\t\t\t</div></li>\n";
 		});
 		newHTML += "\t\t\t\t\t</ul>\n";

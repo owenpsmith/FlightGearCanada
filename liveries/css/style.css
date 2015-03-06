@@ -7,6 +7,7 @@ li.liveryGroup h3 {
 	margin-top : 0px;
 	margin-bottom : 0px;
 	font-size : 12pt;
+	display : inline
 }
 
 ul li.livery {
@@ -68,5 +69,9 @@ li.livery a:hover {
     height: 1.5em;
     line-height: 1.5em;
     padding: 4px 10px;
+}
+
+div.metaData {
+	display : none;
 }
 

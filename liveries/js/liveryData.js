@@ -18,6 +18,7 @@ function addModelData(livery)
 	{
 		if (val.id == livery.typeId)
 		{
+			livery.modelId    = val.id;
 			livery.modelName  = val.modelName;
 			livery.modelPath  = val.modelPath;
 			livery.modelSetup = val.setup;
