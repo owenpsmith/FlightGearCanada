@@ -26,21 +26,21 @@ var Models =
 		name:      "Boeing 777-200ER", 
 		author:    "Justin Smithies / Syd Adams",
 		file:      "../3D/DC-3/model/777/777-200ER.ac", 
-		thumbnail: "../3D/DC-3/model/DC-3/thumbnail.jpg",
+		thumbnail: "../3D/DC-3/model/777/thumbnail.png",
 		setup: {eye: [-28.07, -48.23, 23.66], poi: [6.86, 3.30, -0.02], up:[-0.70, 0.50, 0.50], fov: 45}
 	},
 	{
 		name:      "Boeing 707",
 		author:    "Innis Cunningham",
 		file:      "../3D/DC-3/model/707/707.ac",
-		thumbnail: "../3D/DC-3/model/DC-3/thumbnail.jpg",
+		thumbnail: "../3D/DC-3/model/707/thumbnail.png",
 		setup: {eye: [-35.33, 11.98, -23.03], poi: [2.04, 3.48, 0.00], up:[-0.28, 0.84, 0.45], fov: 45}
 	},
 	{
 		name: "H-60", 
 		author: "Unknown",
 		file: "../3D/DC-3/model/H-60/H-60.ac", 
-		thumbnail: "../3D/DC-3/model/DC-3/thumbnail.jpg"
+		thumbnail: "../3D/DC-3/model/H-60/thumbnail.png"
 	},
 	{
 		name: "Tupolev 154",
