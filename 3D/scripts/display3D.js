@@ -38,7 +38,7 @@ function createGallery(models)
 		img.src = models[i].thumbnail;
 		img.alt = models[i].name;
 		img.title = models[i].name;
-		img.style.left = (5 + 100 * i) + "px";
+		img.style.left = (5 + 128 * i) + "px";
 		img.onclick = onClick;
 
 		document.body.appendChild(img);

@@ -46,12 +46,14 @@ var Models =
 		name: "Tupolev 154",
 		author: "Ilia Pavlenko / Ilja Moderau / Denis Okan / Mike Savchenk",
 		file: "../3D/DC-3/model/tu154/tu154B.ac",
-		thumbnail: "../DC-3/model/tu154/thumbnail.png",
+		thumbnail: "../3D/DC-3/model/tu154/thumbnail.png",
 		setup: {eye: [-33.60, 16.02, -28.20], poi: [2.85, 2.12, 0.00], up:[-0.04, 0.98, 0.16], fov: 45}
 	},
 	{
-		name: "Douglas DC-3", author: "Owen Smith",
-		file: "../3D/DC-3/model/DC-3/model.ac", thumbnail: "../3D/DC-3/model/DC-3/thumbnail.jpg",
+		name: "Douglas DC-3", 
+		author: "Owen Smith",
+		file: "../3D/DC-3/model/DC-3/model.ac", 
+		thumbnail: "../3D/DC-3/model/DC-3/thumbnail.jpg",
 		setup: {eye: [20.0, 10.0, 40.0], poi: [0.0, 0.0, 0.0], up:[0.0, 1.0, 0.0], fov: 20}
 	}
 ];
