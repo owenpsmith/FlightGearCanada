@@ -40,10 +40,21 @@ var displayLiveriesByType = function()
 
 	$('.3DLink').click(function(e)
 	{
-	console.log("3D clicked");
 		e.preventDefault();
+		
 		$('section#welcome').hide();
 		$('section#3D').show();
+
+console.log("Element = " + e.target);
+		
+//		e.currentTarget.parent.children("ul").first().children("li").each().children("div.metaData").first(function ()
+//		{
+//			console.log("acID      = " + this.children(p.acID).text());
+//			console.log("operator  = " + this.children(p.operator).text());
+//			console.log("thumbPath = " + this.children(p.thumbPath).text());
+//			console.log("livPath   = " + this.children(p.livPath).text());		
+//		});
+			
 		load3D();
 	});
 }
