@@ -67,18 +67,10 @@ function onClick()
 function showModel(model)
 {
 	loading.style.display = "block";
-
 	details.innerHTML = "<p id='name'>" + model.acName + " - " + model.operator + "</p>";
-    
+
     var params = {callback: onLoaded, texturePath: model.liveryPath, setup: model.setup};
-
-//    viewer.show(model.modelPath, model.setup, onLoaded, {texturePath: model.liveryPath});
 	viewer.show(model.modelPath, params);
-//	viewer.show(model.modelPath, {texturePath: model.liveryPath});
-//(filename, {callback: onModelLoaded, texturePath: "path/to/textures/"});
-
-    // TEMPORARY
-//    onLoaded();
 };
 
 function onLoaded()

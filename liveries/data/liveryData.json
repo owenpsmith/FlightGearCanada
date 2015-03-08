@@ -596,7 +596,7 @@
 			"desc":    "",
 			"thumb":   "http://liveries.flightgear.org/thumbs/819.jpg",
 			"zip":     "http://liveries.flightgear.org/download/Douglas/DC-3/BFL.zip",
-			"texture": "../3D/textures/DC-3/C-FDTH/",
+			"texture": "../3D/textures/DC-3/BFL/",
 			"acLink":  "",
 			"acDesc":  ""
 		},
@@ -620,7 +620,7 @@
 			"desc":    "",
 			"thumb":   "downloads/CPC_Canadian_Pacific_thumb.jpg",
 			"zip":     "downloads/CPC_Canadian_Pacific.zip",
-			"texture": "../3D/textures/DC-3/CPC_Canadian_Pacific/",
+			"texture": "../3D/textures/DC-3/CPC/",
 			"acLink":  "",
 			"acDesc":  ""
 		},
