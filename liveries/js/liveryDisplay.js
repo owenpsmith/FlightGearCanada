@@ -1,4 +1,4 @@
-
+var toDisplay3D = [];
 
 var displayLiveriesByType = function()
 {
@@ -24,7 +24,7 @@ var displayLiveriesByType = function()
 
 			// data for generating 3D gallery upon selection
 			newHTML += "\t\t\t\t\t\t<div class=\"metaData\">\n";
-			newHTML += "\t\t\t\t\t\t\t<p class=\"acID\"     >" + thisType[0].modelId   + "</p>\n";
+			newHTML += "\t\t\t\t\t\t\t<p class=\"acId\"     >" + thisType[0].modelId   + "</p>\n";
 			newHTML += "\t\t\t\t\t\t\t<p class=\"operator\" >" + thisOperator.operator + "</p>\n";
 			newHTML += "\t\t\t\t\t\t\t<p class=\"thumbPath\">" + thisOperator.thumb    + "</p>\n";
 			newHTML += "\t\t\t\t\t\t\t<p class=\"livPath\"  >" + thisOperator.texture  + "</p>\n";
@@ -41,21 +41,35 @@ var displayLiveriesByType = function()
 	$('.3DLink').click(function(e)
 	{
 		e.preventDefault();
-		
+
 		$('section#welcome').hide();
 		$('section#3D').show();
 
-console.log("Element = " + e.target);
-		
-//		e.currentTarget.parent.children("ul").first().children("li").each().children("div.metaData").first(function ()
-//		{
-//			console.log("acID      = " + this.children(p.acID).text());
-//			console.log("operator  = " + this.children(p.operator).text());
-//			console.log("thumbPath = " + this.children(p.thumbPath).text());
-//			console.log("livPath   = " + this.children(p.livPath).text());		
-//		});
-			
-		load3D();
+        $(this).next().children().each(function()
+        { 
+            var $metaData = $(this).children("div.metaData");
+            
+            var acId      = $metaData.children("p.acId").first().text();
+            var operator  = $metaData.children("p.operator").first().text();
+            var thumbPath = $metaData.children("p.thumbPath").first().text();
+            var livPath   = $metaData.children("p.livPath").first().text();
+            
+            var typeData = getTypeDataForAcId(acId);
+            
+            var addToDisplay3D =
+            {
+                acName     : typeData.modelName,
+                operator   : operator,
+                thumbPath  : thumbPath,
+                modelPath  : typeData.modelPath,
+                liveryPath : livPath,
+                setup      : typeData.setup   
+            }
+            
+            toDisplay3D.push(addToDisplay3D);
+        });
+
+		load3D(toDisplay3D);
 	});
 }
 

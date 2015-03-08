@@ -596,7 +596,7 @@
 			"desc":    "",
 			"thumb":   "http://liveries.flightgear.org/thumbs/819.jpg",
 			"zip":     "http://liveries.flightgear.org/download/Douglas/DC-3/BFL.zip",
-			"texture": "3D/textures/DC-3/BFL/",
+			"texture": "../3D/textures/DC-3/C-FDTH/",
 			"acLink":  "",
 			"acDesc":  ""
 		},
@@ -608,7 +608,7 @@
 			"desc":    "",
 			"thumb":   "downloads/C-FDTH_thumb.jpg",
 			"zip":     "downloads/C-FDTH.zip",
-			"texture": "3D/textures/DC-3/C-FDTH/",
+			"texture": "../3D/textures/DC-3/C-FDTH/",
 			"acLink":  "",
 			"acDesc":  ""
 		},
@@ -620,7 +620,7 @@
 			"desc":    "",
 			"thumb":   "downloads/CPC_Canadian_Pacific_thumb.jpg",
 			"zip":     "downloads/CPC_Canadian_Pacific.zip",
-			"texture": "3D/textures/DC-3/CPC_Canadian_Pacific/",
+			"texture": "../3D/textures/DC-3/CPC_Canadian_Pacific/",
 			"acLink":  "",
 			"acDesc":  ""
 		},
@@ -632,7 +632,7 @@
 			"desc":    "",
 			"thumb":   "http://liveries.flightgear.org/thumbs/820.jpg",
 			"zip":     "http://liveries.flightgear.org/download/Douglas/DC-3/CPC.zip",
-			"texture": "3D/textures/DC-3/CPC/",
+			"texture": "../3D/textures/DC-3/CPC/",
 			"acLink":  "",
 			"acDesc":  ""
 		},
@@ -644,7 +644,7 @@
 			"desc":    "",
 			"thumb":   "http://liveries.flightgear.org/thumbs/637.jpg",
 			"zip":     "http://liveries.flightgear.org/download/Douglas/DC-3/C-GWIR.zip",
-			"texture": "3D/textures/DC-3/C-GWIR/",
+			"texture": "../3D/textures/DC-3/C-GWIR/",
 			"acLink":  "",
 			"acDesc":  ""
 		},
@@ -656,7 +656,7 @@
 			"desc":    "old",
 			"thumb":   "downloads/PWA_old_thumb.jpg",
 			"zip":     "downloads/PWA_old.zip",
-			"texture": "3D/textures/DC-3/PWA_old/",
+			"texture": "../3D/textures/DC-3/PWA_old/",
 			"acLink":  "",
 			"acDesc":  ""
 		},
@@ -668,7 +668,7 @@
 			"desc":    "new",
 			"thumb":   "downloads/PWA_new_thumb.jpg",
 			"zip":     "downloads/PWA_new.zip",
-			"texture": "3D/textures/DC-3/PWA_new/",
+			"texture": "../3D/textures/DC-3/PWA_new/",
 			"acLink":  "",
 			"acDesc":  ""
 		},
@@ -680,7 +680,7 @@
 			"desc":    "",
 			"thumb":   "downloads/CF-HCF_thumb.jpg",
 			"zip":     "downloads/CF-HCF.zip",
-			"texture": "3D/textures/DC-3/CF-HCF/",
+			"texture": "../3D/textures/DC-3/CF-HCF/",
 			"acLink":  "",
 			"acDesc":  ""
 		},
@@ -692,7 +692,7 @@
 			"desc":    "Post-unification",
 			"thumb":   "downloads/RCAF_CAF_thumb.jpg",
 			"zip":     "downloads/RCAF_CAF.zip",
-			"texture": "3D/textures/DC-3/RCAF_CAF/",
+			"texture": "../3D/textures/DC-3/RCAF_CAF/",
 			"acLink":  "",
 			"acDesc":  ""
 		},
@@ -704,7 +704,7 @@
 			"desc":    "now Air Canada",
 			"thumb":   "downloads/ACA_TCA_thumb.jpg",
 			"zip":     "downloads/ACA_TCA.zip",
-			"texture": "3D/textures/DC-3/ACA_TCA/",
+			"texture": "../3D/textures/DC-3/ACA_TCA/",
 			"acLink":  "",
 			"acDesc":  ""
 		},

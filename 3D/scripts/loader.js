@@ -20,4 +20,24 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 */
 
-var HG = HG || {};
+HG.Loader = {};
+
+HG.Loader.loadText = function(url, object, callback, params){
+  var request = new XMLHttpRequest();
+  request.open("GET", url, true);
+  request.overrideMimeType("text/plain; charset=x-user-defined");
+  request.onload = function(){
+    object[callback](this.responseText, params);
+  };
+  request.send();
+};
+
+HG.Loader.loadBinary = function(url, object, callback, params){
+  var request = new XMLHttpRequest();
+  request.open("GET", url, true);
+  request.responseType = "arraybuffer";
+  request.onload = function(){
+    object[callback](this.response, params);
+  };
+  request.send();
+};

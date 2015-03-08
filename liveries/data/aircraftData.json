@@ -129,7 +129,7 @@
 		{
 			"id"        : "DC-3",
 			"modelName" : "Douglas DC-3",
-			"modelPath" : "3D/models/DC-3.ac",
+			"modelPath" : "../3D/models/DC-3.ac",
 			"setup"     : { "eye": [20.0, 10.0, 40.0], "poi": [0.0, 0.0, 0.0], "up":[0.0, 1.0, 0.0], "fov": 20}		
 		},
 		{

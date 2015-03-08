@@ -14,14 +14,14 @@ var liveriesByAuthor   = [];
 
 function addModelData(livery)
 {
-	$.each(types, function(key, val)
+	$.each(types, function(key, type)
 	{
-		if (val.id == livery.typeId)
+		if (type.id == livery.typeId)
 		{
-			livery.modelId    = val.id;
-			livery.modelName  = val.modelName;
-			livery.modelPath  = val.modelPath;
-			livery.modelSetup = val.setup;
+			livery.modelId    = type.id;
+			livery.modelName  = type.modelName;
+			livery.modelPath  = type.modelPath;
+			livery.modelSetup = type.setup;
 			return;
 		}
 	});
@@ -181,4 +181,22 @@ function getLiveriesByAuthor()
 
 	return liveriesByAuthor;
 }
+
+function getTypeDataForAcId(acId)
+{
+    var returnType = null;
+    
+	$.each(types, function(key, thisType)
+	{
+		if (thisType.id == acId)
+		{
+            console.log("setting " + thisType.id);
+			returnType = thisType;
+            return;
+		}
+	}); 
+    console.log("returning " + returnType.id);
+    return returnType;
+}
+
 
