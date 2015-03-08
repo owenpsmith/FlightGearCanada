@@ -9,7 +9,7 @@ name "aileronD"
 loc -0.958505 -0.186507 -11.577637
 data 8
 aileronD
-texture "texture.png"
+texture "livery.png"
 texrep 1 1
 crease 30.000001
 numvert 78
@@ -700,7 +700,7 @@ name "aileronG"
 loc -0.958505 -0.186516 11.57764
 data 8
 aileronG
-texture "texture.png"
+texture "livery.png"
 texrep 1 1
 crease 30.000001
 numvert 78
@@ -1391,7 +1391,7 @@ name "ailes"
 loc -2.054201 -0.414274 -0.000002
 data 5
 ailes
-texture "texture.png"
+texture "livery.png"
 texrep 1 1
 crease 30.000001
 numvert 1268
@@ -11064,7 +11064,7 @@ name "ailes2"
 loc 8.009484 0.11232 0
 data 6
 ailes2
-texture "texture.png"
+texture "livery.png"
 texrep 1 1
 crease 30.000001
 numvert 620
@@ -15821,7 +15821,7 @@ name "air"
 loc -5.671644 -1.275994 -0
 data 3
 air
-texture "texture.png"
+texture "livery.png"
 texrep 1 1
 crease 30.000001
 numvert 658
@@ -20434,7 +20434,7 @@ name "antennes"
 loc -6.94897 -0.288156 0.000123
 data 8
 antennes
-texture "texture.png"
+texture "livery.png"
 texrep 1 1
 crease 30.000001
 numvert 2113
@@ -37479,7 +37479,7 @@ name "cargoA"
 loc 2.31309 -0.024919 1.186405
 data 6
 cargoA
-texture "texture.png"
+texture "livery.png"
 texrep 1 1
 crease 30.000001
 numvert 48
@@ -37719,7 +37719,7 @@ name "cargoB"
 loc 3.260247 -0.091098 1.113815
 data 6
 cargoB
-texture "texture.png"
+texture "livery.png"
 texrep 1 1
 crease 30.000001
 numvert 32
@@ -37919,7 +37919,7 @@ name "direction"
 loc 8.509557 2.751626 0
 data 9
 direction
-texture "texture.png"
+texture "livery.png"
 texrep 1 1
 crease 30.000001
 numvert 228
@@ -40010,7 +40010,7 @@ name "fuselage"
 loc -1.274114 0.252687 0.024946
 data 8
 fuselage
-texture "texture.png"
+texture "livery.png"
 texrep 1 1
 crease 30.000001
 numvert 1483
@@ -51853,7 +51853,7 @@ name "moteurs"
 loc -5.1995 -1.2372 -0.001944
 data 7
 moteurs
-texture "texture.png"
+texture "livery.png"
 texrep 1 1
 crease 30.000001
 numvert 1295
@@ -61582,7 +61582,7 @@ name "porteA"
 loc -7.222863 -0.305643 1.073056
 data 6
 porteA
-texture "texture.png"
+texture "livery.png"
 texrep 1 1
 crease 30.000001
 numvert 23
@@ -61692,7 +61692,7 @@ name "porteB"
 loc 2.365816 -0.1002 1.208223
 data 6
 porteB
-texture "texture.png"
+texture "livery.png"
 texrep 1 1
 crease 30.000001
 numvert 39
@@ -61938,7 +61938,7 @@ name "profondeur"
 loc 8.862147 0.108602 0
 data 10
 profondeur
-texture "texture.png"
+texture "livery.png"
 texrep 1 1
 crease 30.000001
 numvert 894
@@ -69431,7 +69431,7 @@ name "sorties"
 loc -5.252973 -1.56669 -0
 data 7
 sorties
-texture "texture.png"
+texture "livery.png"
 texrep 1 1
 crease 30.000001
 numvert 1888
@@ -84396,7 +84396,7 @@ name "trous"
 loc -3.962289 -1.100404 -0.000001
 data 5
 trous
-texture "texture.png"
+texture "livery.png"
 texrep 1 1
 crease 30.000001
 numvert 1410
@@ -94729,7 +94729,7 @@ name "voletD1"
 loc -0.913404 -1.437699 -1.343611
 data 7
 voletD1
-texture "texture.png"
+texture "livery.png"
 texrep 1 1
 crease 30.000001
 numvert 43
@@ -95084,7 +95084,7 @@ name "voletD2"
 loc -0.998501 -1.20991 -4.896644
 data 7
 voletD2
-texture "texture.png"
+texture "livery.png"
 texrep 1 1
 crease 30.000001
 numvert 6
@@ -95134,7 +95134,7 @@ name "voletG1"
 loc -0.913404 -1.437699 1.343611
 data 7
 voletG1
-texture "texture.png"
+texture "livery.png"
 texrep 1 1
 crease 30.000001
 numvert 43
@@ -95489,7 +95489,7 @@ name "voletG2"
 loc -0.9985 -1.209909 4.896644
 data 7
 voletG2
-texture "texture.png"
+texture "livery.png"
 texrep 1 1
 crease 30.000001
 numvert 6
