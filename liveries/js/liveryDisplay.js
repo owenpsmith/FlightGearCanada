@@ -36,11 +36,16 @@ var displayLiveriesByType = function()
 		});
 		
 		// livery header
-		newHTML += "\t\t\t\t<li class=\"liveryGroup\"><h3>" + thisType[0].modelName + " (" + thisType.length + ")</h3>\n";
+		newHTML += "\t\t\t\t<li class=\"liveryGroup\"><h3 class=\"liveryCount\">" + thisType.length + "</h3>";
 		if (supports3D)
 		{
-			newHTML += "<a class=\"link3D\" href=\"" + "\">View in 3D</a>\n";
+			newHTML += "<a class=\"link3D\" href=\"#\">3D</a>";
 		}
+		else
+		{
+			newHTML += "<a class=\"link3DDisabled\" href=\"#\"></a>";
+		}
+		newHTML += "<h3>" + thisType[0].modelName + "</h3>\n";
 		newHTML += "\t\t\t\t\t<ul>\n";
 
 		// livery content
@@ -99,11 +104,16 @@ var displayLiveriesByOperator = function()
 		});
 		
 		// livery header
-		newHTML += "\t\t\t\t<li class=\"liveryGroup\"><h3>" + thisOperator[0].operator + " (" + thisOperator.length + ")</h3>\n";
+		newHTML += "\t\t\t\t<li class=\"liveryGroup\"><h3 class=\"liveryCount\">" + thisOperator.length + "</h3>";
 		if (supports3D)
 		{
-			newHTML += "<a class=\"link3D\" href=\"" + "\">View in 3D</a>\n";
+			newHTML += "<a class=\"link3D\" href=\"#\">3D</a>";
 		}
+		else
+		{
+			newHTML += "<a class=\"link3DDisabled\" href=\"#\"></a>";
+		}
+		newHTML += "<h3>" + thisOperator[0].operator + "</h3>\n";
 		newHTML += "\t\t\t\t\t<ul>\n";
 		
 		// livery content
