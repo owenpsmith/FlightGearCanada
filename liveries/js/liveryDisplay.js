@@ -21,10 +21,6 @@ var displayLiveriesByType = function()
 			liveryHTML += "\t\t\t\t\t\t\t<a class=\"link\" href=\""      + thisOperator.zip + "\">Download</a>\n";
 			liveryHTML += "\t\t\t\t\t\t</div>\n";
 
-			if (thisOperator.texture != "")
-			{
-				supports3D = true;
-			}
 			// data for generating 3D gallery upon selection
 			liveryHTML += "\t\t\t\t\t\t<div class=\"metaData\">\n";
 			liveryHTML += "\t\t\t\t\t\t\t<p class=\"acId\"     >" + thisType[0].modelId   + "</p>\n";
@@ -32,6 +28,11 @@ var displayLiveriesByType = function()
 			liveryHTML += "\t\t\t\t\t\t\t<p class=\"thumbPath\">" + thisOperator.thumb    + "</p>\n";
 			liveryHTML += "\t\t\t\t\t\t\t<p class=\"livPath\"  >" + thisOperator.texture  + "</p>\n";
 			liveryHTML += "\t\t\t\t\t\t</div></li>\n";
+
+			if (thisOperator.texture != "")
+			{
+				supports3D = true;
+			}
 		});
 		
 		// livery header
@@ -57,35 +58,8 @@ var displayLiveriesByType = function()
 	$('.3DLink').click(function(e)
 	{
 		e.preventDefault();
-
-		$('section#welcome').hide();
-		$('section#3D').show();
-
-        $(this).next().children().each(function()
-        { 
-            var $metaData = $(this).children("div.metaData");
-            
-            var acId      = $metaData.children("p.acId").first().text();
-            var operator  = $metaData.children("p.operator").first().text();
-            var thumbPath = $metaData.children("p.thumbPath").first().text();
-            var livPath   = $metaData.children("p.livPath").first().text();
-            
-            var typeData = getTypeDataForAcId(acId);
-            
-            var addToDisplay3D =
-            {
-                acName     : typeData.modelName,
-                operator   : operator,
-                thumbPath  : thumbPath,
-                modelPath  : typeData.modelPath,
-                liveryPath : livPath,
-                setup      : typeData.setup   
-            }
-            
-            toDisplay3D.push(addToDisplay3D);
-        });
-
-		load3D(toDisplay3D);
+		
+		switchTo3DView($(this));
 	});
 }
 
@@ -97,19 +71,45 @@ var displayLiveriesByOperator = function()
 
 	$.each(liveriesByOperator, function(key, thisOperator)
 	{
-		newHTML += "\t\t\t\t<li class=\"liveryGroup\"><h3>" + thisOperator[0].operator + " (" + thisOperator.length + ")</h3>\n";
-		newHTML += "\t\t\t\t\t<ul>\n";
+		var liveryHTML = ""
+		var supports3D = false;
 
 		$.each(thisOperator, function(key, thisType)
 		{
-			newHTML += "\t\t\t\t\t\t<li class=\"livery\"><img src=\"" + thisType.thumb + "\" /><div>\n";
-			newHTML += "\t\t\t\t\t\t\t<p><b>Type    :</b>"            + thisType.modelName + "</p>\n";
-			newHTML += "\t\t\t\t\t\t\t<p><b>Author  :</b>"            + thisType.author    + "</p>\n";
-			newHTML += "\t\t\t\t\t\t\t<p><b>Updated :</b>"            + thisType.updated   + "</p>\n";
-			newHTML += "\t\t\t\t\t\t\t<br>\n";
-			newHTML += "\t\t\t\t\t\t\t<a class=\"link\" href=\""      + thisType.zip + "\">Download</a>\n";
-			newHTML += "\t\t\t\t\t\t</div></li>\n";
+			liveryHTML += "\t\t\t\t\t\t<li class=\"livery\"><img src=\"" + thisType.thumb + "\" /><div>\n";
+			liveryHTML += "\t\t\t\t\t\t\t<p><b>Type    :</b>"            + thisType.modelName + "</p>\n";
+			liveryHTML += "\t\t\t\t\t\t\t<p><b>Author  :</b>"            + thisType.author    + "</p>\n";
+			liveryHTML += "\t\t\t\t\t\t\t<p><b>Updated :</b>"            + thisType.updated   + "</p>\n";
+			liveryHTML += "\t\t\t\t\t\t\t<br>\n";
+			liveryHTML += "\t\t\t\t\t\t\t<a class=\"link\" href=\""      + thisType.zip + "\">Download</a>\n";
+			liveryHTML += "\t\t\t\t\t\t</div>\n";
+			
+			// data for generating 3D gallery upon selection
+			liveryHTML += "\t\t\t\t\t\t<div class=\"metaData\">\n";
+			liveryHTML += "\t\t\t\t\t\t\t<p class=\"acId\"     >" + thisType.modelId  + "</p>\n";
+			liveryHTML += "\t\t\t\t\t\t\t<p class=\"operator\" >" + thisType.operator + "</p>\n";
+			liveryHTML += "\t\t\t\t\t\t\t<p class=\"thumbPath\">" + thisType.thumb    + "</p>\n";
+			liveryHTML += "\t\t\t\t\t\t\t<p class=\"livPath\"  >" + thisType.texture  + "</p>\n";
+			liveryHTML += "\t\t\t\t\t\t</div></li>\n";
+
+			if (thisType.texture != "")
+			{
+				supports3D = true;
+			}
 		});
+		
+		// livery header
+		newHTML += "\t\t\t\t<li class=\"liveryGroup\"><h3>" + thisOperator[0].operator + " (" + thisOperator.length + ")</h3>\n";
+		if (supports3D)
+		{
+			newHTML += "<a class=\"3DLink\" href=\"" + "\">View in 3D</a>\n";
+		}
+		newHTML += "\t\t\t\t\t<ul>\n";
+		
+		// livery content
+		newHTML += liveryHTML;
+		
+		// livery footer
 		newHTML += "\t\t\t\t\t</ul>\n";
 		newHTML += "\t\t\t\t</li>\n";
 	});
@@ -117,6 +117,13 @@ var displayLiveriesByOperator = function()
 	$('#liveryContainer').html(newHTML);
 
 	prepareList();
+
+	$('.3DLink').click(function(e)
+	{
+		e.preventDefault();
+		
+		switchTo3DView($(this));
+	});
 }
 
 var displayLiveriesByAuthor = function()
@@ -127,20 +134,46 @@ var displayLiveriesByAuthor = function()
 
 	$.each(liveriesByAuthor, function(key, thisAuthor)
 	{
-		newHTML += "\t\t\t\t<li class=\"liveryGroup\"><h3>" + thisAuthor[0].author + " (" + thisAuthor.length + ")</h3>\n";
-		newHTML += "\t\t\t\t\t<ul>\n";
+		var liveryHTML = ""
+		var supports3D = false;
 
 		$.each(thisAuthor, function(key, thisLivery)
 		{
-			newHTML += "\t\t\t\t\t\t<li class=\"livery\"><img src=\"" + thisLivery.thumb + "\" /><div>\n";
-			newHTML += "\t\t\t\t\t\t\t<p><b>Type    :</b>"            + thisLivery.modelName + "</p>\n";
-			newHTML += "\t\t\t\t\t\t\t<p><b>Operator:</b>"            + thisLivery.operator  + "</p>\n";
-			newHTML += "\t\t\t\t\t\t\t<p><b>Author  :</b>"            + thisLivery.author    + "</p>\n";
-			newHTML += "\t\t\t\t\t\t\t<p><b>Updated :</b>"            + thisLivery.updated   + "</p>\n";
-			newHTML += "\t\t\t\t\t\t\t<br>\n";
-			newHTML += "\t\t\t\t\t\t\t<a class=\"link\" href=\""      + thisLivery.zip + "\">Download</a>\n";
-			newHTML += "\t\t\t\t\t\t</div></li>\n";
+			liveryHTML += "\t\t\t\t\t\t<li class=\"livery\"><img src=\"" + thisLivery.thumb     + "\" /><div>\n";
+			liveryHTML += "\t\t\t\t\t\t\t<p><b>Type    :</b>"            + thisLivery.modelName + "</p>\n";
+			liveryHTML += "\t\t\t\t\t\t\t<p><b>Operator:</b>"            + thisLivery.operator  + "</p>\n";
+			liveryHTML += "\t\t\t\t\t\t\t<p><b>Author  :</b>"            + thisLivery.author    + "</p>\n";
+			liveryHTML += "\t\t\t\t\t\t\t<p><b>Updated :</b>"            + thisLivery.updated   + "</p>\n";
+			liveryHTML += "\t\t\t\t\t\t\t<br>\n";
+			liveryHTML += "\t\t\t\t\t\t\t<a class=\"link\" href=\""      + thisLivery.zip + "\">Download</a>\n";
+			liveryHTML += "\t\t\t\t\t\t</div>\n";
+
+			// data for generating 3D gallery upon selection
+			liveryHTML += "\t\t\t\t\t\t<div class=\"metaData\">\n";
+			liveryHTML += "\t\t\t\t\t\t\t<p class=\"acId\"     >" + thisLivery.modelId  + "</p>\n";
+			liveryHTML += "\t\t\t\t\t\t\t<p class=\"operator\" >" + thisLivery.operator + "</p>\n";
+			liveryHTML += "\t\t\t\t\t\t\t<p class=\"thumbPath\">" + thisLivery.thumb    + "</p>\n";
+			liveryHTML += "\t\t\t\t\t\t\t<p class=\"livPath\"  >" + thisLivery.texture  + "</p>\n";
+			liveryHTML += "\t\t\t\t\t\t</div></li>\n";
+			
+			if (thisLivery.texture != "")
+			{
+				supports3D = true;
+			}
 		});
+		
+		// livery header
+		newHTML += "\t\t\t\t<li class=\"liveryGroup\"><h3>" + thisAuthor[0].author + " (" + thisAuthor.length + ")</h3>\n";
+		if (supports3D)
+		{
+			newHTML += "<a class=\"3DLink\" href=\"" + "\">View in 3D</a>\n";
+		}
+		newHTML += "\t\t\t\t\t<ul>\n";
+
+		// livery content
+		newHTML += liveryHTML;
+		
+		// livery footer
 		newHTML += "\t\t\t\t\t</ul>\n";
 		newHTML += "\t\t\t\t</li>\n";
 	});
@@ -148,6 +181,13 @@ var displayLiveriesByAuthor = function()
 	$('#liveryContainer').html(newHTML);
 
 	prepareList();
+
+	$('.3DLink').click(function(e)
+	{
+		e.preventDefault();
+		
+		switchTo3DView($(this));
+	});
 }
 
 var displayLiveriesByAll = function()
@@ -171,6 +211,42 @@ var displayLiveriesByAll = function()
 	$('#liveryContainer').html(newHTML);
 
 	prepareList();
+}
+
+
+var switchTo3DView = function($this)
+{
+	$('section#welcome').hide();
+	$('section#3D').show();
+
+	$this.next().children().each(function()
+	{ 
+		var $metaData = $(this).children("div.metaData");
+
+		var acId      = $metaData.children("p.acId").first().text();
+		var operator  = $metaData.children("p.operator").first().text();
+		var thumbPath = $metaData.children("p.thumbPath").first().text();
+		var livPath   = $metaData.children("p.livPath").first().text();
+
+		var typeData = getTypeDataForAcId(acId);
+
+		var addToDisplay3D =
+		{
+			acName     : typeData.modelName,
+			operator   : operator,
+			thumbPath  : thumbPath,
+			modelPath  : typeData.modelPath,
+			liveryPath : livPath,
+			setup      : typeData.setup   
+		}
+		
+		if (addToDisplay3D.liveryPath != "")
+		{
+			toDisplay3D.push(addToDisplay3D);
+		}
+	});
+
+	load3D(toDisplay3D);
 }
 
 

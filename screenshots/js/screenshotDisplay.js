@@ -23,7 +23,6 @@ var displayImageThumbnails = function()
 
 var showNextImage = function(ssDirection)
 {
-	console.log("showNextImage()");
 	if (mode == "slideshow")
 	{
 		if (imageIndex < 0)

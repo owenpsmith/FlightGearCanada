@@ -190,12 +190,11 @@ function getTypeDataForAcId(acId)
 	{
 		if (thisType.id == acId)
 		{
-            console.log("setting " + thisType.id);
 			returnType = thisType;
             return;
 		}
 	}); 
-    console.log("returning " + returnType.id);
+	
     return returnType;
 }
 

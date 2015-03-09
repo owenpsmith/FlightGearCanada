@@ -33,7 +33,8 @@ function resize()
 
 function createGallery()
 {
-	for (var i = 0; i < models.length; ++ i){
+	for (var i = 0; i < models.length; ++ i)
+	{
 		var img = document.createElement("img");
 
 		img.id = "img" + i;
