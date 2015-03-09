@@ -23,7 +23,7 @@ function load3D(modelsToLoad)
 function resize()
 {
 	canvas.width = window.innerWidth;
-	canvas.height = window.innerHeight;
+	canvas.height = window.innerHeight - 110 - 45;
 
 	window.addEventListener("resize", function(event)
 	{
