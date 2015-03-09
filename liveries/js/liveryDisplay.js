@@ -8,28 +8,44 @@ var displayLiveriesByType = function()
 
 	$.each(liveriesByType, function(key, thisType)
 	{
-		newHTML += "\t\t\t\t<li class=\"liveryGroup\"><h3>" + thisType[0].modelName + " (" + thisType.length + ")</h3>\n";
-		newHTML += "<a class=\"3DLink\" href=\"" + "\">View in 3D</a>\n";
-		newHTML += "\t\t\t\t\t<ul>\n";
+		var liveryHTML = ""
+		var supports3D = false;
 
 		$.each(thisType, function(key, thisOperator)
 		{
-			newHTML += "\t\t\t\t\t\t<li class=\"livery\"><img src=\"" + thisOperator.thumb + "\" /><div>\n";
-			newHTML += "\t\t\t\t\t\t\t<p><b>Operator:</b>"            + thisOperator.operator + "</p>\n";
-			newHTML += "\t\t\t\t\t\t\t<p><b>Author  :</b>"            + thisOperator.author   + "</p>\n";
-			newHTML += "\t\t\t\t\t\t\t<p><b>Updated :</b>"            + thisOperator.updated  + "</p>\n";
-			newHTML += "\t\t\t\t\t\t\t<br>\n";
-			newHTML += "\t\t\t\t\t\t\t<a class=\"link\" href=\""      + thisOperator.zip + "\">Download</a>\n";
-			newHTML += "\t\t\t\t\t\t</div>\n";
+			liveryHTML += "\t\t\t\t\t\t<li class=\"livery\"><img src=\"" + thisOperator.thumb + "\" /><div>\n";
+			liveryHTML += "\t\t\t\t\t\t\t<p><b>Operator:</b>"            + thisOperator.operator + "</p>\n";
+			liveryHTML += "\t\t\t\t\t\t\t<p><b>Author  :</b>"            + thisOperator.author   + "</p>\n";
+			liveryHTML += "\t\t\t\t\t\t\t<p><b>Updated :</b>"            + thisOperator.updated  + "</p>\n";
+			liveryHTML += "\t\t\t\t\t\t\t<br>\n";
+			liveryHTML += "\t\t\t\t\t\t\t<a class=\"link\" href=\""      + thisOperator.zip + "\">Download</a>\n";
+			liveryHTML += "\t\t\t\t\t\t</div>\n";
 
+			if (thisOperator.texture != "")
+			{
+				supports3D = true;
+			}
 			// data for generating 3D gallery upon selection
-			newHTML += "\t\t\t\t\t\t<div class=\"metaData\">\n";
-			newHTML += "\t\t\t\t\t\t\t<p class=\"acId\"     >" + thisType[0].modelId   + "</p>\n";
-			newHTML += "\t\t\t\t\t\t\t<p class=\"operator\" >" + thisOperator.operator + "</p>\n";
-			newHTML += "\t\t\t\t\t\t\t<p class=\"thumbPath\">" + thisOperator.thumb    + "</p>\n";
-			newHTML += "\t\t\t\t\t\t\t<p class=\"livPath\"  >" + thisOperator.texture  + "</p>\n";
-			newHTML += "\t\t\t\t\t\t</div></li>\n";
+			liveryHTML += "\t\t\t\t\t\t<div class=\"metaData\">\n";
+			liveryHTML += "\t\t\t\t\t\t\t<p class=\"acId\"     >" + thisType[0].modelId   + "</p>\n";
+			liveryHTML += "\t\t\t\t\t\t\t<p class=\"operator\" >" + thisOperator.operator + "</p>\n";
+			liveryHTML += "\t\t\t\t\t\t\t<p class=\"thumbPath\">" + thisOperator.thumb    + "</p>\n";
+			liveryHTML += "\t\t\t\t\t\t\t<p class=\"livPath\"  >" + thisOperator.texture  + "</p>\n";
+			liveryHTML += "\t\t\t\t\t\t</div></li>\n";
 		});
+		
+		// livery header
+		newHTML += "\t\t\t\t<li class=\"liveryGroup\"><h3>" + thisType[0].modelName + " (" + thisType.length + ")</h3>\n";
+		if (supports3D)
+		{
+			newHTML += "<a class=\"3DLink\" href=\"" + "\">View in 3D</a>\n";
+		}
+		newHTML += "\t\t\t\t\t<ul>\n";
+
+		// livery content
+		newHTML += liveryHTML;
+		
+		// livery footer
 		newHTML += "\t\t\t\t\t</ul>\n";
 		newHTML += "\t\t\t\t</li>\n";
 	});
