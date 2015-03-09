@@ -39,7 +39,7 @@ var displayLiveriesByType = function()
 		newHTML += "\t\t\t\t<li class=\"liveryGroup\"><h3>" + thisType[0].modelName + " (" + thisType.length + ")</h3>\n";
 		if (supports3D)
 		{
-			newHTML += "<a class=\"3DLink\" href=\"" + "\">View in 3D</a>\n";
+			newHTML += "<a class=\"link3D\" href=\"" + "\">View in 3D</a>\n";
 		}
 		newHTML += "\t\t\t\t\t<ul>\n";
 
@@ -55,7 +55,7 @@ var displayLiveriesByType = function()
 
 	prepareList();
 
-	$('.3DLink').click(function(e)
+	$('.link3D').click(function(e)
 	{
 		e.preventDefault();
 		
@@ -102,7 +102,7 @@ var displayLiveriesByOperator = function()
 		newHTML += "\t\t\t\t<li class=\"liveryGroup\"><h3>" + thisOperator[0].operator + " (" + thisOperator.length + ")</h3>\n";
 		if (supports3D)
 		{
-			newHTML += "<a class=\"3DLink\" href=\"" + "\">View in 3D</a>\n";
+			newHTML += "<a class=\"link3D\" href=\"" + "\">View in 3D</a>\n";
 		}
 		newHTML += "\t\t\t\t\t<ul>\n";
 		
@@ -118,7 +118,7 @@ var displayLiveriesByOperator = function()
 
 	prepareList();
 
-	$('.3DLink').click(function(e)
+	$('.link3D').click(function(e)
 	{
 		e.preventDefault();
 		
@@ -163,11 +163,16 @@ var displayLiveriesByAuthor = function()
 		});
 		
 		// livery header
-		newHTML += "\t\t\t\t<li class=\"liveryGroup\"><h3>" + thisAuthor[0].author + " (" + thisAuthor.length + ")</h3>\n";
+		newHTML += "\t\t\t\t<li class=\"liveryGroup\"><h3 class=\"liveryCount\">" + thisAuthor.length + "</h3>";
 		if (supports3D)
 		{
-			newHTML += "<a class=\"3DLink\" href=\"" + "\">View in 3D</a>\n";
+			newHTML += "<a class=\"link3D\" href=\"#\">3D</a>";
 		}
+		else
+		{
+			newHTML += "<a class=\"link3DDisabled\" href=\"#\"></a>";
+		}
+		newHTML += "<h3>" + thisAuthor[0].author + "</h3>\n";
 		newHTML += "\t\t\t\t\t<ul>\n";
 
 		// livery content
@@ -182,7 +187,7 @@ var displayLiveriesByAuthor = function()
 
 	prepareList();
 
-	$('.3DLink').click(function(e)
+	$('.link3D').click(function(e)
 	{
 		e.preventDefault();
 		
@@ -219,8 +224,9 @@ var switchTo3DView = function($this)
 	$('section#welcome').hide();
 	$('section#3D').show();
 
-	$this.next().children().each(function()
+	$this.next().next().children().each(function()
 	{ 
+		
 		var $metaData = $(this).children("div.metaData");
 
 		var acId      = $metaData.children("p.acId").first().text();
@@ -228,6 +234,7 @@ var switchTo3DView = function($this)
 		var thumbPath = $metaData.children("p.thumbPath").first().text();
 		var livPath   = $metaData.children("p.livPath").first().text();
 
+		console.log("processing " + operator);
 		var typeData = getTypeDataForAcId(acId);
 
 		var addToDisplay3D =
@@ -240,12 +247,14 @@ var switchTo3DView = function($this)
 			setup      : typeData.setup   
 		}
 		
-		if (addToDisplay3D.liveryPath != "")
+		if (livPath != "")
 		{
+			console.log("adding " + operator);
 			toDisplay3D.push(addToDisplay3D);
 		}
 	});
 
+	console.log("loading model");
 	load3D(toDisplay3D);
 }
 

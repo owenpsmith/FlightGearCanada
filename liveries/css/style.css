@@ -4,10 +4,32 @@ li.liveryGroup ul {
 }
 
 li.liveryGroup h3 {
-	margin-top : 0px;
+	margin-top    : 0px;
 	margin-bottom : 0px;
-	font-size : 12pt;
-	display : inline
+	font-size     : 12pt;
+	display       : inline-block;
+}
+
+li.liveryGroup h3.liveryCount {
+	margin-right  : 20px;
+	min-width     : 30px;
+	text-align    : right;
+	font-weight   : normal;
+}
+
+li.liveryGroup a.link3D {
+	margin-right  : 20px;
+	min-width     : 20px;
+	font-weight   : normal;
+	color		  : #ff0000;
+	display       : inline-block;
+}
+
+li.liveryGroup a.link3DDisabled {
+	margin-right   : 20px;
+	min-width      : 20px;
+	pointer-events : none;
+	display        : inline-block;
 }
 
 ul li.livery {
