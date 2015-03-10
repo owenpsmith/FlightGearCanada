@@ -27,6 +27,8 @@ var displayLiveriesByType = function()
 			liveryHTML += "\t\t\t\t\t\t\t<p class=\"operator\" >" + thisOperator.operator + "</p>\n";
 			liveryHTML += "\t\t\t\t\t\t\t<p class=\"thumbPath\">" + thisOperator.thumb    + "</p>\n";
 			liveryHTML += "\t\t\t\t\t\t\t<p class=\"livPath\"  >" + thisOperator.texture  + "</p>\n";
+			liveryHTML += "\t\t\t\t\t\t\t<p class=\"modAuthor\">" + thisOperator.modelAuthor  + "</p>\n";
+			liveryHTML += "\t\t\t\t\t\t\t<p class=\"livAuthor\">" + thisOperator.author       + "</p>\n";
 			liveryHTML += "\t\t\t\t\t\t</div></li>\n";
 
 			if (thisOperator.texture != "")
@@ -95,6 +97,8 @@ var displayLiveriesByOperator = function()
 			liveryHTML += "\t\t\t\t\t\t\t<p class=\"operator\" >" + thisType.operator + "</p>\n";
 			liveryHTML += "\t\t\t\t\t\t\t<p class=\"thumbPath\">" + thisType.thumb    + "</p>\n";
 			liveryHTML += "\t\t\t\t\t\t\t<p class=\"livPath\"  >" + thisType.texture  + "</p>\n";
+			liveryHTML += "\t\t\t\t\t\t\t<p class=\"modAuthor\">" + thisType.modelAuthor  + "</p>\n";
+			liveryHTML += "\t\t\t\t\t\t\t<p class=\"livAuthor\">" + thisType.author       + "</p>\n";
 			liveryHTML += "\t\t\t\t\t\t</div></li>\n";
 
 			if (thisType.texture != "")
@@ -160,10 +164,12 @@ var displayLiveriesByAuthor = function()
 
 			// data for generating 3D gallery upon selection
 			liveryHTML += "\t\t\t\t\t\t<div class=\"metaData\">\n";
-			liveryHTML += "\t\t\t\t\t\t\t<p class=\"acId\"     >" + thisLivery.modelId  + "</p>\n";
-			liveryHTML += "\t\t\t\t\t\t\t<p class=\"operator\" >" + thisLivery.operator + "</p>\n";
-			liveryHTML += "\t\t\t\t\t\t\t<p class=\"thumbPath\">" + thisLivery.thumb    + "</p>\n";
-			liveryHTML += "\t\t\t\t\t\t\t<p class=\"livPath\"  >" + thisLivery.texture  + "</p>\n";
+			liveryHTML += "\t\t\t\t\t\t\t<p class=\"acId\"     >" + thisLivery.modelId      + "</p>\n";
+			liveryHTML += "\t\t\t\t\t\t\t<p class=\"operator\" >" + thisLivery.operator     + "</p>\n";
+			liveryHTML += "\t\t\t\t\t\t\t<p class=\"thumbPath\">" + thisLivery.thumb        + "</p>\n";
+			liveryHTML += "\t\t\t\t\t\t\t<p class=\"livPath\"  >" + thisLivery.texture      + "</p>\n";
+			liveryHTML += "\t\t\t\t\t\t\t<p class=\"modAuthor\">" + thisLivery.modelAuthor  + "</p>\n";
+			liveryHTML += "\t\t\t\t\t\t\t<p class=\"livAuthor\">" + thisLivery.author       + "</p>\n";
 			liveryHTML += "\t\t\t\t\t\t</div></li>\n";
 			
 			if (thisLivery.texture != "")
@@ -243,6 +249,8 @@ var switchTo3DView = function($this)
 		var operator  = $metaData.children("p.operator").first().text();
 		var thumbPath = $metaData.children("p.thumbPath").first().text();
 		var livPath   = $metaData.children("p.livPath").first().text();
+		var modAuthor = $metaData.children("p.modAuthor").first().text();
+		var livAuthor = $metaData.children("p.livAuthor").first().text();
 
 		console.log("processing " + operator);
 		var typeData = getTypeDataForAcId(acId);
@@ -254,7 +262,9 @@ var switchTo3DView = function($this)
 			thumbPath  : thumbPath,
 			modelPath  : typeData.modelPath,
 			liveryPath : livPath,
-			setup      : typeData.setup   
+			setup      : typeData.setup,   
+			modAuthor  : modAuthor,   
+			livAuthor  : livAuthor   
 		}
 		
 		if (livPath != "")
@@ -299,6 +309,5 @@ var dataLoadedCallback = function()
 
 $(document).ready( function()
 {
-	$('section#3D').hide();
 	loadData(dataLoadedCallback);
 });

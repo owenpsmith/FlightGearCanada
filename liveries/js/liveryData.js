@@ -18,10 +18,11 @@ function addModelData(livery)
 	{
 		if (type.id == livery.typeId)
 		{
-			livery.modelId    = type.id;
-			livery.modelName  = type.modelName;
-			livery.modelPath  = type.modelPath;
-			livery.modelSetup = type.setup;
+			livery.modelId     = type.id;
+			livery.modelName   = type.modelName;
+			livery.modelAuthor = type.author;
+			livery.modelPath   = type.modelPath;
+			livery.modelSetup  = type.setup;
 			return;
 		}
 	});

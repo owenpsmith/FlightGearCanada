@@ -67,8 +67,14 @@ function onClick()
 
 function showModel(model)
 {
+	var infoHTML = "";
 	loading.style.display = "block";
-	details.innerHTML = "<p id='name'>" + model.acName + " - " + model.operator + "</p>";
+	
+	infoHTML += "<p id='name'>"         + model.acName + " - " + model.operator  + "</p>\n";
+	infoHTML += "<p id='modelAuthor'>"  + "Model by "          + model.modAuthor + "</p>\n";
+	infoHTML += "<p id='liveryAuthor'>" + "Livery by "         + model.livAuthor + "</p>\n";
+	
+	details.innerHTML = infoHTML;
 
     var params = {callback: onLoaded, texturePath: model.liveryPath, setup: model.setup};
 	viewer.show(model.modelPath, params);

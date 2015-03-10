@@ -97,3 +97,8 @@ div.metaData {
 	display : none;
 }
 
+section#3D {
+	display    : none;
+	background : #aaaaaa;
+}
+
