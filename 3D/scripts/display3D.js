@@ -75,6 +75,8 @@ function showModel(model)
 	infoHTML += "<p id='liveryAuthor'>" + "Livery by "         + model.livAuthor + "</p>\n";
 	
 	details.innerHTML = infoHTML;
+	
+	console.log("Loading model " + model.modelPath);
 
     var params = {callback: onLoaded, texturePath: model.liveryPath, setup: model.setup};
 	viewer.show(model.modelPath, params);

@@ -136,9 +136,9 @@
 		{
 			"id"        : "DHC-6",
 			"modelName" : "DeHavilland Canada DHC-6 Twin Otter",
-			"author"    : "",
-			"modelPath" : "",
-			"setup"     : ""		
+			"author"    : "Syd Adams",
+			"modelPath" : "../3D/models/DHC-6.ac",
+			"setup"     : { "eye": [-36.0, -1.0, -22.0], "poi": [0.0, 0.0, 0.0], "up":[0.0, 1.0, 0.0], "fov": 15}		
 		},
 		{
 			"id"        : "DHC-8",

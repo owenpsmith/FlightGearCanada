@@ -23,6 +23,7 @@ function addModelData(livery)
 			livery.modelAuthor = type.author;
 			livery.modelPath   = type.modelPath;
 			livery.modelSetup  = type.setup;
+
 			return;
 		}
 	});

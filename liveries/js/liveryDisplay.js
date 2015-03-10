@@ -29,6 +29,7 @@ var displayLiveriesByType = function()
 			liveryHTML += "\t\t\t\t\t\t\t<p class=\"livPath\"  >" + thisOperator.texture  + "</p>\n";
 			liveryHTML += "\t\t\t\t\t\t\t<p class=\"modAuthor\">" + thisOperator.modelAuthor  + "</p>\n";
 			liveryHTML += "\t\t\t\t\t\t\t<p class=\"livAuthor\">" + thisOperator.author       + "</p>\n";
+			liveryHTML += "\t\t\t\t\t\t\t<p class=\"livGear\"  >" + thisOperator.gear         + "</p>\n";
 			liveryHTML += "\t\t\t\t\t\t</div></li>\n";
 
 			if (thisOperator.texture != "")
@@ -99,6 +100,7 @@ var displayLiveriesByOperator = function()
 			liveryHTML += "\t\t\t\t\t\t\t<p class=\"livPath\"  >" + thisType.texture  + "</p>\n";
 			liveryHTML += "\t\t\t\t\t\t\t<p class=\"modAuthor\">" + thisType.modelAuthor  + "</p>\n";
 			liveryHTML += "\t\t\t\t\t\t\t<p class=\"livAuthor\">" + thisType.author       + "</p>\n";
+			liveryHTML += "\t\t\t\t\t\t\t<p class=\"livGear\"  >" + thisType.gear         + "</p>\n";
 			liveryHTML += "\t\t\t\t\t\t</div></li>\n";
 
 			if (thisType.texture != "")
@@ -170,6 +172,7 @@ var displayLiveriesByAuthor = function()
 			liveryHTML += "\t\t\t\t\t\t\t<p class=\"livPath\"  >" + thisLivery.texture      + "</p>\n";
 			liveryHTML += "\t\t\t\t\t\t\t<p class=\"modAuthor\">" + thisLivery.modelAuthor  + "</p>\n";
 			liveryHTML += "\t\t\t\t\t\t\t<p class=\"livAuthor\">" + thisLivery.author       + "</p>\n";
+			liveryHTML += "\t\t\t\t\t\t\t<p class=\"livGear\"  >" + thisLivery.gear         + "</p>\n";
 			liveryHTML += "\t\t\t\t\t\t</div></li>\n";
 			
 			if (thisLivery.texture != "")
@@ -239,6 +242,8 @@ var switchTo3DView = function($this)
 {
 	$('section#welcome').hide();
 	$('section#3D').show();
+	$('section#3D div#gallery').show();
+	$('section#3D div#text').show();
 
 	$this.next().next().children().each(function()
 	{ 
@@ -251,16 +256,30 @@ var switchTo3DView = function($this)
 		var livPath   = $metaData.children("p.livPath").first().text();
 		var modAuthor = $metaData.children("p.modAuthor").first().text();
 		var livAuthor = $metaData.children("p.livAuthor").first().text();
+		var livGear   = $metaData.children("p.livGear").first().text();
 
-		console.log("processing " + operator);
 		var typeData = getTypeDataForAcId(acId);
+		
+		// append landing gear variant if applicable
+		var modelPath = typeData.modelPath;
+		console.log("modelPath1 = " + modelPath);
+		if (livGear != "")
+		{
+			modelPath = modelPath.substring(0, modelPath.length - 3);
+			console.log("modelPath2 = " + modelPath);
+
+			modelPath += "_" + livGear + ".ac";
+			console.log("modelPath3 = " + modelPath);
+		}
+
+
 
 		var addToDisplay3D =
 		{
 			acName     : typeData.modelName,
 			operator   : operator,
 			thumbPath  : thumbPath,
-			modelPath  : typeData.modelPath,
+			modelPath  : modelPath,
 			liveryPath : livPath,
 			setup      : typeData.setup,   
 			modAuthor  : modAuthor,   
@@ -269,12 +288,10 @@ var switchTo3DView = function($this)
 		
 		if (livPath != "")
 		{
-			console.log("adding " + operator);
 			toDisplay3D.push(addToDisplay3D);
 		}
 	});
 
-	console.log("loading model");
 	load3D(toDisplay3D);
 }
 

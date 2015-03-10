@@ -24,7 +24,7 @@ HG.Renderer = function(canvas){
   this.gl = canvas.getContext("webgl", {alpha:false}) || canvas.getContext("experimental-webgl", {alpha:false});
 };
 
-HG.Renderer.BackgroundColor = [0.5, 0.5, 0.65, 1.0];
+HG.Renderer.BackgroundColor = [0.87, 0.87, 0.87, 1.0];
 HG.Renderer.LightPosition = [-50, 50, 50];
 HG.Renderer.LightAmbient = [0.2, 0.2, 0.2];
 
