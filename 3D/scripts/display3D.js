@@ -51,7 +51,7 @@ function createGallery()
 
 function onClick()
 {
-	var selected = parseInt( this.id.substring( this.id.length - 1 ) );
+	var selected = parseInt( this.id.substring(3) );
 
 	if (current !== selected){
 
@@ -69,13 +69,13 @@ function showModel(model)
 {
 	var infoHTML = "";
 	loading.style.display = "block";
-	
+
 	infoHTML += "<p id='name'>"         + model.acName + " - " + model.operator  + "</p>\n";
 	infoHTML += "<p id='modelAuthor'>"  + "Model by "          + model.modAuthor + "</p>\n";
 	infoHTML += "<p id='liveryAuthor'>" + "Livery by "         + model.livAuthor + "</p>\n";
-	
+
 	details.innerHTML = infoHTML;
-	
+
 	console.log("Loading model " + model.modelPath);
 
     var params = {callback: onLoaded, texturePath: model.liveryPath, setup: model.setup};
