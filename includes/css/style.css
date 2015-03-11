@@ -13,10 +13,11 @@ nav#menu {
 	height : 45px;
 }
 
+
 nav#menu a {
 	float : left;
-	width : 12.5%;
-	height : 100%;
+	width : 12.49%;
+	height : 45px;
 	text-align : center;
 	line-height : 45px;
 	text-decoration : none;
@@ -25,7 +26,6 @@ nav#menu a {
 	border-right : 1px solid gray;
 	font-size: 14px;
 	font-weight: 700;
-	line-height: 45px;
 
 	background-color: #585858;
 	background-image: -webkit-gradient(linear, left top, left bottom, from(#585858), to(#3d3d3d));
@@ -51,6 +51,22 @@ nav#menu a#currentPage {
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#3070A0, endColorstr=#205277);
 }
 
+@media screen and (max-width : 704px) {
+
+	nav#menu {
+		height : 120px;
+	}
+
+	nav#menu a {
+		width : 24.9%;
+		height : 60px;
+		line-height : 60px;
+		font-size: 12px;
+		font-weight: 700;
+	}
+}
+
+
 nav#menu a#language {
 	clear : left;
 	float : right;
@@ -69,6 +85,10 @@ nav#menu a#language:after {
 
 
 section#welcome {
+	margin : 20px;
+}
+
+section#whatsNew {
 	margin : 20px;
 }
 
