@@ -37,7 +37,7 @@ var displayLiveriesByType = function()
 				supports3D = true;
 			}
 		});
-		
+
 		// livery header
 		newHTML += "\t\t\t\t<li class=\"liveryGroup\"><h3 class=\"liveryCount\">" + thisType.length + "</h3>";
 		if (supports3D)
@@ -53,7 +53,7 @@ var displayLiveriesByType = function()
 
 		// livery content
 		newHTML += liveryHTML;
-		
+
 		// livery footer
 		newHTML += "\t\t\t\t\t</ul>\n";
 		newHTML += "\t\t\t\t</li>\n";
@@ -66,7 +66,7 @@ var displayLiveriesByType = function()
 	$('.link3D').click(function(e)
 	{
 		e.preventDefault();
-		
+
 		switchTo3DView($(this));
 	});
 }
@@ -91,7 +91,7 @@ var displayLiveriesByOperator = function()
 			liveryHTML += "\t\t\t\t\t\t\t<br>\n";
 			liveryHTML += "\t\t\t\t\t\t\t<a class=\"link\" href=\""      + thisType.zip + "\">Download</a>\n";
 			liveryHTML += "\t\t\t\t\t\t</div>\n";
-			
+
 			// data for generating 3D gallery upon selection
 			liveryHTML += "\t\t\t\t\t\t<div class=\"metaData\">\n";
 			liveryHTML += "\t\t\t\t\t\t\t<p class=\"acId\"     >" + thisType.modelId  + "</p>\n";
@@ -108,7 +108,7 @@ var displayLiveriesByOperator = function()
 				supports3D = true;
 			}
 		});
-		
+
 		// livery header
 		newHTML += "\t\t\t\t<li class=\"liveryGroup\"><h3 class=\"liveryCount\">" + thisOperator.length + "</h3>";
 		if (supports3D)
@@ -121,10 +121,10 @@ var displayLiveriesByOperator = function()
 		}
 		newHTML += "<h3>" + thisOperator[0].operator + "</h3>\n";
 		newHTML += "\t\t\t\t\t<ul>\n";
-		
+
 		// livery content
 		newHTML += liveryHTML;
-		
+
 		// livery footer
 		newHTML += "\t\t\t\t\t</ul>\n";
 		newHTML += "\t\t\t\t</li>\n";
@@ -137,7 +137,7 @@ var displayLiveriesByOperator = function()
 	$('.link3D').click(function(e)
 	{
 		e.preventDefault();
-		
+
 		switchTo3DView($(this));
 	});
 }
@@ -174,13 +174,13 @@ var displayLiveriesByAuthor = function()
 			liveryHTML += "\t\t\t\t\t\t\t<p class=\"livAuthor\">" + thisLivery.author       + "</p>\n";
 			liveryHTML += "\t\t\t\t\t\t\t<p class=\"livGear\"  >" + thisLivery.gear         + "</p>\n";
 			liveryHTML += "\t\t\t\t\t\t</div></li>\n";
-			
+
 			if (thisLivery.texture != "")
 			{
 				supports3D = true;
 			}
 		});
-		
+
 		// livery header
 		newHTML += "\t\t\t\t<li class=\"liveryGroup\"><h3 class=\"liveryCount\">" + thisAuthor.length + "</h3>";
 		if (supports3D)
@@ -196,7 +196,7 @@ var displayLiveriesByAuthor = function()
 
 		// livery content
 		newHTML += liveryHTML;
-		
+
 		// livery footer
 		newHTML += "\t\t\t\t\t</ul>\n";
 		newHTML += "\t\t\t\t</li>\n";
@@ -209,7 +209,7 @@ var displayLiveriesByAuthor = function()
 	$('.link3D').click(function(e)
 	{
 		e.preventDefault();
-		
+
 		switchTo3DView($(this));
 	});
 }
@@ -246,8 +246,8 @@ var switchTo3DView = function($this)
 	$('section#3D div#text').show();
 
 	$this.next().next().children().each(function()
-	{ 
-		
+	{
+
 		var $metaData = $(this).children("div.metaData");
 
 		var acId      = $metaData.children("p.acId").first().text();
@@ -259,20 +259,22 @@ var switchTo3DView = function($this)
 		var livGear   = $metaData.children("p.livGear").first().text();
 
 		var typeData = getTypeDataForAcId(acId);
-		
+
 		// append landing gear variant if applicable
 		var modelPath = typeData.modelPath;
-		console.log("modelPath1 = " + modelPath);
 		if (livGear != "")
 		{
+			// select the appropriate model file
 			modelPath = modelPath.substring(0, modelPath.length - 3);
-			console.log("modelPath2 = " + modelPath);
 
 			modelPath += "_" + livGear + ".ac";
-			console.log("modelPath3 = " + modelPath);
+
+//			if (livGear == "floats")
+//			{
+//				// tweak the POI to fit the floats into the view
+//				typeData.setup.poi[1] -= 1;
+//			}
 		}
-
-
 
 		var addToDisplay3D =
 		{
@@ -281,15 +283,21 @@ var switchTo3DView = function($this)
 			thumbPath  : thumbPath,
 			modelPath  : modelPath,
 			liveryPath : livPath,
-			setup      : typeData.setup,   
-			modAuthor  : modAuthor,   
-			livAuthor  : livAuthor   
+			setup      : typeData.setup,
+			modAuthor  : modAuthor,
+			livAuthor  : livAuthor
 		}
-		
+
 		if (livPath != "")
 		{
 			toDisplay3D.push(addToDisplay3D);
 		}
+
+//		if (livGear == "floats")
+//		{
+//			// tweak the POI to fit the floats into the view
+//			typeData.setup.poi[1] += 1;
+//		}
 	});
 
 	load3D(toDisplay3D);
