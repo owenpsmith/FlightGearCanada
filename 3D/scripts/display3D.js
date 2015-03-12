@@ -53,17 +53,29 @@ function onClick()
 {
 	var selected = parseInt( this.id.substring(3) );
 
-	if (current !== selected){
-
+	if (current !== selected)
+	{
 		var img = document.getElementById("img" + current);
 		img.setAttribute("class", "thumbnail");
 
+		if (models[selected].modelPath == models[current].modelPath)
+		{
+			console.log("Just refreshing livery");
+			// same aircraft, just refresh livery
+			viewer.newLiveryPath(models[selected].liveryPath);
+		}
+		else
+		{
+			console.log("Refreshing model");
+			// refresh all
+			showModel(models[selected]);
+		}
+		
 		current = selected;
 		this.setAttribute("class", "thumbnail selected");
-
-		showModel(models[current]);
 	}
 };
+
 
 function showModel(model)
 {

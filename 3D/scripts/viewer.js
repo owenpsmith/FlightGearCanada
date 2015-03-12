@@ -47,6 +47,13 @@ HG.Viewer.prototype.onModelLoaded = function(data, params){
   }
 };
 
+
+HG.Viewer.prototype.newLiveryPath = function(path)
+{
+	this.renderer.newLiveryPath(path);
+};
+
+
 HG.Viewer.prototype.tick = function(){
   var that = this;
 

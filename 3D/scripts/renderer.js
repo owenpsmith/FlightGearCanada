@@ -39,6 +39,11 @@ HG.Renderer.prototype.setScene = function(path, scene, camera){
   this.buffers = this.createBuffers(scene.groups);
 };
 
+HG.Renderer.prototype.newLiveryPath = function(path)
+{
+	this.textures = this.createTextures(path, this.scene.textures);
+};
+
 HG.Renderer.prototype.reset = function(){
   var gl = this.gl, color = HG.Renderer.BackgroundColor;
 
