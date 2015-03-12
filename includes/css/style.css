@@ -16,7 +16,7 @@ nav#menu {
 
 nav#menu a {
 	float : left;
-	width : 12.49%;
+	width : 12.2%;
 	height : 45px;
 	text-align : center;
 	line-height : 45px;
@@ -58,7 +58,7 @@ nav#menu a#currentPage {
 	}
 
 	nav#menu a {
-		width : 24.9%;
+		width : 24.2%;
 		height : 60px;
 		line-height : 60px;
 		font-size: 12px;
