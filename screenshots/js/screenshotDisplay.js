@@ -1,4 +1,5 @@
 
+var images = [];
 var mode = "";
 var imageIndex = -1;
 var imageElement = 0;
@@ -144,14 +145,13 @@ $('#nextBtn').click(function()
 });
 
 
-// initialization
-var dataLoadedCallback = function()
-{
-	// default to view all by type
-	displayImageThumbnails();
-};
-
 $(document).ready( function()
 {
-	loadData(dataLoadedCallback);
+	loadScreenshotData(function(imageData)
+	{
+		images = imageData;
+	
+		// default to view all by type
+		displayImageThumbnails();
+	});
 });
