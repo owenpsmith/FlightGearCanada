@@ -325,14 +325,12 @@ $('#byAllBtn').click(function()
 	displayLiveriesByAll();
 });
 
-// initialization
-var dataLoadedCallback = function()
-{
-	// default to view all by type
-	displayLiveriesByType();
-};
 
 $(document).ready( function()
 {
-	loadData(dataLoadedCallback);
+	loadLiveryData(function()
+	{
+		// default to view all by type
+		displayLiveriesByType();
+	});
 });

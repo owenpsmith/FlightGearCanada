@@ -1,0 +1,104 @@
+
+li.liveryGroup ul {
+	margin-left : 20px;
+}
+
+li.liveryGroup h3 {
+	margin-top    : 0px;
+	margin-bottom : 0px;
+	font-size     : 12pt;
+	display       : inline-block;
+}
+
+li.liveryGroup h3.liveryCount {
+	margin-right  : 20px;
+	min-width     : 30px;
+	text-align    : right;
+	font-weight   : normal;
+}
+
+li.liveryGroup a.link3D {
+	margin-right  : 20px;
+	min-width     : 20px;
+	font-weight   : normal;
+	color		  : #ff0000;
+	display       : inline-block;
+}
+
+li.liveryGroup a.link3DDisabled {
+	margin-right   : 20px;
+	min-width      : 20px;
+	pointer-events : none;
+	display        : inline-block;
+}
+
+ul li.livery {
+	width : 800px;
+	height : 254px;
+	border : 2px solid black;
+    padding-left: 0px;
+}
+
+li.livery:after {
+	clear : left;
+}
+
+li.livery img {
+	float : left;
+	border-right : 2px solid black;
+}
+
+li.livery div {
+	float : left;
+	padding : 20px;
+}
+
+li.livery div:after {
+	clear : left;
+}
+
+li.livery a {
+
+	background-color: #585858;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#585858), to(#3d3d3d));
+	background-image: -webkit-linear-gradient(top, #585858, #3d3d3d);
+	background-image: -moz-linear-gradient(top, #585858, #3d3d3d);
+	background-image: -ms-linear-gradient(top, #585858, #3d3d3d);
+	background-image: -o-linear-gradient(top, #585858, #3d3d3d);
+	background-image: linear-gradient(top, #585858, #3d3d3d);
+
+    color: #ffffff;
+	text-decoration : none;
+    cursor: pointer;
+    height: 1.5em;
+    line-height: 1.5em;
+    padding: 4px 10px;
+}
+
+li.livery a:hover {
+
+	background-color : #40A4E4;
+	background-image : -webkit-gradient(linear, left top, left bottom, from(#3070A0), to(#205080));
+	background-image : -webkit-linear-gradient(top, #3070A0, #205277);
+	background-image : -moz-linear-gradient(top, #3070A0, #205277);
+	background-image : -ms-linear-gradient(top, #3070A0, #205277);
+	background-image : -o-linear-gradient(top, #3070A0, #205277);
+	background-image : linear-gradient(top, #3070A0, #205277);
+
+    color: #ffffff;
+	text-decoration : none;
+    cursor: pointer;
+    height: 1.5em;
+    line-height: 1.5em;
+    padding: 4px 10px;
+}
+
+div.metaData {
+	display : none;
+}
+
+section#3D {
+	display    : none;
+	background : #aaaaaa;
+}
+

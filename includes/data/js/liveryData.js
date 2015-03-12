@@ -4,7 +4,7 @@ var types              = [];
 var liveries           = [];
 
 // indexes
-var typeIndex     = [];
+var liveryTypeIndex     = [];
 var operatorIndex = [];
 var authorIndex   = [];
 
@@ -30,7 +30,7 @@ function addModelData(livery)
 }
 
 
-function loadData(dataLoadedCallback)
+function loadLiveryData(dataLoadedCallback)
 {
 	// load aircraft data
 	loadTypeData(function(typeData)
@@ -58,9 +58,9 @@ function loadData(dataLoadedCallback)
 			//create indexes
 			$.each(liveries, function(key, val)
 			{
-				if (typeIndex.indexOf(val.modelName) == -1)
+				if (liveryTypeIndex.indexOf(val.modelName) == -1)
 				{
-					typeIndex.push(val.modelName);
+					liveryTypeIndex.push(val.modelName);
 				}
 				if (operatorIndex.indexOf(val.operator) == -1)
 				{
@@ -73,7 +73,7 @@ function loadData(dataLoadedCallback)
 			});
 
 			// sort indexes
-			typeIndex.sort(function (a, b) {
+			liveryTypeIndex.sort(function (a, b) {
 				return a.toLowerCase().localeCompare(b.toLowerCase());
 			});
 			operatorIndex.sort(function (a, b) {
@@ -94,7 +94,7 @@ function getLiveriesByType()
 	if (liveriesByType.length <= 0)
 	{
 		// build livery heirarchy by type/operator
-		$.each(typeIndex,     function(key, thisType)
+		$.each(liveryTypeIndex,     function(key, thisType)
 		{
 			var liveryGroup    = [];
 
@@ -131,7 +131,7 @@ function getLiveriesByOperator()
 		{
 			var liveryGroup = [];
 
-			$.each(typeIndex, function(key, thisType)
+			$.each(liveryTypeIndex, function(key, thisType)
 			{
 				$.each(liveries, function(key, thisLivery)
 				{
