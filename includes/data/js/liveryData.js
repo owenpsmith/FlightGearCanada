@@ -33,9 +33,9 @@ function addModelData(livery)
 function loadData(dataLoadedCallback)
 {
 	// load aircraft data
-	$.getJSON( "data/aircraftData.json", function(typeData)
+	loadTypeData(function(typeData)
 	{
-		types = typeData.types;
+		types = typeData;
 
 		types.sort(function (a, b)
 		{
@@ -45,7 +45,7 @@ function loadData(dataLoadedCallback)
 		});
 
 		// load livery data
-		$.getJSON( "data/liveryData.json", function(liveryData)
+		$.getJSON( "../includes/data/json/liveryData.json", function(liveryData)
 		{
 			liveries = liveryData.liveries;
 
