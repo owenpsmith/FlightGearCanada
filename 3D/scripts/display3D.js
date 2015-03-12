@@ -60,13 +60,11 @@ function onClick()
 
 		if (models[selected].modelPath == models[current].modelPath)
 		{
-			console.log("Just refreshing livery");
 			// same aircraft, just refresh livery
 			viewer.newLiveryPath(models[selected].liveryPath);
 		}
 		else
 		{
-			console.log("Refreshing model");
 			// refresh all
 			showModel(models[selected]);
 		}
@@ -87,8 +85,6 @@ function showModel(model)
 	infoHTML += "<p id='liveryAuthor'>" + "Livery by "         + model.livAuthor + "</p>\n";
 
 	details.innerHTML = infoHTML;
-
-	console.log("Loading model " + model.modelPath);
 
     var params = {callback: onLoaded, texturePath: model.liveryPath, setup: model.setup};
 	viewer.show(model.modelPath, params);
