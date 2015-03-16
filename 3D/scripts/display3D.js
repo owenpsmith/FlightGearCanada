@@ -22,12 +22,12 @@ function load3D(modelsToLoad)
 
 function resize()
 {
-	canvas.width = window.innerWidth;
-	canvas.height = window.innerHeight - 110 - 45;
+	canvas.width = window.innerWidth - 24;
+	canvas.height = window.innerHeight - 110 - 35 - 24;
 
 	window.addEventListener("resize", function(event)
 	{
-		viewer.onResize(window.innerWidth, window.innerHeight);
+		viewer.onResize(window.innerWidth - 24, window.innerHeight - 110 - 45 - 24);
 	}, false);
 };
 
@@ -35,6 +35,7 @@ function createGallery()
 {
 	for (var i = 0; i < models.length; ++ i)
 	{
+		var $gallery = document.getElementById("gallery");
 		var img = document.createElement("img");
 
 		img.id = "img" + i;
@@ -45,7 +46,7 @@ function createGallery()
 		img.style.left = (5 + 128 * i) + "px";
 		img.onclick = onClick;
 
-		document.body.appendChild(img);
+		$gallery.appendChild(img);
 	}
 };
 

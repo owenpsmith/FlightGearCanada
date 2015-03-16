@@ -24,16 +24,16 @@ HG.Renderer = function(canvas){
   this.gl = canvas.getContext("webgl", {alpha:false}) || canvas.getContext("experimental-webgl", {alpha:false});
 };
 
-HG.Renderer.BackgroundColor = [0.87, 0.87, 0.87, 1.0];
+HG.Renderer.BackgroundColor = [0.6, 0.7, 0.9, 1.0];
 HG.Renderer.LightPosition = [-50, 50, 50];
 HG.Renderer.LightAmbient = [0.2, 0.2, 0.2];
 
 HG.Renderer.prototype.setScene = function(path, scene, camera){
   this.scene = scene;
   this.camera = camera;
-  
+
   this.reset();
-  
+
   this.programs = this.programs || this.createPrograms();
   this.textures = this.createTextures(path, scene.textures);
   this.buffers = this.createBuffers(scene.groups);
@@ -53,11 +53,11 @@ HG.Renderer.prototype.reset = function(){
   gl.enable(gl.DEPTH_TEST);
   gl.depthFunc(gl.LEQUAL);
   gl.depthMask(true);
-  
+
   gl.enable(gl.CULL_FACE);
   gl.frontFace(gl.CCW);
   gl.cullFace(gl.BACK);
-  
+
   gl.disable(gl.BLEND);
   gl.blendEquation(gl.FUNC_ADD);
   gl.blendFunc(gl.SRC_ALPHA, gl.ONE_MINUS_SRC_ALPHA);
@@ -79,7 +79,7 @@ HG.Renderer.prototype.resize = function(width, height){
 
 HG.Renderer.prototype.setDepthMask = function(depthMask){
   var gl = this.gl;
-  
+
   if (this.depthMask !== depthMask){
     gl.depthMask(depthMask);
   }
@@ -123,7 +123,7 @@ HG.Renderer.prototype.setProgram = function(program){
 
 HG.Renderer.prototype.render = function(){
   var gl = this.gl;
-  
+
   gl.clear(gl.COLOR_BUFFER_BIT | gl.DEPTH_BUFFER_BIT);
 
   this.draw(gl, this.scene, false);
@@ -137,7 +137,7 @@ HG.Renderer.prototype.draw = function(gl, scene, transparent){
 
   projector = mat4.perspective(this.camera.fov,
     gl.drawingBufferWidth / gl.drawingBufferHeight, 0.1, 1000.0);
-  
+
   normalizer = mat4.toInverseMat3(this.camera.transformer);
   mat3.transpose(normalizer);
 
@@ -149,14 +149,14 @@ HG.Renderer.prototype.draw = function(gl, scene, transparent){
 
     material = scene.materials[group.materialId];
     if (transparent !== (0.0 === material.transparency) ){
-    
+
       this.setCulling(!group.isTwoSided);
-      
+
       program = this.getProgram(group);
       this.setProgram(program);
-      
+
       gl.bindBuffer(gl.ARRAY_BUFFER, buffers[i]);
-      
+
       gl.uniformMatrix4fv(program.uniforms.uProjector, false, projector);
       gl.uniformMatrix4fv(program.uniforms.uTransformer, false, this.camera.transformer);
 
@@ -183,14 +183,14 @@ HG.Renderer.prototype.draw = function(gl, scene, transparent){
       if (undefined !== group.textureId){
         gl.activeTexture(gl.TEXTURE0);
         gl.bindTexture(gl.TEXTURE_2D, this.textures[group.textureId]);
-        
+
         gl.uniform1i(program.uniforms.uSampler, 0);
-        
+
         gl.vertexAttribPointer(program.attributes.aTexcoord, 2, gl.FLOAT, false, 32, 12);
       }
 
       gl.drawArrays( this.getDrawMode(group.type), 0, group.buffer.length/8);
-  
+
       gl.bindTexture(gl.TEXTURE_2D, null);
       gl.bindBuffer(gl.ARRAY_BUFFER, null);
     }
@@ -199,7 +199,7 @@ HG.Renderer.prototype.draw = function(gl, scene, transparent){
 
 HG.Renderer.prototype.getProgram = function(group){
   var program;
-  
+
   if (group.type === AC.SurfaceType.POLYGON){
     if (group.textureId === undefined){
       program = this.programs.phong;
@@ -213,13 +213,13 @@ HG.Renderer.prototype.getProgram = function(group){
       program = this.programs.texture;
     }
   }
-  
+
   return program;
 };
 
 HG.Renderer.prototype.getDrawMode = function(type){
   var gl = this.gl, mode;
-  
+
   switch(type){
     case AC.SurfaceType.POLYGON:
       mode = gl.TRIANGLES;
@@ -249,29 +249,29 @@ HG.Renderer.prototype.createPrograms = function(){
 HG.Renderer.prototype.createBuffers = function(groups){
   var gl = this.gl, buffers = [], numgroups = groups.length, i = 0,
       buffer;
-  
+
   for (; i < numgroups; ++ i){
     buffer = gl.createBuffer();
     buffers.push(buffer);
-    
+
     gl.bindBuffer(gl.ARRAY_BUFFER, buffer);
     gl.bufferData(gl.ARRAY_BUFFER, new Float32Array(groups[i].buffer), gl.STATIC_DRAW);
     gl.bindBuffer(gl.ARRAY_BUFFER, null);
   }
-  
+
   return buffers;
 };
 
 HG.Renderer.prototype.createTextures = function(path, filenames){
   var gl = this.gl, textures = [], len = filenames.length, i = 0,
       filename, texture;
-  
+
   for (; i < len; ++ i){
     filename = path + filenames[i];
-    
+
     texture = gl.createTexture();
     textures.push(texture);
-    
+
     switch( this.getExtension(filename) ){
       case "sgi":
       case "rgba":
@@ -285,7 +285,7 @@ HG.Renderer.prototype.createTextures = function(path, filenames){
         break;
     }
   }
-  
+
   return textures;
 };
 
@@ -296,7 +296,7 @@ HG.Renderer.prototype.getExtension = function(filename){
   if (-1 !== position){
     extension = filename.substring(position + 1);
   }
-    
+
   return extension.toLowerCase();
 };
 
@@ -308,14 +308,14 @@ HG.Renderer.prototype.onSgiTextureLoaded = function(data, params){
       filterMode = pot? gl.LINEAR_MIPMAP_LINEAR: gl.LINEAR;
 
   gl.bindTexture(gl.TEXTURE_2D, params.texture);
-  
+
   gl.pixelStorei(gl.UNPACK_FLIP_Y_WEBGL, true);
   gl.pixelStorei(gl.UNPACK_PREMULTIPLY_ALPHA_WEBGL, false);
   gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MIN_FILTER, filterMode);
   gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MAG_FILTER, filterMode);
   gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_S, wrapMode);
   gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_T, wrapMode);
-  
+
   gl.texImage2D(gl.TEXTURE_2D, 0, gl.RGBA,
                 file.img.width, file.img.height, 0, gl.RGBA,
                 gl.UNSIGNED_BYTE, file.img.data);
@@ -330,30 +330,30 @@ HG.Renderer.prototype.onSgiTextureLoaded = function(data, params){
 HG.Renderer.prototype.loadTexture = function(filename, texture){
   var gl = this.gl, that = this, image = new Image(),
       pot, wrapMode, filterMode;
-  
+
   image.onload = function(){
     pot = that.isImagePowerOfTwo(image);
     wrapMode = pot? gl.REPEAT: gl.CLAMP_TO_EDGE;
     filterMode = pot? gl.LINEAR_MIPMAP_LINEAR: gl.LINEAR;
-  
+
     gl.bindTexture(gl.TEXTURE_2D, texture);
-    
+
     gl.pixelStorei(gl.UNPACK_FLIP_Y_WEBGL, true);
     gl.pixelStorei(gl.UNPACK_PREMULTIPLY_ALPHA_WEBGL, false);
     gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MIN_FILTER, filterMode);
     gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MAG_FILTER, filterMode);
     gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_S, wrapMode);
     gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_T, wrapMode);
-    
+
     gl.texImage2D(gl.TEXTURE_2D, 0, gl.RGBA, gl.RGBA, gl.UNSIGNED_BYTE, image);
-    
+
     if (filterMode === gl.LINEAR_MIPMAP_LINEAR){
       gl.generateMipmap(gl.TEXTURE_2D);
     }
 
     gl.bindTexture(gl.TEXTURE_2D, null);
   };
-  
+
   image.src = filename;
 };
 

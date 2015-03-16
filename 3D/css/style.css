@@ -7,12 +7,15 @@ html, body {
 #canvas {
   cursor:move;
   z-index: 10;
+  margin : 10px 10px 0px 10px;
+  border : 2px solid black;
+  display: none;
 }
 
 #details {
   position: absolute;
-  top: 45px;
-  left: 0px;
+  top: 55px;
+  left: 10px;
   overflow: hidden;
   display: block;
   padding: 10px;
@@ -32,6 +35,41 @@ html, body {
   font-size: 12px;
 }
 
+#close {
+  position: absolute;
+  top: 65px;
+  right: 20px;
+  display: none;
+  opacity : 0.5;
+}
+
+#close:hover {
+  opacity : 1.0;
+}
+
+#close img {
+  width: 50px;
+  height: 50px;
+}
+
+#text {
+  position: absolute;
+  bottom: 30px;
+  right: 10px;
+  margin-bottom: 90px;
+  padding: 10px;
+  overflow: hidden;
+  display: none;
+  color: #3f3f3f;
+  font-family: monospace;
+  font-weight:bold;
+  z-index: 2;
+}
+
+#text a{
+  color: #3f3f5f;
+}
+
 #gallery {
   position: absolute;
   bottom: 0px;
@@ -41,7 +79,6 @@ html, body {
   overflow: hidden;
   display: none;
   background-color: #ffffff;
-  opacity: 0.25;
   z-index: 1;
 }
 
@@ -56,24 +93,6 @@ html, body {
   border: 1px solid #3f3f5f;
   cursor: pointer;
   z-index: 2;
-}
-
-#text {
-  position: absolute;
-  bottom: 15px;
-  right: 0px;
-  margin-bottom: 90px;
-  padding: 10px;
-  overflow: hidden;
-  display: none;
-  color: #3f3f3f;
-  font-family: monospace;
-  font-weight:bold;
-  z-index: 2;
-}
-
-#text a{
-  color: #3f3f5f;
 }
 
 #loading {

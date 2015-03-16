@@ -242,8 +242,12 @@ var switchTo3DView = function($this)
 {
 	$('section#welcome').hide();
 	$('section#3D').show();
-	$('section#3D div#gallery').show();
+	$('section#3D canvas#canvas').show();
 	$('section#3D div#text').show();
+	$('section#3D div#close').show();
+	$('section#3D div#gallery').show();
+
+	toDisplay3D.length = 0;
 
 	$this.next().next().children().each(function()
 	{
@@ -304,6 +308,19 @@ var switchTo3DView = function($this)
 }
 
 
+var switchToLiveryView = function($this)
+{
+	$('section#3D').hide();
+	$('section#3D canvas#canvas').hide();
+	$('section#3D div#text').hide();
+	$('section#3D div#close').hide();
+	$('section#3D div#gallery').hide();
+	$('section#3D div#gallery').empty();
+	$('img.thumbnail').hide();
+	$('section#welcome').show();
+}
+
+
 // button handlers
 $('#byTypeBtn').click(function()
 {
@@ -325,6 +342,10 @@ $('#byAllBtn').click(function()
 	displayLiveriesByAll();
 });
 
+$('div#close img').click(function(e)
+{
+	switchToLiveryView($(this));
+});
 
 $(document).ready( function()
 {

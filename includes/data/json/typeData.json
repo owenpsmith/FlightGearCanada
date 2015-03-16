@@ -157,7 +157,7 @@
 			"modelName" : "DeHavilland Canada DHC-2 Beaver",
 			"author"    : "Syd Adams",
 			"modelPath" : "../3D/models/DHC-2.ac",
-			"setup"     : { "eye": [-25.0, -7.0, -25.0], "poi": [0.0, 0.5, 0.0], "up":[0.0, 1.0, 0.0], "fov": 11},
+			"setup"     : { "eye": [-25.0, -7.0, -25.0], "poi": [0.0, 0.0, 0.0], "up":[0.0, 1.0, 0.0], "fov": 11},
 			"canadian"  : true		
 		},
 		{
