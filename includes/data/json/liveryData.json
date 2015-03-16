@@ -53,6 +53,32 @@
 			"acDesc":  ""
 		},
 		{
+			"operator":"Royal Canadian Air Force",
+			"typeId":  "CF-100",
+			"author":  "Connor Toppings",
+			"updated": "2011-04-28",
+			"desc":    "black",
+			"thumb":   "http://liveries.flightgear.org/thumbs/nothumb.jpg",
+			"zip":     "included",
+			"texture": "../3D/textures/CF-100/black/",
+			"gear":    "",
+			"acLink":  "",
+			"acDesc":  ""
+		},
+		{
+			"operator":"Royal Canadian Air Force",
+			"typeId":  "CF-100",
+			"author":  "Connor Toppings",
+			"updated": "2011-04-28",
+			"desc":    "Low vis grey",
+			"thumb":   "http://liveries.flightgear.org/thumbs/nothumb.jpg",
+			"zip":     "included",
+			"texture": "../3D/textures/CF-100/loVis/",
+			"gear":    "",
+			"acLink":  "",
+			"acDesc":  ""
+		},
+		{
 			"operator":"Air Canada",
 			"typeId":  "B1900D",
 			"author":  "Cristian Marchi",

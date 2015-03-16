@@ -21,16 +21,16 @@
 		{
 			"id"        : "CF-100",
 			"modelName" : "Avro Canada CF-100 Canuck",
-			"author"    : "",
+			"author"    : "Connor Toppings",
 			"thumb"     : "http://liveries.flightgear.org/thumbs/nothumb.jpg",
-			"modelPath" : "",
-			"setup"     : "",
+			"modelPath" : "../3D/models/CF-100.ac",
+			"setup"     : { "eye": [-50.0, -14.0, -50.0], "poi": [9.0, 0.0, 0.0], "up":[0.0, 1.0, 0.0], "fov": 9},
 			"canadian"  : true		
 		},
 		{
 			"id"        : "CF-105",
 			"modelName" : "Avro Canada CF-105 Arrow",
-			"author"    : "",
+			"author"    : "Emmanuel Baranger",
 			"thumb"     : "http://liveries.flightgear.org/thumbs/nothumb.jpg",
 			"modelPath" : "",
 			"setup"     : "",
@@ -138,7 +138,7 @@
 		{
 			"id"        : "CRJ-200",
 			"modelName" : "Bombardier CRJ-200",
-			"author"    : "",
+			"author"    : "Joshua Wilson",
 			"thumb"     : "http://liveries.flightgear.org/thumbs/350.jpg",
 			"modelPath" : "",
 			"setup"     : "",
@@ -147,7 +147,7 @@
 		{
 			"id"        : "CRJ-700ER",
 			"modelName" : "Bombardier CRJ-700ER",
-			"author"    : "",
+			"author"    : "Ryan Miller",
 			"thumb"     : "http://liveries.flightgear.org/thumbs/734.jpg",
 			"modelPath" : "",
 			"setup"     : "",
@@ -165,7 +165,7 @@
 		{
 			"id"        : "DHC-1",
 			"modelName" : "DeHavilland Canada DHC-1 Chipmunk",
-			"author"    : "",
+			"author"    : "Emmanuel Baranger",
 			"thumb"     : "http://liveries.flightgear.org/thumbs/1032.jpg",
 			"modelPath" : "",
 			"setup"     : "",
@@ -192,7 +192,7 @@
 		{
 			"id"        : "DHC-4",
 			"modelName" : "DeHavilland Canada DHC-4 Caribou",
-			"author"    : "",
+			"author"    : "Emmanuel Baranger",
 			"thumb"     : "http://liveries.flightgear.org/thumbs/nothumb.jpg",
 			"modelPath" : "",
 			"setup"     : "",
@@ -210,7 +210,7 @@
 		{
 			"id"        : "DHC-8",
 			"modelName" : "DeHavilland Canada DHC-8 Dash 8",
-			"author"    : "",
+			"author"    : "Alex Park",
 			"thumb"     : "http://liveries.flightgear.org/thumbs/nothumb.jpg",
 			"modelPath" : "",
 			"setup"     : "",

@@ -13,9 +13,9 @@ var displayAircraft = function()
 
 		var thisTypeData = getDataForType(thisType);
 
-		typeHTML += "\t\t\t\t\t\t<li class=\"livery\"><img src=\"" + thisTypeData.thumb + "\" /><div>\n";
+		typeHTML += "\t\t\t\t\t\t<li class=\"livery\"><img src=\"" + thisTypeData.thumb    + "\" /><div>\n";
 //		typeHTML += "\t\t\t\t\t\t\t<p><b>Operator:</b>"            + thisOperator.operator + "</p>\n";
-		typeHTML += "\t\t\t\t\t\t\t<p><b>Author  :</b>"            + "thisTypeData.author"  + "</p>\n";
+		typeHTML += "\t\t\t\t\t\t\t<p><b>Author  :</b>"            + thisTypeData.author   + "</p>\n";
 //		typeHTML += "\t\t\t\t\t\t\t<p><b>Updated :</b>"            + thisOperator.updated  + "</p>\n";
 //		typeHTML += "\t\t\t\t\t\t\t<br>\n";
 //		typeHTML += "\t\t\t\t\t\t\t<a class=\"link\" href=\""      + thisOperator.zip + "\">Download</a>\n";
