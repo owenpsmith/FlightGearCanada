@@ -1,4 +1,5 @@
 var canvas;
+var context;
 var details;
 var loading;
 var viewer;
@@ -10,6 +11,7 @@ function load3D(modelsToLoad)
     models = modelsToLoad;
 
 	canvas = document.getElementById("canvas");
+    context = canvas.getContext('2d');
 	details = document.getElementById("details");
 	loading = document.getElementById("loading");
 	viewer = new HG.Viewer(canvas);
@@ -78,6 +80,7 @@ function onClick()
 
 function showModel(model)
 {
+	context.clearRect( 0 , 0 , canvas.width, canvas.height );
 	loading.style.display = "block";
 	updateHTML(model);
 
