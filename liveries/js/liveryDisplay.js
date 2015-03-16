@@ -18,7 +18,16 @@ var displayLiveriesByType = function()
 			liveryHTML += "\t\t\t\t\t\t\t<p><b>Author  :</b>"            + thisOperator.author   + "</p>\n";
 			liveryHTML += "\t\t\t\t\t\t\t<p><b>Updated :</b>"            + thisOperator.updated  + "</p>\n";
 			liveryHTML += "\t\t\t\t\t\t\t<br>\n";
-			liveryHTML += "\t\t\t\t\t\t\t<a class=\"link\" href=\""      + thisOperator.zip + "\">Download</a>\n";
+			
+			if (thisOperator.zip == "included")
+			{
+				liveryHTML += "\t\t\t\t\t\t\t<p><b>Included with aircraft</b></p>\n";
+			}
+			else
+			{
+				liveryHTML += "\t\t\t\t\t\t\t<a class=\"link\" href=\""      + thisOperator.zip + "\">Download</a>\n";
+			}
+			
 			liveryHTML += "\t\t\t\t\t\t</div>\n";
 
 			// data for generating 3D gallery upon selection
