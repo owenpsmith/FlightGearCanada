@@ -61,14 +61,14 @@ function onClick()
 		if (models[selected].modelPath == models[current].modelPath)
 		{
 			// same aircraft, just refresh livery
-			viewer.newLiveryPath(models[selected].liveryPath);
+			showLivery(models[selected]);
 		}
 		else
 		{
 			// refresh all
 			showModel(models[selected]);
 		}
-		
+
 		current = selected;
 		this.setAttribute("class", "thumbnail selected");
 	}
@@ -77,17 +77,29 @@ function onClick()
 
 function showModel(model)
 {
-	var infoHTML = "";
 	loading.style.display = "block";
+	updateHTML(model);
+
+    var params = {callback: onLoaded, texturePath: model.liveryPath, setup: model.setup};
+	viewer.show(model.modelPath, params);
+};
+
+function showLivery(model)
+{
+	updateHTML(model);
+
+	viewer.newLiveryPath(model.liveryPath);
+};
+
+function updateHTML(model)
+{
+	var infoHTML = "";
 
 	infoHTML += "<p id='name'>"         + model.acName + " - " + model.operator  + "</p>\n";
 	infoHTML += "<p id='modelAuthor'>"  + "Model by "          + model.modAuthor + "</p>\n";
 	infoHTML += "<p id='liveryAuthor'>" + "Livery by "         + model.livAuthor + "</p>\n";
 
 	details.innerHTML = infoHTML;
-
-    var params = {callback: onLoaded, texturePath: model.liveryPath, setup: model.setup};
-	viewer.show(model.modelPath, params);
 };
 
 function onLoaded()
