@@ -163,9 +163,9 @@
 		{
 			"id"        : "DHC-3",
 			"modelName" : "DeHavilland Canada DHC-3 Otter",
-			"author"    : "",
-			"modelPath" : "",
-			"setup"     : "",
+			"author"    : "Emmanuel Baranger",
+			"modelPath" : "../3D/models/DHC-3.ac",
+			"setup"     : { "eye": [-25.0, -7.0, -25.0], "poi": [0.0, 0.0, 0.0], "up":[0.0, 1.0, 0.0], "fov": 13},
 			"canadian"  : true		
 		},
 		{
