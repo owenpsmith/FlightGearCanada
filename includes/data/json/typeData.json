@@ -17,12 +17,28 @@
 			"canadian"  : false		
 		},
 		{
+			"id"        : "CF-100",
+			"modelName" : "Avro Canada CF-100 Canuck",
+			"author"    : "",
+			"modelPath" : "",
+			"setup"     : "",
+			"canadian"  : true		
+		},
+		{
+			"id"        : "CF-105",
+			"modelName" : "Avro Canada CF-105 Arrow",
+			"author"    : "",
+			"modelPath" : "",
+			"setup"     : "",
+			"canadian"  : true		
+		},
+		{
 			"id"        : "B1900D",
 			"modelName" : "Beechcraft B1900D",
 			"author"    : "",
 			"modelPath" : "",
 			"setup"     : "",
-			"canadian"  : false		
+			"canadian"  : true		
 		},
 		{
 			"id"        : "T-6-II",
@@ -121,8 +137,8 @@
 			"canadian"  : true		
 		},
 		{
-			"id"        : "CL-215",
-			"modelName" : "Canadair CL-215",
+			"id"        : "CL-415",
+			"modelName" : "Canadair CL-415",
 			"author"    : "",
 			"modelPath" : "",
 			"setup"     : "",
@@ -139,9 +155,9 @@
 		{
 			"id"        : "DHC-2",
 			"modelName" : "DeHavilland Canada DHC-2 Beaver",
-			"author"    : "",
-			"modelPath" : "",
-			"setup"     : "",
+			"author"    : "Syd Adams",
+			"modelPath" : "../3D/models/DHC-2.ac",
+			"setup"     : { "eye": [-25.0, -7.0, -25.0], "poi": [0.0, 0.5, 0.0], "up":[0.0, 1.0, 0.0], "fov": 11},
 			"canadian"  : true		
 		},
 		{
