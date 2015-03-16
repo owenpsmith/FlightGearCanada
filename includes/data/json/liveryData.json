@@ -456,7 +456,7 @@
 			"acDesc":  ""
 		},
 		{
-			"operator":"zz_Other",
+			"operator":"other",
 			"typeId":  "DHC-2",
 			"author":  "Brett Harrison",
 			"updated": "2010-04-10",

@@ -62,7 +62,8 @@ function loadLiveryData(dataLoadedCallback)
 				{
 					liveryTypeIndex.push(val.modelName);
 				}
-				if (operatorIndex.indexOf(val.operator) == -1)
+				if ((operatorIndex.indexOf(val.operator) == -1) &&
+				    (val.operator != "other"))
 				{
 					operatorIndex.push(val.operator);
 				}
@@ -76,9 +77,13 @@ function loadLiveryData(dataLoadedCallback)
 			liveryTypeIndex.sort(function (a, b) {
 				return a.toLowerCase().localeCompare(b.toLowerCase());
 			});
+			
 			operatorIndex.sort(function (a, b) {
 				return a.toLowerCase().localeCompare(b.toLowerCase());
 			});
+			// we want "other" to be at the end of the list for display
+			operatorIndex.push("other");
+			
 			authorIndex.sort(function (a, b) {
 				return a.toLowerCase().localeCompare(b.toLowerCase());
 			});

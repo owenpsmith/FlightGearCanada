@@ -4,6 +4,7 @@
 			"id"        : "A320",
 			"modelName" : "Airbus A320",
 			"author"    : "",
+			"thumb"     : "http://liveries.flightgear.org/thumbs/nothumb.jpg",
 			"modelPath" : "",
 			"setup"     : "",
 			"canadian"  : false		
@@ -12,6 +13,7 @@
 			"id"        : "A330-343",
 			"modelName" : "Airbus A330-343",
 			"author"    : "",
+			"thumb"     : "http://liveries.flightgear.org/thumbs/nothumb.jpg",
 			"modelPath" : "",
 			"setup"     : "",
 			"canadian"  : false		
@@ -20,6 +22,7 @@
 			"id"        : "CF-100",
 			"modelName" : "Avro Canada CF-100 Canuck",
 			"author"    : "",
+			"thumb"     : "http://liveries.flightgear.org/thumbs/nothumb.jpg",
 			"modelPath" : "",
 			"setup"     : "",
 			"canadian"  : true		
@@ -28,6 +31,7 @@
 			"id"        : "CF-105",
 			"modelName" : "Avro Canada CF-105 Arrow",
 			"author"    : "",
+			"thumb"     : "http://liveries.flightgear.org/thumbs/nothumb.jpg",
 			"modelPath" : "",
 			"setup"     : "",
 			"canadian"  : true		
@@ -36,14 +40,16 @@
 			"id"        : "B1900D",
 			"modelName" : "Beechcraft B1900D",
 			"author"    : "",
+			"thumb"     : "http://liveries.flightgear.org/thumbs/nothumb.jpg",
 			"modelPath" : "",
 			"setup"     : "",
-			"canadian"  : true		
+			"canadian"  : false		
 		},
 		{
 			"id"        : "T-6-II",
 			"modelName" : "Beechcraft T-6 Texan II",
 			"author"    : "",
+			"thumb"     : "http://liveries.flightgear.org/thumbs/nothumb.jpg",
 			"modelPath" : "",
 			"setup"     : "",
 			"canadian"  : false		
@@ -52,6 +58,7 @@
 			"id"        : "UH-1",
 			"modelName" : "Bell UH-1",
 			"author"    : "",
+			"thumb"     : "http://liveries.flightgear.org/thumbs/nothumb.jpg",
 			"modelPath" : "",
 			"setup"     : "",
 			"canadian"  : false		
@@ -60,6 +67,7 @@
 			"id"        : "707",
 			"modelName" : "Boeing 707",
 			"author"    : "",
+			"thumb"     : "http://liveries.flightgear.org/thumbs/nothumb.jpg",
 			"modelPath" : "",
 			"setup"     : "",
 			"canadian"  : false		
@@ -68,6 +76,7 @@
 			"id"        : "737-200",
 			"modelName" : "Boeing 737-200",
 			"author"    : "",
+			"thumb"     : "http://liveries.flightgear.org/thumbs/nothumb.jpg",
 			"modelPath" : "",
 			"setup"     : "",
 			"canadian"  : false		
@@ -76,6 +85,7 @@
 			"id"        : "737-800",
 			"modelName" : "Boeing 737-800",
 			"author"    : "",
+			"thumb"     : "http://liveries.flightgear.org/thumbs/nothumb.jpg",
 			"modelPath" : "",
 			"setup"     : "",
 			"canadian"  : false		
@@ -84,6 +94,7 @@
 			"id"        : "747-400",
 			"modelName" : "Boeing 747-400",
 			"author"    : "",
+			"thumb"     : "http://liveries.flightgear.org/thumbs/nothumb.jpg",
 			"modelPath" : "",
 			"setup"     : "",
 			"canadian"  : false		
@@ -92,6 +103,7 @@
 			"id"        : "767-300",
 			"modelName" : "Boeing 767-300",
 			"author"    : "",
+			"thumb"     : "http://liveries.flightgear.org/thumbs/nothumb.jpg",
 			"modelPath" : "",
 			"setup"     : "",
 			"canadian"  : false		
@@ -100,6 +112,7 @@
 			"id"        : "777-200LR",
 			"modelName" : "Boeing 777-200LR",
 			"author"    : "",
+			"thumb"     : "http://liveries.flightgear.org/thumbs/nothumb.jpg",
 			"modelPath" : "",
 			"setup"     : "",
 			"canadian"  : false		
@@ -108,6 +121,7 @@
 			"id"        : "787",
 			"modelName" : "Boeing 787",
 			"author"    : "",
+			"thumb"     : "http://liveries.flightgear.org/thumbs/nothumb.jpg",
 			"modelPath" : "",
 			"setup"     : "",
 			"canadian"  : false		
@@ -116,6 +130,7 @@
 			"id"        : "C-17",
 			"modelName" : "Boeing C-17",
 			"author"    : "",
+			"thumb"     : "http://liveries.flightgear.org/thumbs/nothumb.jpg",
 			"modelPath" : "",
 			"setup"     : "",
 			"canadian"  : false		
@@ -124,6 +139,7 @@
 			"id"        : "CRJ-200",
 			"modelName" : "Bombardier CRJ-200",
 			"author"    : "",
+			"thumb"     : "http://liveries.flightgear.org/thumbs/350.jpg",
 			"modelPath" : "",
 			"setup"     : "",
 			"canadian"  : true		
@@ -132,6 +148,7 @@
 			"id"        : "CRJ-700ER",
 			"modelName" : "Bombardier CRJ-700ER",
 			"author"    : "",
+			"thumb"     : "http://liveries.flightgear.org/thumbs/734.jpg",
 			"modelPath" : "",
 			"setup"     : "",
 			"canadian"  : true		
@@ -140,6 +157,7 @@
 			"id"        : "CL-415",
 			"modelName" : "Canadair CL-415",
 			"author"    : "Emmanuel Baranger",
+			"thumb"     : "http://liveries.flightgear.org/thumbs/nothumb.jpg",
 			"modelPath" : "../3D/models/CL-415.ac",
 			"setup"     : { "eye": [-50.0, -14.0, -50.0], "poi": [0.0, 0.0, 0.0], "up":[0.0, 1.0, 0.0], "fov": 10},
 			"canadian"  : true		
@@ -148,6 +166,7 @@
 			"id"        : "DHC-1",
 			"modelName" : "DeHavilland Canada DHC-1 Chipmunk",
 			"author"    : "",
+			"thumb"     : "http://liveries.flightgear.org/thumbs/1032.jpg",
 			"modelPath" : "",
 			"setup"     : "",
 			"canadian"  : true		
@@ -156,6 +175,7 @@
 			"id"        : "DHC-2",
 			"modelName" : "DeHavilland Canada DHC-2 Beaver",
 			"author"    : "Syd Adams",
+			"thumb"     : "http://liveries.flightgear.org/thumbs/196.jpg",
 			"modelPath" : "../3D/models/DHC-2.ac",
 			"setup"     : { "eye": [-25.0, -7.0, -25.0], "poi": [1.5, 0.0, 0.0], "up":[0.0, 1.0, 0.0], "fov": 11},
 			"canadian"  : true		
@@ -164,6 +184,7 @@
 			"id"        : "DHC-3",
 			"modelName" : "DeHavilland Canada DHC-3 Otter",
 			"author"    : "Emmanuel Baranger",
+			"thumb"     : "../liveries/downloads/DHC-3_RCAF_Rescue_thumb.jpg",
 			"modelPath" : "../3D/models/DHC-3.ac",
 			"setup"     : { "eye": [-25.0, -7.0, -25.0], "poi": [0.0, 0.0, 0.0], "up":[0.0, 1.0, 0.0], "fov": 13},
 			"canadian"  : true		
@@ -172,6 +193,7 @@
 			"id"        : "DHC-4",
 			"modelName" : "DeHavilland Canada DHC-4 Caribou",
 			"author"    : "",
+			"thumb"     : "http://liveries.flightgear.org/thumbs/nothumb.jpg",
 			"modelPath" : "",
 			"setup"     : "",
 			"canadian"  : true		
@@ -180,6 +202,7 @@
 			"id"        : "DHC-6",
 			"modelName" : "DeHavilland Canada DHC-6 Twin Otter",
 			"author"    : "Syd Adams",
+			"thumb"     : "http://liveries.flightgear.org/thumbs/444.jpg",
 			"modelPath" : "../3D/models/DHC-6.ac",
 			"setup"     : { "eye": [-25.0, -7.0, -25.0], "poi": [1.0, 0.5, 0.0], "up":[0.0, 1.0, 0.0], "fov": 14},
 			"canadian"  : true
@@ -188,6 +211,7 @@
 			"id"        : "DHC-8",
 			"modelName" : "DeHavilland Canada DHC-8 Dash 8",
 			"author"    : "",
+			"thumb"     : "http://liveries.flightgear.org/thumbs/nothumb.jpg",
 			"modelPath" : "",
 			"setup"     : "",
 			"canadian"  : true		
@@ -196,6 +220,7 @@
 			"id"        : "DC-3",
 			"modelName" : "Douglas DC-3",
 			"author"    : "Emmanuel Baranger",
+			"thumb"     : "http://liveries.flightgear.org/thumbs/nothumb.jpg",
 			"modelPath" : "../3D/models/DC-3.ac",
 			"setup"     : { "eye": [-36.0, -1.0, -22.0], "poi": [0.0, 0.0, 0.0], "up":[0.0, 1.0, 0.0], "fov": 15},
 			"canadian"  : false		
@@ -204,6 +229,7 @@
 			"id"        : "DC-10-30",
 			"modelName" : "Douglas DC-10-30",
 			"author"    : "",
+			"thumb"     : "http://liveries.flightgear.org/thumbs/nothumb.jpg",
 			"modelPath" : "",
 			"setup"     : "",
 			"canadian"  : false		
@@ -212,6 +238,7 @@
 			"id"        : "ERJ-190",
 			"modelName" : "Embraer ERJ-190",
 			"author"    : "",
+			"thumb"     : "http://liveries.flightgear.org/thumbs/nothumb.jpg",
 			"modelPath" : "",
 			"setup"     : "",
 			"canadian"  : false		
@@ -220,6 +247,7 @@
 			"id"        : "G-21",
 			"modelName" : "Grumman G-21 Goose",
 			"author"    : "",
+			"thumb"     : "http://liveries.flightgear.org/thumbs/nothumb.jpg",
 			"modelPath" : "",
 			"setup"     : "",
 			"canadian"  : false		
@@ -228,6 +256,7 @@
 			"id"        : "F-104",
 			"modelName" : "Lockheed F-104 Starfighter",
 			"author"    : "",
+			"thumb"     : "http://liveries.flightgear.org/thumbs/nothumb.jpg",
 			"modelPath" : "",
 			"setup"     : "",
 			"canadian"  : false		
@@ -236,6 +265,7 @@
 			"id"        : "T-6",
 			"modelName" : "North American T-6 Texan",
 			"author"    : "",
+			"thumb"     : "http://liveries.flightgear.org/thumbs/nothumb.jpg",
 			"modelPath" : "",
 			"setup"     : "",
 			"canadian"  : false		
@@ -244,6 +274,7 @@
 			"id"        : "S.E.5",
 			"modelName" : "Royal Aircraft Factory S.E.5",
 			"author"    : "",
+			"thumb"     : "http://liveries.flightgear.org/thumbs/nothumb.jpg",
 			"modelPath" : "",
 			"setup"     : "",
 			"canadian"  : false		
