@@ -8,7 +8,7 @@ name "aileronD"
 loc -0.053576 -0.548195 -11.4006
 data 8
 aileronD
-texture "texture.png"
+texture "livery.png"
 crease 30.000002
 numvert 30
 -0.339925 0.108617 -2.30635
@@ -314,7 +314,7 @@ name "aileronG"
 loc -0.053576 -0.548195 11.4006
 data 8
 aileronG
-texture "texture.png"
+texture "livery.png"
 crease 30.000002
 numvert 30
 -0.339925 0.108617 2.30635
@@ -620,7 +620,7 @@ name "ailes"
 loc -1.6227 -0.300038 0
 data 5
 ailes
-texture "texture.png"
+texture "livery.png"
 crease 30.000002
 numvert 618
 0.992582 -0.371051 8.29727
@@ -5750,7 +5750,7 @@ name "axeA"
 loc -8.25966 -3.66443 0
 data 4
 axeA
-texture "texture.png"
+texture "livery.png"
 crease 30.000002
 numvert 34
 0.0455818 0.583698 0.045582
@@ -6098,7 +6098,7 @@ name "axeD1"
 loc -1.12001 -3.70204 -2.22495
 data 5
 axeD1
-texture "texture.png"
+texture "livery.png"
 crease 30.000002
 numvert 98
 0.0188299 -0.276989 -0.164354
@@ -6926,7 +6926,7 @@ name "axeD2"
 loc -1.113 -3.338 -2.067
 data 5
 axeD2
-texture "texture.png"
+texture "livery.png"
 crease 30.000002
 numvert 651
 -0.132345 0.254062 0.129997
@@ -12819,7 +12819,7 @@ name "axeD3"
 loc -1.12006 -2.7189 -1.70033
 data 5
 axeD3
-texture "texture.png"
+texture "livery.png"
 crease 30.000002
 numvert 146
 -7.03335e-006 -0.258475 -0.152168
@@ -14183,7 +14183,7 @@ name "axeD4"
 loc -1.12191 -2.00688 -1.26538
 data 5
 axeD4
-texture "texture.png"
+texture "livery.png"
 crease 30.000002
 numvert 34
 0.0111639 -0.402648 -0.248955
@@ -14531,7 +14531,7 @@ name "axeG1"
 loc -1.12001 -3.70204 2.22495
 data 5
 axeG1
-texture "texture.png"
+texture "livery.png"
 crease 30.000002
 numvert 98
 0.018829 -0.276989 0.164354
@@ -15359,7 +15359,7 @@ name "axeG2"
 loc -1.12171 -3.338 2.067
 data 5
 axeG2
-texture "texture.png"
+texture "livery.png"
 crease 30.000002
 numvert 651
 -0.141053 0.254062 -0.129997
@@ -21252,7 +21252,7 @@ name "axeG3"
 loc -1.12006 -2.7189 1.70033
 data 5
 axeG3
-texture "texture.png"
+texture "livery.png"
 crease 30.000002
 numvert 146
 -5.96046e-006 -0.258475 0.152168
@@ -22616,7 +22616,7 @@ name "axeG4"
 loc -1.12191 -2.00688 1.26538
 data 5
 axeG4
-texture "texture.png"
+texture "livery.png"
 crease 30.000002
 numvert 34
 0.0111639 -0.402648 0.248955
@@ -22964,7 +22964,7 @@ name "bolD"
 loc -5.45118 0.261698 -3.4096
 data 4
 bolD
-texture "texture.png"
+texture "livery.png"
 crease 30.000002
 numvert 225
 -0.341642 0 0
@@ -24735,7 +24735,7 @@ name "bolG"
 loc -5.45118 0.261698 3.4096
 data 4
 bolG
-texture "texture.png"
+texture "livery.png"
 crease 30.000002
 numvert 225
 -0.341641 0 0
@@ -26506,7 +26506,7 @@ name "derive"
 loc 7.06698 1.02068 0
 data 6
 derive
-texture "texture.png"
+texture "livery.png"
 crease 30.000002
 numvert 108
 -0.222281 0.164889 -5.18471
@@ -27204,7 +27204,7 @@ name "derive2"
 loc 7.07159 0.975243 0
 data 7
 derive2
-texture "texture.png"
+texture "livery.png"
 crease 30.000002
 numvert 92
 1.23652 1.28005 2.09607
@@ -27962,7 +27962,7 @@ name "direction"
 loc 8.87975 1.82821 0
 data 9
 direction
-texture "texture.png"
+texture "livery.png"
 crease 30.000002
 numvert 97
 -0.37665 2.52394 0.015787
@@ -28849,7 +28849,7 @@ name "flotteurD"
 loc -1.93483 -1.60492 -13.2075
 data 9
 flotteurD
-texture "texture.png"
+texture "livery.png"
 crease 30.000002
 numvert 438
 -0.047739 -0.413977 0.413697
@@ -32443,7 +32443,7 @@ name "flotteurG"
 loc -1.93483 -1.60492 13.2075
 data 9
 flotteurG
-texture "texture.png"
+texture "livery.png"
 crease 30.000002
 numvert 438
 -0.047739 -0.413975 -0.413697
@@ -36037,7 +36037,7 @@ name "fuselage"
 loc -0.228802 0.181925 0
 data 8
 fuselage
-texture "texture.png"
+texture "livery.png"
 crease 30.000002
 numvert 1368
 5.27048 0.852885 0.086276
@@ -47257,7 +47257,7 @@ name "heliceD"
 loc -5.25479 0.261999 -3.41217
 data 7
 heliceD
-texture "texture.png"
+texture "livery.png"
 crease 30.000002
 numvert 48
 -0.080451 0.000234991 -0.0271211
@@ -47715,7 +47715,7 @@ name "heliceG"
 loc -5.25479 0.261999 3.41
 data 7
 heliceG
-texture "texture.png"
+texture "livery.png"
 crease 30.000002
 numvert 48
 -0.080451 0.000234991 -0.0271201
@@ -48173,7 +48173,7 @@ name "moteurs"
 loc -2.60476 -0.005005 0
 data 7
 moteurs
-texture "texture.png"
+texture "livery.png"
 crease 30.000002
 numvert 1990
 -2.50478 0.507022 3.64992
@@ -63753,7 +63753,7 @@ name "parapD1"
 loc -1.07762 -3.38404 -1.5385
 data 7
 parapD1
-texture "texture.png"
+texture "livery.png"
 crease 30.000002
 numvert 96
 -0.391765 0.204841 0.424006
@@ -64495,7 +64495,7 @@ name "parapD2"
 loc -1.07762 -2.88983 -1.51206
 data 7
 parapD2
-texture "texture.png"
+texture "livery.png"
 crease 30.000002
 numvert 232
 -0.381678 0.212611 0.437162
@@ -66277,7 +66277,7 @@ name "parapG1"
 loc -1.07762 -3.38404 1.5385
 data 7
 parapG1
-texture "texture.png"
+texture "livery.png"
 crease 30.000002
 numvert 96
 -0.391765 0.204841 -0.424006
@@ -67019,7 +67019,7 @@ name "parapG2"
 loc -1.07762 -2.88983 1.51206
 data 7
 parapG2
-texture "texture.png"
+texture "livery.png"
 crease 30.000002
 numvert 232
 -0.381678 0.212611 -0.437161
@@ -68801,7 +68801,7 @@ name "porteD"
 loc -7.59505 -3.70191 -0.181607
 data 6
 porteD
-texture "texture.png"
+texture "livery.png"
 crease 30.000002
 numvert 30
 -0.369371 0.100144 -0.181607
@@ -69037,7 +69037,7 @@ name "porteG"
 loc -7.59505 -3.70191 0.181606
 data 6
 porteG
-texture "texture.png"
+texture "livery.png"
 crease 30.000002
 numvert 30
 -0.369371 0.100144 0.181607
@@ -69273,7 +69273,7 @@ name "profondeur"
 loc 8.2573 1.02068 0
 data 10
 profondeur
-texture "texture.png"
+texture "livery.png"
 crease 30.000002
 numvert 176
 -0.189464 0.143584 4.1914
@@ -70863,7 +70863,7 @@ name "roueA"
 loc -8.25966 -4.21935 0
 data 5
 roueA
-texture "texture.png"
+texture "livery.png"
 crease 30.000002
 numvert 1604
 0.16265 0.163624 0.222015
@@ -83997,7 +83997,7 @@ name "roueD"
 loc -1.12001 -3.99785 -2.384
 data 5
 roueD
-texture "texture.png"
+texture "livery.png"
 crease 30.000002
 numvert 802
 0.309265 0.311116 0.116334
@@ -90569,7 +90569,7 @@ name "roueG"
 loc -1.12001 -3.99785 2.384
 data 5
 roueG
-texture "texture.png"
+texture "livery.png"
 crease 30.000002
 numvert 802
 0.309265 0.311116 0.116334
@@ -97141,7 +97141,7 @@ name "surailes"
 loc -1.84982 -0.214424 0
 data 8
 surailes
-texture "texture.png"
+texture "livery.png"
 crease 30.000002
 numvert 114
 -0.314516 0.004673 8.13197
@@ -97881,7 +97881,7 @@ name "trappeD"
 loc -1.07736 -3.25283 -1.31934
 data 7
 trappeD
-texture "texture.png"
+texture "livery.png"
 crease 30.000002
 numvert 8
 -0.3861 -0.249414 -0.00503504
@@ -97941,7 +97941,7 @@ name "trappeG"
 loc -1.07736 -3.25283 1.31934
 data 7
 trappeG
-texture "texture.png"
+texture "livery.png"
 crease 30.000002
 numvert 8
 -0.3861 -0.249414 0.005036
@@ -98001,7 +98001,7 @@ name "trous"
 loc 0.478814 0.184104 1e-006
 data 5
 trous
-texture "texture.png"
+texture "livery.png"
 crease 30.000002
 numvert 978
 -5.52116 -0.467341 -3.51568
@@ -105504,7 +105504,7 @@ name "voletD"
 loc -0.343796 -0.834372 -5.1893
 data 6
 voletD
-texture "texture.png"
+texture "livery.png"
 crease 30.000002
 numvert 294
 -0.06256 0.1868 3.12918
@@ -107798,7 +107798,7 @@ name "voletG"
 loc -0.343796 -0.834372 5.1893
 data 6
 voletG
-texture "texture.png"
+texture "livery.png"
 crease 30.000002
 numvert 294
 -0.06256 0.1868 -3.12918

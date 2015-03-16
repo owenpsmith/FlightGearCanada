@@ -139,9 +139,9 @@
 		{
 			"id"        : "CL-415",
 			"modelName" : "Canadair CL-415",
-			"author"    : "",
-			"modelPath" : "",
-			"setup"     : "",
+			"author"    : "Emmanuel Baranger",
+			"modelPath" : "../3D/models/CL-415.ac",
+			"setup"     : { "eye": [-50.0, -14.0, -50.0], "poi": [0.0, 0.0, 0.0], "up":[0.0, 1.0, 0.0], "fov": 10},
 			"canadian"  : true		
 		},
 		{
