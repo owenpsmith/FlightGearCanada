@@ -23,7 +23,7 @@
 			"modelName" : "Avro Canada CF-100 Canuck",
 			"author"    : "Connor Toppings",
 			"thumb"     : "http://liveries.flightgear.org/thumbs/nothumb.jpg",
-			"modelPath" : "../3D/models/CF-100.ac",
+			"modelPath" : "../data/aircraft/CF-100/CF-100.ac",
 			"setup"     : { "eye": [-50.0, -14.0, -50.0], "poi": [9.0, 0.0, 0.0], "up":[0.0, 1.0, 0.0], "fov": 7},
 			"canadian"  : true		
 		},
@@ -39,10 +39,10 @@
 		{
 			"id"        : "B1900D",
 			"modelName" : "Beechcraft B1900D",
-			"author"    : "",
+			"author"    : "unknown",
 			"thumb"     : "http://liveries.flightgear.org/thumbs/nothumb.jpg",
-			"modelPath" : "",
-			"setup"     : "",
+			"modelPath" : "../data/aircraft/B1900D/B1900D.ac",
+			"setup"     : { "eye": [-50.0, -14.0, -50.0], "poi": [1.5, 0.0, 0.0], "up":[0.0, 1.0, 0.0], "fov": 9.0},
 			"canadian"  : false		
 		},
 		{
@@ -158,7 +158,7 @@
 			"modelName" : "Canadair CL-415",
 			"author"    : "Emmanuel Baranger",
 			"thumb"     : "http://liveries.flightgear.org/thumbs/nothumb.jpg",
-			"modelPath" : "../3D/models/CL-415.ac",
+			"modelPath" : "../data/aircraft/CL-415/CL-415.ac",
 			"setup"     : { "eye": [-50.0, -14.0, -50.0], "poi": [0.0, 0.0, 0.0], "up":[0.0, 1.0, 0.0], "fov": 10},
 			"canadian"  : true		
 		},
@@ -176,7 +176,7 @@
 			"modelName" : "DeHavilland Canada DHC-2 Beaver",
 			"author"    : "Syd Adams",
 			"thumb"     : "http://liveries.flightgear.org/thumbs/196.jpg",
-			"modelPath" : "../3D/models/DHC-2.ac",
+			"modelPath" : "../data/aircraft/DHC-2/DHC-2.ac",
 			"setup"     : { "eye": [-25.0, -7.0, -25.0], "poi": [1.5, 0.0, 0.0], "up":[0.0, 1.0, 0.0], "fov": 11},
 			"canadian"  : true		
 		},
@@ -185,7 +185,7 @@
 			"modelName" : "DeHavilland Canada DHC-3 Otter",
 			"author"    : "Emmanuel Baranger",
 			"thumb"     : "../data/aircraft/DHC-3/thumbs/DHC-3_RCAF_Rescue_thumb.jpg",
-			"modelPath" : "../3D/models/DHC-3.ac",
+			"modelPath" : "../data/aircraft/DHC-3/DHC-3.ac",
 			"setup"     : { "eye": [-25.0, -7.0, -25.0], "poi": [0.0, 0.0, 0.0], "up":[0.0, 1.0, 0.0], "fov": 13},
 			"canadian"  : true		
 		},
@@ -203,7 +203,7 @@
 			"modelName" : "DeHavilland Canada DHC-6 Twin Otter",
 			"author"    : "Syd Adams",
 			"thumb"     : "http://liveries.flightgear.org/thumbs/444.jpg",
-			"modelPath" : "../3D/models/DHC-6.ac",
+			"modelPath" : "../data/aircraft/DHC-6/DHC-6.ac",
 			"setup"     : { "eye": [-25.0, -7.0, -25.0], "poi": [1.0, 0.5, 0.0], "up":[0.0, 1.0, 0.0], "fov": 14},
 			"canadian"  : true
 		},
@@ -221,7 +221,7 @@
 			"modelName" : "Douglas DC-3",
 			"author"    : "Emmanuel Baranger",
 			"thumb"     : "http://liveries.flightgear.org/thumbs/nothumb.jpg",
-			"modelPath" : "../3D/models/DC-3.ac",
+			"modelPath" : "../data/aircraft/DC-3/DC-3.ac",
 			"setup"     : { "eye": [-36.0, -1.0, -22.0], "poi": [0.0, 0.0, 0.0], "up":[0.0, 1.0, 0.0], "fov": 15},
 			"canadian"  : false		
 		},

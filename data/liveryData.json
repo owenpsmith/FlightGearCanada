@@ -86,7 +86,7 @@
 			"desc":    "Air Alliance - C-GORC",
 			"thumb":   "http://liveries.flightgear.org/thumbs/603.jpg",
 			"zip":     "http://liveries.flightgear.org/download/Beechcraft/B1900D/C-GORC.zip",
-			"texture": "",
+			"texture": "../data/aircraft/B1900D/textures/C-GORC/",
 			"gear":    "",
 			"acLink":  "",
 			"acDesc":  ""
@@ -99,7 +99,7 @@
 			"desc":    "Air Alliance - C-GHGA",
 			"thumb":   "http://liveries.flightgear.org/thumbs/692.jpg",
 			"zip":     "http://liveries.flightgear.org/download/Beechcraft/B1900D/C-GHGA.zip",
-			"texture": "",
+			"texture": "../data/aircraft/B1900D/textures/C-GHGA/",
 			"gear":    "",
 			"acLink":  "",
 			"acDesc":  ""
@@ -112,7 +112,7 @@
 			"desc":    "Air Alliance - C-GAAS",
 			"thumb":   "http://liveries.flightgear.org/thumbs/694.jpg",
 			"zip":     "http://liveries.flightgear.org/download/Beechcraft/B1900D/C-GAAS.zip",
-			"texture": "",
+			"texture": "../data/aircraft/B1900D/textures/C-GAAS/",
 			"gear":    "",
 			"acLink":  "",
 			"acDesc":  ""
@@ -125,7 +125,7 @@
 			"desc":    "Air Alliance",
 			"thumb":   "http://liveries.flightgear.org/thumbs/230.jpg",
 			"zip":     "http://liveries.flightgear.org/download/Beechcraft/B1900D/AAQ.zip",
-			"texture": "",
+			"texture": "../data/aircraft/B1900D/textures/AAQ/",
 			"gear":    "",
 			"acLink":  "",
 			"acDesc":  ""
@@ -138,7 +138,7 @@
 			"desc":    "",
 			"thumb":   "http://liveries.flightgear.org/thumbs/319.jpg",
 			"zip":     "http://liveries.flightgear.org/download/Beechcraft/B1900D/LAL.zip",
-			"texture": "",
+			"texture": "../data/aircraft/B1900D/textures/LAL/",
 			"gear":    "",
 			"acLink":  "",
 			"acDesc":  ""
@@ -151,7 +151,7 @@
 			"desc":    "",
 			"thumb":   "http://liveries.flightgear.org/thumbs/604.jpg",
 			"zip":     "http://liveries.flightgear.org/download/Beechcraft/B1900D/GLR.zip",
-			"texture": "",
+			"texture": "../data/aircraft/B1900D/textures/GLR/",
 			"gear":    "",
 			"acLink":  "",
 			"acDesc":  ""
@@ -164,7 +164,7 @@
 			"desc":    "",
 			"thumb":   "http://liveries.flightgear.org/thumbs/687.jpg",
 			"zip":     "http://liveries.flightgear.org/download/Beechcraft/B1900D/NTA.zip",
-			"texture": "",
+			"texture": "../data/aircraft/B1900D/textures/NTA/",
 			"gear":    "",
 			"acLink":  "",
 			"acDesc":  ""
