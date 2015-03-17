@@ -45,7 +45,7 @@ function loadLiveryData(dataLoadedCallback)
 		});
 
 		// load livery data
-		$.getJSON( "../includes/data/json/liveryData.json", function(liveryData)
+		$.getJSON( "../data/liveryData.json", function(liveryData)
 		{
 			liveries = liveryData.liveries;
 

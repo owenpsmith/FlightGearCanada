@@ -5,7 +5,7 @@ var canadianTypeIndex = [];
 function loadTypeData(dataLoadedCallback)
 {
 	// load aircraft type data
-	$.getJSON( "../includes/data/json/typeData.json", function(newTypeData)
+	$.getJSON( "../data/typeData.json", function(newTypeData)
 	{
 		typeData = newTypeData.types
 		dataLoadedCallback(typeData);
