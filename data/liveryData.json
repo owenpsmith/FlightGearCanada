@@ -209,6 +209,19 @@
 			"acDesc":  ""
 		},
 		{
+			"operator":"WestJet",
+			"typeId":  "737-600",
+			"author":  "Innis Cunningham",
+			"updated": "2014-01-16",
+			"desc":    "",
+			"thumb":   "http://liveries.flightgear.org/thumbs/nothumb.jpg",
+			"zip":     "included",
+			"texture": "../data/aircraft/737-600/textures/WJA/",
+			"gear":    "",
+			"acLink":  "",
+			"acDesc":  ""
+		},
+		{
 			"operator":"CanJet Airlines",
 			"typeId":  "737-800",
 			"author":  "Brett Harrison",
@@ -216,7 +229,7 @@
 			"desc":    "",
 			"thumb":   "http://liveries.flightgear.org/thumbs/391.jpg",
 			"zip":     "http://liveries.flightgear.org/download/Boeing/737-800/CJA.zip",
-			"texture": "",
+			"texture": "../data/aircraft/737-800/textures/CJA/",
 			"gear":    "",
 			"acLink":  "",
 			"acDesc":  ""
@@ -229,7 +242,7 @@
 			"desc":    "",
 			"thumb":   "http://liveries.flightgear.org/thumbs/756.jpg",
 			"zip":     "http://liveries.flightgear.org/download/Boeing/737-800/SWG.zip",
-			"texture": "",
+			"texture": "../data/aircraft/737-800/textures/SWG/",
 			"gear":    "",
 			"acLink":  "",
 			"acDesc":  ""
@@ -268,7 +281,7 @@
 			"desc":    "",
 			"thumb":   "http://liveries.flightgear.org/thumbs/101.jpg",
 			"zip":     "http://liveries.flightgear.org/download/Boeing/767-300/ACA.zip",
-			"texture": "",
+			"texture": "../data/aircraft/767-300/textures/ACA/",
 			"gear":    "",
 			"acLink":  "",
 			"acDesc":  ""
@@ -281,7 +294,7 @@
 			"desc":    "",
 			"thumb":   "http://liveries.flightgear.org/thumbs/116.jpg",
 			"zip":     "http://liveries.flightgear.org/download/Boeing/767-300/OOM.zip",
-			"texture": "",
+			"texture": "../data/aircraft/767-300/textures/OOM/",
 			"gear":    "",
 			"acLink":  "",
 			"acDesc":  ""
@@ -307,7 +320,7 @@
 			"desc":    "",
 			"thumb":   "http://liveries.flightgear.org/thumbs/1135.jpg",
 			"zip":     "http://liveries.flightgear.org/download/Boeing/787/ACA.zip",
-			"texture": "",
+			"texture": "../data/aircraft/787/textures/ACA/",
 			"gear":    "",
 			"acLink":  "",
 			"acDesc":  ""
@@ -906,6 +919,19 @@
 			"thumb":   "http://liveries.flightgear.org/thumbs/nothumb.jpg",
 			"zip":     "http://liveries.flightgear.org/download/Lockheed/F-104/RCAF-417.zip",
 			"texture": "",
+			"gear":    "",
+			"acLink":  "",
+			"acDesc":  ""
+		},
+		{
+			"operator":"Royal Canadian Air Force",
+			"typeId":  "F-18",
+			"author":  "Fabrice Kauffmann",
+			"updated": "2010-10-26",
+			"desc":    "",
+			"thumb":   "http://liveries.flightgear.org/thumbs/nothumb.jpg",
+			"zip":     "included",
+			"texture": "../data/aircraft/F-18/textures/RCAF_80/",
 			"gear":    "",
 			"acLink":  "",
 			"acDesc":  ""

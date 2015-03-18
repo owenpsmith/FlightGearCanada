@@ -82,12 +82,21 @@
 			"canadian"  : false		
 		},
 		{
+			"id"        : "737-600",
+			"modelName" : "Boeing 737-600",
+			"author"    : "Innis Cunningham",
+			"thumb"     : "http://liveries.flightgear.org/thumbs/nothumb.jpg",
+			"modelPath" : "../data/aircraft/737-600/737-600.ac",
+			"setup"     : { "eye": [-150.0, -40.0, -150.0], "poi": [0.0, 0.0, 0.0], "up":[0.0, 1.0, 0.0], "fov": 10},
+			"canadian"  : false		
+		},
+		{
 			"id"        : "737-800",
 			"modelName" : "Boeing 737-800",
-			"author"    : "",
+			"author"    : "Innis Cunningham",
 			"thumb"     : "http://liveries.flightgear.org/thumbs/nothumb.jpg",
-			"modelPath" : "",
-			"setup"     : "",
+			"modelPath" : "../data/aircraft/737-800/737-800.ac",
+			"setup"     : { "eye": [-150.0, -40.0, -150.0], "poi": [0.0, 0.0, 0.0], "up":[0.0, 1.0, 0.0], "fov": 10},
 			"canadian"  : false		
 		},
 		{
@@ -102,10 +111,10 @@
 		{
 			"id"        : "767-300",
 			"modelName" : "Boeing 767-300",
-			"author"    : "",
+			"author"    : "Liam Gathercole",
 			"thumb"     : "http://liveries.flightgear.org/thumbs/nothumb.jpg",
-			"modelPath" : "",
-			"setup"     : "",
+			"modelPath" : "../data/aircraft/767-300/767-300.ac",
+			"setup"     : { "eye": [-150.0, -40.0, -150.0], "poi": [0.0, 0.0, 0.0], "up":[0.0, 1.0, 0.0], "fov": 10},
 			"canadian"  : false		
 		},
 		{
@@ -120,10 +129,10 @@
 		{
 			"id"        : "787",
 			"modelName" : "Boeing 787",
-			"author"    : "",
+			"author"    : "Joshua Wilson",
 			"thumb"     : "http://liveries.flightgear.org/thumbs/nothumb.jpg",
-			"modelPath" : "",
-			"setup"     : "",
+			"modelPath" : "../data/aircraft/787/787.ac",
+			"setup"     : { "eye": [-150.0, -40.0, -150.0], "poi": [0.0, 0.0, 0.0], "up":[0.0, 1.0, 0.0], "fov": 10},
 			"canadian"  : false		
 		},
 		{
@@ -259,6 +268,15 @@
 			"thumb"     : "http://liveries.flightgear.org/thumbs/nothumb.jpg",
 			"modelPath" : "",
 			"setup"     : "",
+			"canadian"  : false		
+		},
+		{
+			"id"        : "F-18",
+			"modelName" : "McDonnell Douglas F-18 Hornet",
+			"author"    : "Fabrice Kauffmann",
+			"thumb"     : "http://liveries.flightgear.org/thumbs/nothumb.jpg",
+			"modelPath" : "../data/aircraft/F-18/F-18.ac",
+			"setup"     : { "eye": [-54.0, -1.5, -33.0], "poi": [0.0, 0.0, 0.0], "up":[0.0, 1.0, 0.0], "fov": 12},
 			"canadian"  : false		
 		},
 		{
