@@ -264,8 +264,9 @@ var switchTo3DView = function($this)
 
 	$this.next().next().children().each(function()
 	{
+		console.log($(this).get(0).tagName);
 
-		var $metaData = $(this).children("div.metaData");
+		var $metaData = $(this).children("div").children("div.metaData");
 
 		var acId      = $metaData.children("p.acId").first().text();
 		var operator  = $metaData.children("p.operator").first().text();
@@ -276,6 +277,8 @@ var switchTo3DView = function($this)
 		var livGear   = $metaData.children("p.livGear").first().text();
 
 		var typeData = getTypeDataForAcId(acId);
+
+		console.log(acId);
 
 		// append landing gear variant if applicable
 		var modelPath = typeData.modelPath;
