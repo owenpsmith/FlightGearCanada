@@ -35,7 +35,7 @@
 
 	<section id="welcome">
 
-		<p>
+		<p class="hide-no-js">
 			<button id="byTypeBtn"    >Browse By Type</button>
 			<button id="byOperatorBtn">Browse By Operator</button>
 			<button id="byAuthorBtn"  >Browse By Author</button>
@@ -43,12 +43,13 @@
 		</p>
 
 		<div id="listContainer">
-			<div class="listControl">
+			<div class="listControl hide-no-js">
 				<a id="expandList">Expand All</a><a id="collapseList">Collapse All</a>
 			</div>
 			<ul class="expList" id="liveryContainer">
 
-				<!-- livery expandable list will be generated here -->
+				<!-- livery expandable list will be generated here     -->
+				<!-- hardcoded static content in case JS not available -->
 
 			</ul>
 		</div>

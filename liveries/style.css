@@ -101,3 +101,18 @@ section#3D {
 	display : none;
 }
 
+.hide-no-js {
+	display : none !important;
+}
+
+@media screen and (max-width : 704px) {
+
+	li.liveryGroup a.link3D {
+		display : none;
+	}
+
+	li.liveryGroup a.link3DDisabled {
+		display : none;
+	}
+
+}
