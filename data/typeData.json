@@ -24,7 +24,7 @@
 			"author"    : "Connor Toppings",
 			"thumb"     : "http://liveries.flightgear.org/thumbs/nothumb.jpg",
 			"modelPath" : "../data/aircraft/CF-100/CF-100.ac",
-			"setup"     : { "eye": [-50.0, -14.0, -50.0], "poi": [9.0, 0.0, 0.0], "up":[0.0, 1.0, 0.0], "fov": 9},
+			"setup"     : { "eye": [-10.0, 40.0, -70.0], "poi": [9.0, 0.0, 0.0], "up":[0.0, 1.0, 0.0], "fov": 9},
 			"canadian"  : true		
 		},
 		{

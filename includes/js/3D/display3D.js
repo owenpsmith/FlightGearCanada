@@ -8,15 +8,14 @@ var models;
 function load3D(modelsToLoad)
 {
     models = modelsToLoad;
-    
+
     if (viewer == null)
     {
 		canvas = document.getElementById("canvas");
-		details = document.getElementById("details");
 		loading = document.getElementById("loading");
 		viewer = new HG.Viewer(canvas);
 	}
-	
+
 	current = 0;
 
 	resize();
@@ -98,13 +97,9 @@ function showLivery(model)
 
 function updateHTML(model)
 {
-	var infoHTML = "";
-
-	infoHTML += "<p id='name'>"         + model.acName + " - " + model.operator  + "</p>\n";
-	infoHTML += "<p id='modelAuthor'>"  + "Model by "          + model.modAuthor + "</p>\n";
-	infoHTML += "<p id='liveryAuthor'>" + "Livery by "         + model.livAuthor + "</p>\n";
-
-	details.innerHTML = infoHTML;
+	$('p#name3D').html(model.acName + " - " + model.operator);
+	$('p#liveryAuthor3D').html("Livery by " + model.livAuthor);
+	$('p#modelAuthor3D').html("Model by "   + model.modAuthor);
 };
 
 function onLoaded()
