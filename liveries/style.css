@@ -1,13 +1,12 @@
+.clearfix:after { content: "\00A0"; display: block; clear: both; visibility: hidden; line-height: 0; height: 0;}
+.clearfix{ display: inline-block;}
+html[xmlns] .clearfix { display: block;}
+* html .clearfix{ height: 1%;}
+.clearfix {display: block}
+
 
 li.liveryGroup ul {
 	margin-left : 20px;
-}
-
-li.liveryGroup h3 {
-	margin-top    : 0px;
-	margin-bottom : 0px;
-	font-size     : 12pt;
-	display       : inline-block;
 }
 
 li.liveryGroup h3.liveryCount {
@@ -25,6 +24,13 @@ li.liveryGroup a.link3D {
 	display       : inline-block;
 }
 
+li.liveryGroup h3 {
+	margin-top    : 0px;
+	margin-bottom : 0px;
+	font-size     : 12pt;
+	display       : inline-block;
+}
+
 li.liveryGroup a.link3DDisabled {
 	margin-right   : 20px;
 	min-width      : 20px;
@@ -32,29 +38,24 @@ li.liveryGroup a.link3DDisabled {
 	display        : inline-block;
 }
 
-ul li.livery {
+ul li.livery > div {
 	width : 800px;
 	height : 254px;
 	border : 2px solid black;
     padding-left: 0px;
+    display : run-in;
 }
 
-li.livery:after {
-	clear : left;
-}
-
-li.livery img {
+li.livery > div > img {
 	float : left;
 	border-right : 2px solid black;
+    display : run-in;
 }
 
-li.livery div {
+li.livery > div > div {
 	float : left;
 	padding : 20px;
-}
-
-li.livery div:after {
-	clear : left;
+    display : run-in;
 }
 
 li.livery a {
@@ -93,6 +94,10 @@ li.livery a:hover {
     padding: 4px 10px;
 }
 
+li.livery:after {
+	clear : left;
+}
+
 div.metaData {
 	display : none;
 }
@@ -107,6 +112,11 @@ section#3D {
 
 @media screen and (max-width : 704px) {
 
+	ul li.livery > div {
+		width : 354px;
+		height : auto;
+	}
+
 	li.liveryGroup a.link3D {
 		display : none;
 	}
@@ -115,4 +125,21 @@ section#3D {
 		display : none;
 	}
 
+	li.livery > div > img {
+		border-right : none;
+		border-bottom : 2px solid black;
+	}
+
+
+	li.livery > div > div {
+		clear : left;
+		float : left;
+		padding : 20px;
+	}
+
+	li.livery:after {
+		clear : left;
+	}
 }
+
+

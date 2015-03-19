@@ -13,7 +13,8 @@ var displayLiveriesByType = function()
 
 		$.each(thisType, function(key, thisOperator)
 		{
-			liveryHTML += "\t\t\t\t\t\t<li class=\"livery\"><img src=\"" + thisOperator.thumb + "\" /><div>\n";
+			liveryHTML += "\t\t\t\t\t\t<li class=\"livery\"><div class=\"clearfix\">";
+			liveryHTML += "<img src=\"" + thisOperator.thumb + "\" /><div>\n";
 			liveryHTML += "\t\t\t\t\t\t\t<p><b>Operator:</b>"            + thisOperator.operator + "</p>\n";
 			liveryHTML += "\t\t\t\t\t\t\t<p><b>Author  :</b>"            + thisOperator.author   + "</p>\n";
 			liveryHTML += "\t\t\t\t\t\t\t<p><b>Updated :</b>"            + thisOperator.updated  + "</p>\n";
@@ -39,7 +40,7 @@ var displayLiveriesByType = function()
 			liveryHTML += "\t\t\t\t\t\t\t<p class=\"modAuthor\">" + thisOperator.modelAuthor  + "</p>\n";
 			liveryHTML += "\t\t\t\t\t\t\t<p class=\"livAuthor\">" + thisOperator.author       + "</p>\n";
 			liveryHTML += "\t\t\t\t\t\t\t<p class=\"livGear\"  >" + thisOperator.gear         + "</p>\n";
-			liveryHTML += "\t\t\t\t\t\t</div></li>\n";
+			liveryHTML += "\t\t\t\t\t\t</div></div></li>\n";
 
 			if (thisOperator.texture != "")
 			{
@@ -93,7 +94,8 @@ var displayLiveriesByOperator = function()
 
 		$.each(thisOperator, function(key, thisType)
 		{
-			liveryHTML += "\t\t\t\t\t\t<li class=\"livery\"><img src=\"" + thisType.thumb + "\" /><div>\n";
+			liveryHTML += "\t\t\t\t\t\t<li class=\"livery\"><div class=\"clearfix\">";
+			liveryHTML += "<img src=\""                                  + thisType.thumb + "\" /><div>\n";
 			liveryHTML += "\t\t\t\t\t\t\t<p><b>Type    :</b>"            + thisType.modelName + "</p>\n";
 			liveryHTML += "\t\t\t\t\t\t\t<p><b>Author  :</b>"            + thisType.author    + "</p>\n";
 			liveryHTML += "\t\t\t\t\t\t\t<p><b>Updated :</b>"            + thisType.updated   + "</p>\n";
@@ -110,7 +112,7 @@ var displayLiveriesByOperator = function()
 			liveryHTML += "\t\t\t\t\t\t\t<p class=\"modAuthor\">" + thisType.modelAuthor  + "</p>\n";
 			liveryHTML += "\t\t\t\t\t\t\t<p class=\"livAuthor\">" + thisType.author       + "</p>\n";
 			liveryHTML += "\t\t\t\t\t\t\t<p class=\"livGear\"  >" + thisType.gear         + "</p>\n";
-			liveryHTML += "\t\t\t\t\t\t</div></li>\n";
+			liveryHTML += "\t\t\t\t\t\t</div></div></li>\n";
 
 			if (thisType.texture != "")
 			{
@@ -164,7 +166,8 @@ var displayLiveriesByAuthor = function()
 
 		$.each(thisAuthor, function(key, thisLivery)
 		{
-			liveryHTML += "\t\t\t\t\t\t<li class=\"livery\"><img src=\"" + thisLivery.thumb     + "\" /><div>\n";
+			liveryHTML += "\t\t\t\t\t\t<li class=\"livery\"><div class=\"clearfix\">";
+			liveryHTML += "<img src=\""                                  + thisLivery.thumb     + "\" /><div>\n";
 			liveryHTML += "\t\t\t\t\t\t\t<p><b>Type    :</b>"            + thisLivery.modelName + "</p>\n";
 			liveryHTML += "\t\t\t\t\t\t\t<p><b>Operator:</b>"            + thisLivery.operator  + "</p>\n";
 			liveryHTML += "\t\t\t\t\t\t\t<p><b>Author  :</b>"            + thisLivery.author    + "</p>\n";
@@ -182,7 +185,7 @@ var displayLiveriesByAuthor = function()
 			liveryHTML += "\t\t\t\t\t\t\t<p class=\"modAuthor\">" + thisLivery.modelAuthor  + "</p>\n";
 			liveryHTML += "\t\t\t\t\t\t\t<p class=\"livAuthor\">" + thisLivery.author       + "</p>\n";
 			liveryHTML += "\t\t\t\t\t\t\t<p class=\"livGear\"  >" + thisLivery.gear         + "</p>\n";
-			liveryHTML += "\t\t\t\t\t\t</div></li>\n";
+			liveryHTML += "\t\t\t\t\t\t</div></div></li>\n";
 
 			if (thisLivery.texture != "")
 			{
@@ -231,14 +234,15 @@ var displayLiveriesByAll = function()
 
 	$.each(liveries, function(key, thisLivery)
 	{
-		newHTML += "\t\t\t\t\t\t<li class=\"livery\"><img src=\"" + thisLivery.thumb + "\" /><div>\n";
+		newHTML += "\t\t\t\t\t\t<li class=\"livery\"><div class=\"clearfix\">";
+		newHTML += "<img src=\""                                  + thisLivery.thumb + "\" /><div>\n";
 		newHTML += "\t\t\t\t\t\t\t<p><b>Type    :</b>"            + thisLivery.modelName + "</p>\n";
 		newHTML += "\t\t\t\t\t\t\t<p><b>Operator:</b>"            + thisLivery.operator  + "</p>\n";
 		newHTML += "\t\t\t\t\t\t\t<p><b>Author  :</b>"            + thisLivery.author    + "</p>\n";
 		newHTML += "\t\t\t\t\t\t\t<p><b>Updated :</b>"            + thisLivery.updated   + "</p>\n";
 		newHTML += "\t\t\t\t\t\t\t<br>\n";
 		newHTML += "\t\t\t\t\t\t\t<a class=\"link\" href=\""      + thisLivery.zip + "\">Download</a>\n";
-		newHTML += "\t\t\t\t\t\t</div></li>\n";
+		newHTML += "\t\t\t\t\t\t</div></div></li>\n";
 	});
 
 	$('#liveryContainer').html(newHTML);
