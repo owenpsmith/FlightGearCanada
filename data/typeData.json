@@ -257,8 +257,8 @@
 			"modelName" : "Grumman G-21 Goose",
 			"author"    : "",
 			"thumb"     : "http://liveries.flightgear.org/thumbs/nothumb.jpg",
-			"modelPath" : "",
-			"setup"     : "",
+			"modelPath" : "../data/aircraft/G-21/G-21.ac",
+			"setup"     : { "eye": [-54.0, -13.0, -25.0], "poi": [5.0, 1.0, 0.0], "up":[0.0, 1.0, 0.0], "fov": 7},
 			"canadian"  : false		
 		},
 		{
