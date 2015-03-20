@@ -39,7 +39,7 @@ li.liveryGroup a.link3DDisabled {
 }
 
 ul li.livery > div {
-	width : 800px;
+	max-width : 800px;
 	height : 254px;
 	border : 2px solid black;
     padding-left: 0px;
@@ -56,6 +56,12 @@ li.livery > div > div {
 	float : left;
 	padding : 20px;
     display : run-in;
+}
+
+li.livery > div > div > p {
+    display : block;
+    word-break: break-all;
+    white-space: normal;
 }
 
 li.livery a {
