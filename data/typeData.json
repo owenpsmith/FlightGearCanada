@@ -57,10 +57,10 @@
 		{
 			"id"        : "UH-1",
 			"modelName" : "Bell UH-1",
-			"author"    : "",
+			"author"    : "Emmanuel Baranger",
 			"thumb"     : "http://liveries.flightgear.org/thumbs/nothumb.jpg",
-			"modelPath" : "",
-			"setup"     : "",
+			"modelPath" : "../data/aircraft/UH-1/UH-1.ac",
+			"setup"     : { "eye": [-25.0, -7.0, -25.0], "poi": [-3.0, 0.0, 0.0], "up":[0.0, 1.0, 0.0], "fov": 12.0},
 			"canadian"  : false		
 		},
 		{

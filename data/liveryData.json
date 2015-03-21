@@ -190,7 +190,7 @@
 			"desc":    "SAR",
 			"thumb":   "http://liveries.flightgear.org/thumbs/433.jpg",
 			"zip":     "http://liveries.flightgear.org/download/Bell/UH-1/RCAF.zip",
-			"texture": "",
+			"texture": "../data/aircraft/UH-1/textures/RCAF/",
 			"gear":    "",
 			"acLink":  "",
 			"acDesc":  ""
