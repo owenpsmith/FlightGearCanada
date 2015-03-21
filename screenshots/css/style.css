@@ -6,18 +6,7 @@ div#fixedButtons {
 	margin-right : auto;
 }
 
-div#slidesButtons {
-	width        : 210px;
-	margin-left  : auto;
-	margin-right : auto;
-}
-
-div#buttons button {
-	margin-left  : auto;
-	margin-right : auto;
-}
-
-section#thumbnails {
+section#thumbnailContainer {
 	margin-top   : 5px;
 	margin-left  : auto;
 	margin-right : auto;
@@ -55,6 +44,8 @@ div.thumbnail p {
 	}
 }
 
+.
+
 img#slideshow {
 	width        : 60%;
 	margin-left  : 20%;
@@ -71,6 +62,49 @@ div#image2 {
 	position : absolute;
  	text-align : center;
 }
+
+#slideshow {
+	width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.captionOrange, .captionBlack
+{
+    color: #fff;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 4px;
+}
+.captionOrange
+{
+    background: #EB5100;
+    background-color: rgba(235, 81, 0, 0.6);
+}
+.captionBlack
+{
+    font-size:16px;
+    background: #000;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+a.captionOrange, A.captionOrange:active, A.captionOrange:visited
+{
+    color: #ffffff;
+    text-decoration: none;
+}
+a.captionOrange:hover
+{
+    color: #eb5100;
+    text-decoration: underline;
+    background-color: #eeeeee;
+    background-color: rgba(238, 238, 238, 0.7);
+}
+.bricon
+{
+    background: url(../img/browser-icons.png);
+}
+
 
 @media screen and (max-width : 1391px) {
 

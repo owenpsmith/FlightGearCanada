@@ -1,124 +1,84 @@
 { "images" :
 	[
 		{
-			"id"   : "AvroArrow01",
-			"desc" : "Avro Arrow intercepts Russian Tu-95 bomber",
-			"thumb": "thumbs/AvroArrow01.jpg",
-			"image": "images/AvroArrow01.jpg"
+			"id"   : "001",
+			"desc" : "Avro Arrow intercepts Russian Tu-95 bomber"
 		},
 		{
-			"id"   : "AvroArrow02",
-			"desc" : "Avro Arrow intercepts Russian Tu-95 bomber",
-			"thumb": "thumbs/AvroArrow02.jpg",
-			"image": "images/AvroArrow02.jpg"
+			"id"   : "002",
+			"desc" : "Avro Arrow intercepts Russian Tu-95 bomber"
 		},
 		{
-			"id"   : "AvroArrow03",
-			"desc" : "Avro Arrow intercepts Russian Tu-95 bomber",
-			"thumb": "thumbs/AvroArrow03.jpg",
-			"image": "images/AvroArrow03.jpg"
+			"id"   : "003",
+			"desc" : "Avro Arrow intercepts Russian Tu-95 bomber"
 		},
 		{
-			"id"   : "AvroArrow04",
-			"desc" : "Avro Arrow intercepts Russian Tu-95 bomber",
-			"thumb": "thumbs/AvroArrow04.jpg",
-			"image": "images/AvroArrow04.jpg"
+			"id"   : "004",
+			"desc" : "Avro Arrow intercepts Russian Tu-95 bomber"
 		},
 		{
-			"id"   : "AvroJetliner01",
-			"desc" : "Avro Jetliner 3D model",
-			"thumb": "thumbs/AvroJetliner01.jpg",
-			"image": "images/AvroJetliner01.jpg"
+			"id"   : "005",
+			"desc" : "Avro Jetliner 3D model"
 		},
 		{
-			"id"   : "CanadianPacificDC301",
-			"desc" : "Canadian Pacific Airlines Douglas DC-3",
-			"thumb": "thumbs/CanadianPacificDC301.jpg",
-			"image": "images/CanadianPacificDC301.jpg"
+			"id"   : "006",
+			"desc" : "Canadian Pacific Airlines Douglas DC-3"
 		},
 		{
-			"id"   : "CoastGuardDC301",
-			"desc" : "Canadian Coast Guard Douglas DC-3",
-			"thumb": "thumbs/CoastGuardDC301.jpg",
-			"image": "images/CoastGuardDC301.jpg"
+			"id"   : "007",
+			"desc" : "Canadian Coast Guard Douglas DC-3"
 		},
 		{
-			"id"   : "CPAirDC301",
-			"desc" : "CP Air Douglas DC-3",
-			"thumb": "thumbs/CPAirDC301.jpg",
-			"image": "images/CPAirDC301.jpg"
+			"id"   : "008",
+			"desc" : "CP Air Douglas DC-3"	
 		},
 		{
-			"id"   : "FreighterYXT01",
-			"desc" : "Bristol Freighter on approach to Terrace, BC (CYXT)",
-			"thumb": "thumbs/FreighterYXT01.jpg",
-			"image": "images/FreighterYXT01.jpg"
+			"id"   : "009",
+			"desc" : "Bristol Freighter on approach to Terrace, BC (CYXT)"
 		},
 		{
-			"id"   : "PWA73701",
-			"desc" : "Pacific Western Airlines Boeing 737-200",
-			"thumb": "thumbs/PWA73701.jpg",
-			"image": "images/PWA73701.jpg"
+			"id"   : "010",
+			"desc" : "Pacific Western Airlines Boeing 737-200"
 		},
 		{
-			"id"   : "PWA73702",
-			"desc" : "Pacific Western Airlines Boeing 737-200",
-			"thumb": "thumbs/PWA73702.jpg",
-			"image": "images/PWA73702.jpg"
+			"id"   : "011",
+			"desc" : "Pacific Western Airlines Boeing 737-200"
 		},
 		{
-			"id"   : "PWADC301",
-			"desc" : "Pacific Western Airlines Douglas DC-3 (old livery)",
-			"thumb": "thumbs/PWADC301.jpg",
-			"image": "images/PWADC301.jpg"
+			"id"   : "012",
+			"desc" : "Pacific Western Airlines Douglas DC-3 (old livery)"
 		},
 		{
-			"id"   : "PWADC302",
-			"desc" : "Pacific Western Airlines Douglas DC-3 (new livery)",
-			"thumb": "thumbs/PWADC302.jpg",
-			"image": "images/PWADC302.jpg"
+			"id"   : "013",
+			"desc" : "Pacific Western Airlines Douglas DC-3 (new livery)"
 		},
 		{
-			"id"   : "QCADC301",
-			"desc" : "Queen Charlotte Airlines Douglas DC-3",
-			"thumb": "thumbs/QCADC301.jpg",
-			"image": "images/QCADC301.jpg"
+			"id"   : "014",
+			"desc" : "Queen Charlotte Airlines Douglas DC-3"
 		},
 		{
-			"id"   : "RCAFDC301",
-			"desc" : "Canadian Armed Forces Douglas DC-3",
-			"thumb": "thumbs/RCAFDC301.jpg",
-			"image": "images/RCAFDC301.jpg"
+			"id"   : "015",
+			"desc" : "Canadian Armed Forces Douglas DC-3"
 		},
 		{
-			"id"   : "RCMPGoose02",
-			"desc" : "RCMP Grumman Goose",
-			"thumb": "thumbs/RCMPGoose02.jpg",
-			"image": "images/RCMPGoose02.jpg"
+			"id"   : "016",
+			"desc" : "RCMP Grumman Goose"
 		},
 		{
-			"id"   : "RCMPGoose03",
-			"desc" : "RCMP Grumman Goose",
-			"thumb": "thumbs/RCMPGoose03.jpg",
-			"image": "images/RCMPGoose03.jpg"
+			"id"   : "017",
+			"desc" : "RCMP Grumman Goose"
 		},
 		{
-			"id"   : "RCMPGoose04",
-			"desc" : "RCMP Grumman Goose",
-			"thumb": "thumbs/RCMPGoose04.jpg",
-			"image": "images/RCMPGoose04.jpg"
+			"id"   : "018",
+			"desc" : "RCMP Grumman Goose"
 		},
 		{
-			"id"   : "TCADC301",
-			"desc" : "Trans Canada Airlines Douglas DC-3",
-			"thumb": "thumbs/TCADC301.jpg",
-			"image": "images/TCADC301.jpg"
+			"id"   : "019",
+			"desc" : "Trans Canada Airlines Douglas DC-3"
 		},
 		{
-			"id"   : "WestJet73701",
-			"desc" : "WestJet Boeing 737-200",
-			"thumb": "thumbs/WestJet73701.jpg",
-			"image": "images/WestJet73701.jpg"
+			"id"   : "020",
+			"desc" : "WestJet Boeing 737-200"
 		}
 	]
 }

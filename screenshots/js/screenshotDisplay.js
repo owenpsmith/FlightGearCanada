@@ -1,10 +1,7 @@
 
-var images = [];
-var mode = "";
+var imagesData = [];
 var imageIndex = -1;
 var imageElement = 0;
-var $currentImage;
-var interval = 0;
 
 
 var displayImageThumbnails = function()
@@ -14,134 +11,35 @@ var displayImageThumbnails = function()
 	$.each(images, function(key, thisImage)
 	{
 		newHTML += "<div class=\"thumbnail\">\n";
-		newHTML +=     "<a href=\"" + thisImage.image + "\"><img src=\"" + thisImage.thumb + "\" /></a>\n";
-		newHTML +=     "<p>" + thisImage.desc + "<\p>\n";
+		newHTML +=     "<a href=\"images\\" + thisImage.id + ".jpg\"><img src=\"images\\thumbs\\" + thisImage.id + ".jpg\" /></a>\n";
+//		newHTML +=     "<p>" + thisImage.desc + "<\p>\n";
 		newHTML += "</div>\n";
 	});
 
-	$('#thumbnails').html(newHTML);
-}
+	$('section#thumbnailContainer').html(newHTML);
 
-var showNextImage = function(ssDirection)
-{
-	if (mode == "slideshow")
-	{
-		if (imageIndex < 0)
-		{
-			// initial display
-			imageIndex = 0;
-			imageElement = 2;
-			$currentImage = $('#image2');
-			$('#image1').css("opacity", 1);
-			$('#image2').css("opacity", 0);
-		}
-		else
-		{
-			imageIndex += ssDirection;
-			if (imageIndex >= images.length)
-			{
-				imageIndex = 0;
-			}
-			if (imageIndex < 0)
-			{
-				imageIndex = images.length - 1;
-			}
-		}
-
-		var newHTML = "";
-
-		nextImage = images[imageIndex];
-
-		newHTML += "<img id=\"slideshow\" src=\"" + nextImage.image + "\" />";
-		newHTML += "<p>" + nextImage.desc + "<\p>\n";
-
-		if (imageElement == 1)
-		{
-			imageElement = 2;
-
-			$('#image2').html(newHTML);
-			$('#image2').animate({opacity:1}, {duration:1000});
-			$('#image1').animate({opacity:0}, {duration:1000});
-		}
-		else
-		{
-			imageElement = 1;
-
-			$('#image1').html(newHTML);
-			$('#image1').animate({opacity:1}, {duration:1000});
-			$('#image2').animate({opacity:0}, {duration:1000});
-		}
-	}
-}
-
-var ssTimerCallback = function()
-{
-	showNextImage(1);
+	$('section#thumbnailContainer').show();
+	$('section#slideshowContainer').hide();
 }
 
 
 var displaySlideShow = function()
 {
-	var newHTML = "";
-
-	newHTML += "<div id='image1'></div>\n";
-	newHTML += "<div id='image2'></div>\n";
-
-	$thumbnailsTemp = $('#thumbnails');
-
-	$thumbnailsTemp.html("");
-	$thumbnailsTemp.html(newHTML);
-
-	showNextImage(1);
-	interval = setInterval(ssTimerCallback, 5000);
+	$('section#slideshowContainer').show();
+	$('section#thumbnailContainer').hide();
 }
+
 
 // button handlers
 $('#thumbsBtn').click(function()
 {
-	if (mode == "slideshow")
-	{
-		clearInterval(interval);
-		interval = 0;
-	}
-
-	mode = "thumbnails";
 	displayImageThumbnails();
 });
 
+
 $('#slidesBtn').click(function()
 {
-	mode = "slideshow";
 	displaySlideShow();
-});
-
-
-$('#prevBtn').click(function()
-{
-	showNextImage(-1);
-});
-
-$('#playPauseBtn').click(function()
-{
-	if (interval != 0)
-	{
-		// slideshow is running so pause
-		clearInterval(interval);
-		interval = 0;
-		$('#playPauseBtn').text("Play");
-	}
-	else
-	{
-		// slideshow is not running so start
-		showNextImage(1);
-		interval = setInterval(ssTimerCallback, 5000);
-		$('#playPauseBtn').text("Pause");
-	}
-});
-
-$('#nextBtn').click(function()
-{
-	showNextImage(1);
 });
 
 
@@ -150,8 +48,11 @@ $(document).ready( function()
 	loadScreenshotData(function(imageData)
 	{
 		images = imageData;
-	
+
 		// default to view all by type
 		displayImageThumbnails();
 	});
+
+	$('section#thumbnailContainer').show();
+	$('section#slideshowContainer').hide();
 });
