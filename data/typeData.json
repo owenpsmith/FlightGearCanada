@@ -42,7 +42,7 @@
 			"author"    : "unknown",
 			"thumb"     : "http://liveries.flightgear.org/thumbs/nothumb.jpg",
 			"modelPath" : "../data/aircraft/B1900D/B1900D.ac",
-			"setup"     : { "eye": [-50.0, -14.0, -50.0], "poi": [1.5, 0.0, 0.0], "up":[0.0, 1.0, 0.0], "fov": 9.0},
+			"setup"     : { "eye": [-50.0, -14.0, -50.0], "poi": [1.5, 0.0, 0.0], "up":[0.0, 1.0, 0.0], "fov": 10.0},
 			"canadian"  : false		
 		},
 		{
@@ -60,7 +60,7 @@
 			"author"    : "Emmanuel Baranger",
 			"thumb"     : "http://liveries.flightgear.org/thumbs/nothumb.jpg",
 			"modelPath" : "../data/aircraft/UH-1/UH-1.ac",
-			"setup"     : { "eye": [-25.0, -7.0, -25.0], "poi": [-3.0, 0.0, 0.0], "up":[0.0, 1.0, 0.0], "fov": 12.0},
+			"setup"     : { "eye": [-50.0, -14.0, -50.0], "poi": [-3.0, 0.0, 0.0], "up":[0.0, 1.0, 0.0], "fov": 8.0},
 			"canadian"  : false		
 		},
 		{
@@ -87,7 +87,7 @@
 			"author"    : "Innis Cunningham",
 			"thumb"     : "http://liveries.flightgear.org/thumbs/nothumb.jpg",
 			"modelPath" : "../data/aircraft/737-600/737-600.ac",
-			"setup"     : { "eye": [-150.0, -40.0, -150.0], "poi": [0.0, 0.0, 0.0], "up":[0.0, 1.0, 0.0], "fov": 10},
+			"setup"     : { "eye": [-150.0, -40.0, -150.0], "poi": [0.0, 1.0, 0.0], "up":[0.0, 1.0, 0.0], "fov": 7},
 			"canadian"  : false		
 		},
 		{
@@ -96,7 +96,7 @@
 			"author"    : "Innis Cunningham",
 			"thumb"     : "http://liveries.flightgear.org/thumbs/nothumb.jpg",
 			"modelPath" : "../data/aircraft/737-800/737-800.ac",
-			"setup"     : { "eye": [-150.0, -40.0, -150.0], "poi": [0.0, 0.0, 0.0], "up":[0.0, 1.0, 0.0], "fov": 10},
+			"setup"     : { "eye": [-150.0, -40.0, -150.0], "poi": [0.0, 1.0, 0.0], "up":[0.0, 1.0, 0.0], "fov": 7},
 			"canadian"  : false		
 		},
 		{
@@ -132,7 +132,7 @@
 			"author"    : "Joshua Wilson",
 			"thumb"     : "http://liveries.flightgear.org/thumbs/nothumb.jpg",
 			"modelPath" : "../data/aircraft/787/787.ac",
-			"setup"     : { "eye": [-150.0, -40.0, -150.0], "poi": [0.0, 0.0, 0.0], "up":[0.0, 1.0, 0.0], "fov": 10},
+			"setup"     : { "eye": [-150.0, -40.0, -150.0], "poi": [3.0, 0.0, 0.0], "up":[0.0, 1.0, 0.0], "fov": 10},
 			"canadian"  : false		
 		},
 		{
@@ -231,7 +231,7 @@
 			"author"    : "Emmanuel Baranger",
 			"thumb"     : "http://liveries.flightgear.org/thumbs/nothumb.jpg",
 			"modelPath" : "../data/aircraft/DC-3/DC-3.ac",
-			"setup"     : { "eye": [-54.0, -1.5, -33.0], "poi": [0.0, 0.0, 0.0], "up":[0.0, 1.0, 0.0], "fov": 15},
+			"setup"     : { "eye": [-50.0, 10.0, -40.0], "poi": [0.0, 0.0, 0.0], "up":[0.0, 1.0, 0.0], "fov": 15},
 			"canadian"  : false		
 		},
 		{
@@ -258,7 +258,7 @@
 			"author"    : "",
 			"thumb"     : "http://liveries.flightgear.org/thumbs/nothumb.jpg",
 			"modelPath" : "../data/aircraft/G-21/G-21.ac",
-			"setup"     : { "eye": [-54.0, -13.0, -25.0], "poi": [5.0, 1.0, 0.0], "up":[0.0, 1.0, 0.0], "fov": 7},
+			"setup"     : { "eye": [-44.0, -13.0, -35.0], "poi": [6.0, 1.0, 0.0], "up":[0.0, 1.0, 0.0], "fov": 8},
 			"canadian"  : false		
 		},
 		{
@@ -276,7 +276,7 @@
 			"author"    : "Fabrice Kauffmann",
 			"thumb"     : "http://liveries.flightgear.org/thumbs/nothumb.jpg",
 			"modelPath" : "../data/aircraft/F-18/F-18.ac",
-			"setup"     : { "eye": [-54.0, -1.5, -33.0], "poi": [0.0, 0.0, 0.0], "up":[0.0, 1.0, 0.0], "fov": 12},
+			"setup"     : { "eye": [-54.0, -10.0, -33.0], "poi": [0.0, 0.0, 0.0], "up":[0.0, 1.0, 0.0], "fov": 9},
 			"canadian"  : false		
 		},
 		{
