@@ -32,8 +32,8 @@
 			"modelName" : "Avro Canada CF-105 Arrow",
 			"author"    : "Emmanuel Baranger",
 			"thumb"     : "http://liveries.flightgear.org/thumbs/nothumb.jpg",
-			"modelPath" : "",
-			"setup"     : "",
+			"modelPath" : "../data/aircraft/CF-105/CF-105.ac",
+			"setup"     : { "eye": [-10.0, 40.0, -70.0], "poi": [0.5, 0.0, 0.0], "up":[0.0, 1.0, 0.0], "fov": 11},
 			"canadian"  : true		
 		},
 		{
@@ -294,7 +294,7 @@
 			"author"    : "Emmanuel Baranger ",
 			"thumb"     : "http://liveries.flightgear.org/thumbs/nothumb.jpg",
 			"modelPath" : "../data/aircraft/SE5/SE5.ac",
-			"setup"     : { "eye": [-54.0, -10.0, -33.0], "poi": [0.0, 0.0, 0.0], "up":[0.0, 1.0, 0.0], "fov": 9},
+			"setup"     : { "eye": [35.0, 20.0, -25.0], "poi": [0.0, 0.5, 0.0], "up":[0.0, 1.0, 0.0], "fov": 8},
 			"canadian"  : false		
 		}
 	]
