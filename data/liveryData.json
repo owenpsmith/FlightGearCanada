@@ -938,13 +938,13 @@
 		},
 		{
 			"operator":"Royal Canadian Air Force",
-			"typeId":  "S.E.5",
+			"typeId":  "SE5",
 			"author":  "PD Hobson",
 			"updated": "2011-03-20",
 			"desc":    "",
 			"thumb":   "http://liveries.flightgear.org/thumbs/413.jpg",
 			"zip":     "http://liveries.flightgear.org/download/RoyalAircraftFactory/S.E.5/caf_g-cybp.zip",
-			"texture": "",
+			"texture": "../data/aircraft/SE5/textures/RCAF/",
 			"gear":    "",
 			"acLink":  "",
 			"acDesc":  ""

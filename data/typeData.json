@@ -289,12 +289,12 @@
 			"canadian"  : false		
 		},
 		{
-			"id"        : "S.E.5",
+			"id"        : "SE5",
 			"modelName" : "Royal Aircraft Factory S.E.5",
-			"author"    : "",
+			"author"    : "Emmanuel Baranger ",
 			"thumb"     : "http://liveries.flightgear.org/thumbs/nothumb.jpg",
-			"modelPath" : "",
-			"setup"     : "",
+			"modelPath" : "../data/aircraft/SE5/SE5.ac",
+			"setup"     : { "eye": [-54.0, -10.0, -33.0], "poi": [0.0, 0.0, 0.0], "up":[0.0, 1.0, 0.0], "fov": 9},
 			"canadian"  : false		
 		}
 	]
