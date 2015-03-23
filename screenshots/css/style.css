@@ -63,8 +63,8 @@ div#image2 {
  	text-align : center;
 }
 
-#slideshow {
-	width: 1200px;
+#slideshowContainer {
+	width: 900px;
 	margin-left: auto;
 	margin-right: auto;
 }
