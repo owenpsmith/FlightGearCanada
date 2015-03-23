@@ -1,16 +1,28 @@
 
-div#fixedButtons {
+div#buttons {
 	margin-top   : 10px;
-	width        : 1376px;
+	width        : 200px;
 	margin-left  : auto;
 	margin-right : auto;
+}
+
+button#thumbsBtn {
+	width        : 90px;
+	margin-left  : 4px;
+	margin-right : 4px;
+}
+
+button#slidesBtn {
+	width        : 90px;
+	margin-left  : 4px;
+	margin-right : 4px;
 }
 
 section#thumbnailContainer {
 	margin-top   : 5px;
 	margin-left  : auto;
 	margin-right : auto;
-	width        : 1376px;
+	width        : 1352px;
 }
 
 div.thumbnail {
