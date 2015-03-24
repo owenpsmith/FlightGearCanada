@@ -924,6 +924,19 @@
 			"acDesc":  ""
 		},
 		{
+			"operator":"Canadian Airlines",
+			"typeId":  "DC-10-30ER",
+			"author":  "Thomas Ito-Haigh",
+			"updated": "2014-01-16",
+			"desc":    "",
+			"thumb":   "http://liveries.flightgear.org/thumbs/nothumb.jpg",
+			"zip":     "included",
+			"texture": "../data/aircraft/DC-10-30/textures/CDN/",
+			"gear":    "",
+			"acLink":  "",
+			"acDesc":  ""
+		},
+		{
 			"operator":"Air Canada",
 			"typeId":  "ERJ-190",
 			"author":  "Chris Leung",

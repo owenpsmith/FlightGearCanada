@@ -33,7 +33,7 @@
 			"author"    : "Emmanuel Baranger",
 			"thumb"     : "http://liveries.flightgear.org/thumbs/nothumb.jpg",
 			"modelPath" : "../data/aircraft/CF-105/CF-105.ac",
-			"setup"     : { "eye": [-10.0, 40.0, -70.0], "poi": [0.5, 0.0, 0.0], "up":[0.0, 1.0, 0.0], "fov": 11},
+			"setup"     : { "eye": [-40.0, 20.0, -50.0], "poi": [0.5, 0.0, 0.0], "up":[0.0, 1.0, 0.0], "fov": 13},
 			"canadian"  : true		
 		},
 		{
@@ -237,6 +237,15 @@
 		{
 			"id"        : "DC-10-30",
 			"modelName" : "Douglas DC-10-30",
+			"author"    : "Ryan Miller",
+			"thumb"     : "http://liveries.flightgear.org/thumbs/nothumb.jpg",
+			"modelPath" : "../data/aircraft/DC-10-30/DC-10-30.ac",
+			"setup"     : { "eye": [-150.0, -40.0, -150.0], "poi": [0.0, 0.0, 0.0], "up":[0.0, 1.0, 0.0], "fov": 10},
+			"canadian"  : false		
+		},
+		{
+			"id"        : "DC-10-30ER",
+			"modelName" : "Douglas DC-10-30ER",
 			"author"    : "Ryan Miller",
 			"thumb"     : "http://liveries.flightgear.org/thumbs/nothumb.jpg",
 			"modelPath" : "../data/aircraft/DC-10-30/DC-10-30.ac",
