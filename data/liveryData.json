@@ -84,7 +84,7 @@
 			"author":  "Emmanuel Baranger",
 			"updated": "2013-11-27",
 			"desc":    "RL205",
-			"thumb":   "../data/aircraft/CF-105/thumbs/avro.jpg",
+			"thumb":   "../data/aircraft/CF-105/thumbs/avro.png",
 			"zip":     "included",
 			"texture": "../data/aircraft/CF-105/textures/RL205/",
 			"gear":    "",
