@@ -239,10 +239,10 @@
 			"typeId":  "707",
 			"author":  "Brett Harrison",
 			"updated": "2010-07-11",
-			"desc":    "",
+			"desc":    "Requires update",
 			"thumb":   "http://liveries.flightgear.org/thumbs/258.jpg",
 			"zip":     "http://liveries.flightgear.org/download/Boeing/707/RCAF.zip",
-			"texture": "",
+			"texture": "../data/aircraft/707/textures/RCAF/",
 			"gear":    "",
 			"acLink":  "",
 			"acDesc":  ""
