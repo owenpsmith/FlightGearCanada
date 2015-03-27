@@ -102,7 +102,7 @@
 		{
 			"id"        : "747-400",
 			"modelName" : "Boeing 747-400",
-			"author"    : "",
+			"author"    : "Gijs de Rooy",
 			"thumb"     : "http://liveries.flightgear.org/thumbs/nothumb.jpg",
 			"modelPath" : "",
 			"setup"     : "",
@@ -147,7 +147,7 @@
 		{
 			"id"        : "CRJ-200",
 			"modelName" : "Bombardier CRJ-200",
-			"author"    : "Joshua Wilson",
+			"author"    : "Nick I",
 			"thumb"     : "http://liveries.flightgear.org/thumbs/350.jpg",
 			"modelPath" : "",
 			"setup"     : "",
@@ -158,6 +158,15 @@
 			"modelName" : "Bombardier CRJ-700ER",
 			"author"    : "Ryan Miller",
 			"thumb"     : "http://liveries.flightgear.org/thumbs/734.jpg",
+			"modelPath" : "",
+			"setup"     : "",
+			"canadian"  : true		
+		},
+		{
+			"id"        : "CRJ-900",
+			"modelName" : "Bombardier CRJ-900",
+			"author"    : "Ryan Miller",
+			"thumb"     : "http://liveries.flightgear.org/thumbs/nothumb.jpg",
 			"modelPath" : "",
 			"setup"     : "",
 			"canadian"  : true		
