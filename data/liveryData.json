@@ -320,7 +320,7 @@
 			"desc":    "",
 			"thumb":   "http://liveries.flightgear.org/thumbs/101.jpg",
 			"zip":     "http://liveries.flightgear.org/download/Boeing/767-300/ACA.zip",
-			"texture": "../data/aircraft/767-300/textures/ACA/",
+			"texture": "",
 			"gear":    "",
 			"acLink":  "",
 			"acDesc":  ""
@@ -333,7 +333,7 @@
 			"desc":    "",
 			"thumb":   "http://liveries.flightgear.org/thumbs/116.jpg",
 			"zip":     "http://liveries.flightgear.org/download/Boeing/767-300/OOM.zip",
-			"texture": "../data/aircraft/767-300/textures/OOM/",
+			"texture": "",
 			"gear":    "",
 			"acLink":  "",
 			"acDesc":  ""
@@ -359,7 +359,7 @@
 			"desc":    "",
 			"thumb":   "http://liveries.flightgear.org/thumbs/1135.jpg",
 			"zip":     "http://liveries.flightgear.org/download/Boeing/787/ACA.zip",
-			"texture": "../data/aircraft/787/textures/ACA/",
+			"texture": "",
 			"gear":    "",
 			"acLink":  "",
 			"acDesc":  ""
