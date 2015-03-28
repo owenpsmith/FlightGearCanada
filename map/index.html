@@ -15,7 +15,7 @@
 	<meta charset="ANSI" />
 	<meta name="viewport" content="width=device-width">
 	<link type="text/css"  href="../includes/css/style.css"      rel="stylesheet">
-	<link type="text/css"  href="css/style.css"      rel="stylesheet">
+	<link type="text/css"  href="style.css"                      rel="stylesheet">
 	<link type="image/png" href="../includes/images/favicon.ico" rel="icon">
 </head>
 
@@ -32,11 +32,27 @@
 		<a href="../links/index.html"						>Links		</a>
 	</nav>
 
-	<section id="welcome">
-		<header><h1>Under Construction</h1></header>
+	<section id='noJS'>
+		<h2>This page requires JavaScript to be enabled</h2>
+	</section>
+
+	<section id='map'>
+		<!-- map will be generated here -->
+	</section>
+
+	<section id="legendContainer">
+		<div id="legend">
+			<div class="marker"><img src="markers/developer.png"       /></div><div class="markerDesc">Developer       </div>
+			<div class="marker"><img src="markers/user.png"            /></div><div class="markerDesc">User            </div>
+			<div class="marker"><img src="markers/enhancedAirport.png" /></div><div class="markerDesc">Enhanced Airport</div>
+			<div class="marker"><img src="markers/favoriteAirport.png" /></div><div class="markerDesc">Favorite Airport</div>
+			<div class="marker"><img src="markers/enhancedScenery.png" /></div><div class="markerDesc">Enhanced Scenery</div>
+		<div>
 	</section>
 
 	<script type="text/javascript" src="../includes/js/jquery-1.4.2.min.js"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
+	<script type="text/javascript" src="script.js"></script>
 
 </body>
 </html>

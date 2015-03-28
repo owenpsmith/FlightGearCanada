@@ -1,0 +1,47 @@
+{ "locations" :
+	[
+		{
+			"name"   : "Owen Smith",
+			"lat"    : 49.2738005,
+			"lon"    : -122.6713065,
+			"marker" : "developer"
+		},
+		{
+			"name"   : "Max Ward",
+			"lat"    : 49.853822,
+			"lon"    : -97.1522251,
+			"marker" : "user"
+		},
+		{
+			"name"   : "Terrace, BC (CYXT)",
+			"lat"    : 54.46639,
+			"lon"    : -128.5797005,
+			"marker" : "enhancedAirport"
+		},
+		{
+			"name"   : "Vancouver, BC (CYVR)",
+			"lat"    : 49.1943914,
+			"lon"    : -123.1802675,
+			"marker" : "enhancedAirport"
+		},
+		{
+			"name"   : "Blue River, BC (CYCP)",
+			"lat"    : 52.1231251,
+			"lon"    : -119.2919151,
+			"marker" : "favoriteAirport"
+		},
+		{
+			"name"   : "Stewart, BC (CZST)",
+			"lat"    : 55.9334474,
+			"lon"    : -129.9834702,
+			"marker" : "favoriteAirport"
+		},
+		{
+			"name"   : "Toronto",
+			"lat"    : 43.6425,
+			"lon"    : -79.387222,
+			"marker" : "enhancedScenery"
+		}
+    ]
+}
+
