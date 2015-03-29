@@ -12,6 +12,7 @@ div#loading {
 	left: 50%;
 	margin-top  : -15px;
 	margin-left : -75px;
+	display : none;
 }
 
 div#loading h2 {
