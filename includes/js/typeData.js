@@ -26,7 +26,7 @@ function getCanadianTypeIndex()
 			}
 		});
 	}
-	
+
 	return canadianTypeIndex;
 }
 
@@ -34,16 +34,15 @@ function getCanadianTypeIndex()
 function getDataForType(acId)
 {
     var returnType = null;
-    
+
 	$.each(typeData, function(key, thisType)
 	{
 		if (thisType.id == acId)
 		{
-			console.log(acId + " == " + thisType.id);
 			returnType = thisType;
             return;
 		}
-	}); 
-	
+	});
+
     return returnType;
 }

@@ -10,7 +10,6 @@
 			"zip":     "http://liveries.flightgear.org/download/Airbus/A320/ACA.zip",
 			"texture": "",
 			"gear":    "",
-			"acLink":  "",
 			"acDesc":  ""
 		},
 		{
@@ -23,7 +22,6 @@
 			"zip":     "http://liveries.flightgear.org/download/Airbus/A330-343/ACA.zip",
 			"texture": "",
 			"gear":    "",
-			"acLink":  "",
 			"acDesc":  ""
 		},
 		{
@@ -36,7 +34,6 @@
 			"zip":     "http://liveries.flightgear.org/download/Airbus/A330-343/ACA-SA.zip",
 			"texture": "",
 			"gear":    "",
-			"acLink":  "",
 			"acDesc":  ""
 		},
 		{
@@ -49,7 +46,6 @@
 			"zip":     "http://liveries.flightgear.org/download/Airbus/A330-343/TSC.zip",
 			"texture": "",
 			"gear":    "",
-			"acLink":  "",
 			"acDesc":  ""
 		},
 		{
@@ -62,7 +58,6 @@
 			"zip":     "included",
 			"texture": "../data/aircraft/CF-100/textures/black/",
 			"gear":    "",
-			"acLink":  "",
 			"acDesc":  ""
 		},
 		{
@@ -75,7 +70,6 @@
 			"zip":     "included",
 			"texture": "../data/aircraft/CF-100/textures/loVis/",
 			"gear":    "",
-			"acLink":  "",
 			"acDesc":  ""
 		},
 		{
@@ -88,7 +82,6 @@
 			"zip":     "included",
 			"texture": "../data/aircraft/CF-105/textures/RL205/",
 			"gear":    "",
-			"acLink":  "",
 			"acDesc":  ""
 		},
 		{
@@ -101,7 +94,6 @@
 			"zip":     "included",
 			"texture": "../data/aircraft/CF-105/textures/RL206/",
 			"gear":    "",
-			"acLink":  "",
 			"acDesc":  ""
 		},
 		{
@@ -114,7 +106,6 @@
 			"zip":     "included",
 			"texture": "../data/aircraft/CF-105/textures/RL666/",
 			"gear":    "",
-			"acLink":  "",
 			"acDesc":  ""
 		},
 		{
@@ -127,7 +118,6 @@
 			"zip":     "http://liveries.flightgear.org/download/Beechcraft/B1900D/C-GORC.zip",
 			"texture": "../data/aircraft/B1900D/textures/C-GORC/",
 			"gear":    "",
-			"acLink":  "",
 			"acDesc":  ""
 		},
 		{
@@ -140,7 +130,6 @@
 			"zip":     "http://liveries.flightgear.org/download/Beechcraft/B1900D/C-GHGA.zip",
 			"texture": "../data/aircraft/B1900D/textures/C-GHGA/",
 			"gear":    "",
-			"acLink":  "",
 			"acDesc":  ""
 		},
 		{
@@ -153,7 +142,6 @@
 			"zip":     "http://liveries.flightgear.org/download/Beechcraft/B1900D/C-GAAS.zip",
 			"texture": "../data/aircraft/B1900D/textures/C-GAAS/",
 			"gear":    "",
-			"acLink":  "",
 			"acDesc":  ""
 		},
 		{
@@ -166,7 +154,6 @@
 			"zip":     "http://liveries.flightgear.org/download/Beechcraft/B1900D/AAQ.zip",
 			"texture": "../data/aircraft/B1900D/textures/AAQ/",
 			"gear":    "",
-			"acLink":  "",
 			"acDesc":  ""
 		},
 		{
@@ -179,7 +166,6 @@
 			"zip":     "http://liveries.flightgear.org/download/Beechcraft/B1900D/LAL.zip",
 			"texture": "../data/aircraft/B1900D/textures/LAL/",
 			"gear":    "",
-			"acLink":  "",
 			"acDesc":  ""
 		},
 		{
@@ -192,7 +178,6 @@
 			"zip":     "http://liveries.flightgear.org/download/Beechcraft/B1900D/GLR.zip",
 			"texture": "../data/aircraft/B1900D/textures/GLR/",
 			"gear":    "",
-			"acLink":  "",
 			"acDesc":  ""
 		},
 		{
@@ -205,7 +190,6 @@
 			"zip":     "http://liveries.flightgear.org/download/Beechcraft/B1900D/NTA.zip",
 			"texture": "../data/aircraft/B1900D/textures/NTA/",
 			"gear":    "",
-			"acLink":  "",
 			"acDesc":  ""
 		},
 		{
@@ -218,7 +202,6 @@
 			"zip":     "../data/aircraft/CT-156/downloads/CT-156_RCAF.zip",
 			"texture": "",
 			"gear":    "",
-			"acLink":  "",
 			"acDesc":  ""
 		},
 		{
@@ -231,7 +214,6 @@
 			"zip":     "http://liveries.flightgear.org/download/Bell/UH-1/RCAF.zip",
 			"texture": "../data/aircraft/UH-1/textures/RCAF/",
 			"gear":    "",
-			"acLink":  "",
 			"acDesc":  ""
 		},
 		{
@@ -244,7 +226,6 @@
 			"zip":     "http://liveries.flightgear.org/download/Boeing/707/RCAF.zip",
 			"texture": "../data/aircraft/707/textures/RCAF/",
 			"gear":    "",
-			"acLink":  "",
 			"acDesc":  ""
 		},
 		{
@@ -257,7 +238,6 @@
 			"zip":     "included",
 			"texture": "../data/aircraft/737-600/textures/WJA/",
 			"gear":    "",
-			"acLink":  "",
 			"acDesc":  ""
 		},
 		{
@@ -270,7 +250,6 @@
 			"zip":     "http://liveries.flightgear.org/download/Boeing/737-800/CJA.zip",
 			"texture": "../data/aircraft/737-800/textures/CJA/",
 			"gear":    "",
-			"acLink":  "",
 			"acDesc":  ""
 		},
 		{
@@ -283,7 +262,6 @@
 			"zip":     "http://liveries.flightgear.org/download/Boeing/737-800/SWG.zip",
 			"texture": "../data/aircraft/737-800/textures/SWG/",
 			"gear":    "",
-			"acLink":  "",
 			"acDesc":  ""
 		},
 		{
@@ -296,7 +274,6 @@
 			"zip":     "http://liveries.flightgear.org/download/Boeing/747-400/CDN_1987-1999.zip",
 			"texture": "",
 			"gear":    "",
-			"acLink":  "",
 			"acDesc":  ""
 		},
 		{
@@ -309,7 +286,6 @@
 			"zip":     "http://liveries.flightgear.org/download/Boeing/747-400/CDN_1999.zip",
 			"texture": "",
 			"gear":    "",
-			"acLink":  "",
 			"acDesc":  ""
 		},
 		{
@@ -322,7 +298,6 @@
 			"zip":     "http://liveries.flightgear.org/download/Boeing/767-300/ACA.zip",
 			"texture": "",
 			"gear":    "",
-			"acLink":  "",
 			"acDesc":  ""
 		},
 		{
@@ -335,7 +310,6 @@
 			"zip":     "http://liveries.flightgear.org/download/Boeing/767-300/OOM.zip",
 			"texture": "",
 			"gear":    "",
-			"acLink":  "",
 			"acDesc":  ""
 		},
 		{
@@ -348,7 +322,6 @@
 			"zip":     "http://liveries.flightgear.org/download/Boeing/777-200LR/ACA.zip",
 			"texture": "",
 			"gear":    "",
-			"acLink":  "",
 			"acDesc":  ""
 		},
 		{
@@ -361,7 +334,6 @@
 			"zip":     "http://liveries.flightgear.org/download/Boeing/787/ACA.zip",
 			"texture": "",
 			"gear":    "",
-			"acLink":  "",
 			"acDesc":  ""
 		},
 		{
@@ -374,7 +346,6 @@
 			"zip":     "http://liveries.flightgear.org/download/Boeing/C-17/177703.zip",
 			"texture": "",
 			"gear":    "",
-			"acLink":  "",
 			"acDesc":  ""
 		},
 		{
@@ -387,7 +358,6 @@
 			"zip":     "http://liveries.flightgear.org/download/Bombardier/CRJ-200/JZA.zip",
 			"texture": "",
 			"gear":    "",
-			"acLink":  "",
 			"acDesc":  ""
 		},
 		{
@@ -400,7 +370,6 @@
 			"zip":     "http://liveries.flightgear.org/download/Bombardier/CRJ-700ER/C-FUJZ.zip",
 			"texture": "",
 			"gear":    "",
-			"acLink":  "",
 			"acDesc":  ""
 		},
 		{
@@ -413,7 +382,6 @@
 			"zip":     "included",
 			"texture": "../data/aircraft/CL-415/textures/NFL/",
 			"gear":    "",
-			"acLink":  "",
 			"acDesc":  ""
 		},
 		{
@@ -426,7 +394,6 @@
 			"zip":     "included",
 			"texture": "../data/aircraft/CL-415/textures/ONT/",
 			"gear":    "",
-			"acLink":  "",
 			"acDesc":  ""
 		},
 		{
@@ -439,7 +406,6 @@
 			"zip":     "http://liveries.flightgear.org/download/deHavillandCanada/DHC-1/RCAF-671.zip",
 			"texture": "",
 			"gear":    "",
-			"acLink":  "",
 			"acDesc":  ""
 		},
 		{
@@ -452,7 +418,6 @@
 			"zip":     "http://liveries.flightgear.org/download/deHavillandCanada/DHC-2/fecteau.zip",
 			"texture": "../data/aircraft/DHC-2/textures/Fecteau/",
 			"gear":    "floats",
-			"acLink":  "",
 			"acDesc":  ""
 		},
 		{
@@ -465,7 +430,6 @@
 			"zip":     "http://liveries.flightgear.org/download/deHavillandCanada/DHC-2/C-GAXL.zip",
 			"texture": "../data/aircraft/DHC-2/textures/ASG/",
 			"gear":    "floats",
-			"acLink":  "",
 			"acDesc":  ""
 		},
 		{
@@ -478,7 +442,6 @@
 			"zip":     "http://liveries.flightgear.org/download/deHavillandCanada/DHC-2/H3.zip",
 			"texture": "../data/aircraft/DHC-2/textures/HES/",
 			"gear":    "floats",
-			"acLink":  "",
 			"acDesc":  ""
 		},
 		{
@@ -491,7 +454,6 @@
 			"zip":     "http://liveries.flightgear.org/download/deHavillandCanada/DHC-2/C-FBQY.zip",
 			"texture": "../data/aircraft/DHC-2/textures/Molson/",
 			"gear":    "wheels",
-			"acLink":  "",
 			"acDesc":  ""
 		},
 		{
@@ -504,7 +466,6 @@
 			"zip":     "included",
 			"texture": "../data/aircraft/DHC-2/textures/NCA/",
 			"gear":    "floats",
-			"acLink":  "",
 			"acDesc":  ""
 		},
 		{
@@ -517,7 +478,6 @@
 			"zip":     "included",
 			"texture": "../data/aircraft/DHC-2/textures/TPA_blue/",
 			"gear":    "floats",
-			"acLink":  "",
 			"acDesc":  ""
 		},
 		{
@@ -530,7 +490,6 @@
 			"zip":     "included",
 			"texture": "../data/aircraft/DHC-2/textures/TPA_red/",
 			"gear":    "floats",
-			"acLink":  "",
 			"acDesc":  ""
 		},
 		{
@@ -543,7 +502,6 @@
 			"zip":     "http://liveries.flightgear.org/download/deHavillandCanada/DHC-2/C-GVPB.zip",
 			"texture": "../data/aircraft/DHC-2/textures/C-GVPB/",
 			"gear":    "floats",
-			"acLink":  "",
 			"acDesc":  ""
 		},
 		{
@@ -556,7 +514,6 @@
 			"zip":     "http://liveries.flightgear.org/download/deHavillandCanada/DHC-2/YWZ.zip",
 			"texture": "../data/aircraft/DHC-2/textures/WCA/",
 			"gear":    "floats",
-			"acLink":  "",
 			"acDesc":  ""
 		},
 		{
@@ -569,7 +526,6 @@
 			"zip":     "http://liveries.flightgear.org/download/deHavillandCanada/DHC-3/fecteau.zip",
 			"texture": "../data/aircraft/DHC-3/textures/Fecteau/",
 			"gear":    "floats",
-			"acLink":  "",
 			"acDesc":  ""
 		},
 		{
@@ -582,7 +538,6 @@
 			"zip":     "http://liveries.flightgear.org/download/deHavillandCanada/DHC-3/C-FODT.zip",
 			"texture": "../data/aircraft/DHC-3/textures/ASG/",
 			"gear":    "floats",
-			"acLink":  "",
 			"acDesc":  ""
 		},
 		{
@@ -595,7 +550,6 @@
 			"zip":     "included",
 			"texture": "../data/aircraft/DHC-3/textures/RCAF/",
 			"gear":    "floats",
-			"acLink":  "",
 			"acDesc":  ""
 		},
 		{
@@ -608,7 +562,6 @@
 			"zip":     "included",
 			"texture": "../data/aircraft/DHC-3/textures/RCMP/",
 			"gear":    "wheels",
-			"acLink":  "",
 			"acDesc":  ""
 		},		
 		{
@@ -621,7 +574,6 @@
 			"zip":     "http://liveries.flightgear.org/download/deHavillandCanada/DHC-6/AIE.zip",
 			"texture": "../data/aircraft/DHC-6/textures/AIE/",
 			"gear":    "wheels",
-			"acLink":  "",
 			"acDesc":  ""
 		},
 		{
@@ -634,7 +586,6 @@
 			"zip":     "http://liveries.flightgear.org/download/deHavillandCanada/DHC-6/LAL.zip",
 			"texture": "../data/aircraft/DHC-6/textures/LAL/",
 			"gear":    "wheels",
-			"acLink":  "",
 			"acDesc":  ""
 		},		
 		{
@@ -647,7 +598,6 @@
 			"zip":     "../data/aircraft/DHC-6/downloads/DHC-6_Air_Labrador_Blue.zip",
 			"texture": "../data/aircraft/DHC-6/textures/LAL2/",
 			"gear":    "wheels",
-			"acLink":  "",
 			"acDesc":  ""
 		},		
 		{
@@ -660,7 +610,6 @@
 			"zip":     "http://liveries.flightgear.org/download/deHavillandCanada/DHC-6/TID.zip",
 			"texture": "../data/aircraft/DHC-6/textures/TID/",
 			"gear":    "floats",
-			"acLink":  "",
 			"acDesc":  ""
 		},		
 		{
@@ -673,7 +622,6 @@
 			"zip":     "http://liveries.flightgear.org/download/deHavillandCanada/DHC-6/C-FCSU.zip",
 			"texture": "../data/aircraft/DHC-6/textures/C-FCSU/",
 			"gear":    "wheels",
-			"acLink":  "",
 			"acDesc":  ""
 		},		
 		{
@@ -686,7 +634,6 @@
 			"zip":     "http://liveries.flightgear.org/download/deHavillandCanada/DHC-6/HES.zip",
 			"texture": "../data/aircraft/DHC-6/textures/HES/",
 			"gear":    "floats",
-			"acLink":  "",
 			"acDesc":  ""
 		},		
 		{
@@ -699,7 +646,6 @@
 			"zip":     "http://liveries.flightgear.org/download/deHavillandCanada/DHC-6/KBA.zip",
 			"texture": "../data/aircraft/DHC-6/textures/KBA/",
 			"gear":    "floats",
-			"acLink":  "",
 			"acDesc":  ""
 		},		
 		{
@@ -712,7 +658,6 @@
 			"zip":     "http://liveries.flightgear.org/download/deHavillandCanada/DHC-6/NWL.zip",
 			"texture": "../data/aircraft/DHC-6/textures/NWL/",
 			"gear":    "wheels",
-			"acLink":  "",
 			"acDesc":  ""
 		},		
 		{
@@ -725,7 +670,6 @@
 			"zip":     "http://liveries.flightgear.org/download/deHavillandCanada/DHC-6/RCAF_SAR.zip",
 			"texture": "../data/aircraft/DHC-6/textures/RCAF_SAR/",
 			"gear":    "skis",
-			"acLink":  "",
 			"acDesc":  ""
 		},		
 		{
@@ -738,7 +682,6 @@
 			"zip":     "http://liveries.flightgear.org/download/deHavillandCanada/DHC-6/RCAF_UN.zip",
 			"texture": "../data/aircraft/DHC-6/textures/RCAF_UN/",
 			"gear":    "wheels",
-			"acLink":  "",
 			"acDesc":  ""
 		},		
 		{
@@ -751,7 +694,6 @@
 			"zip":     "http://liveries.flightgear.org/download/deHavillandCanada/DHC-6/C-GGLE.zip",
 			"texture": "../data/aircraft/DHC-6/textures/C-GGLE/",
 			"gear":    "wheels",
-			"acLink":  "",
 			"acDesc":  ""
 		},		
 		{
@@ -764,7 +706,6 @@
 			"zip":     "http://liveries.flightgear.org/download/deHavillandCanada/DHC-6/C-FDHT.zip",
 			"texture": "../data/aircraft/DHC-6/textures/C-FDHT/",
 			"gear":    "wheels",
-			"acLink":  "",
 			"acDesc":  ""
 		},		
 		{
@@ -777,7 +718,6 @@
 			"zip":     "http://liveries.flightgear.org/download/deHavillandCanada/DHC-6/YWZ.zip",
 			"texture": "../data/aircraft/DHC-6/textures/YWZ/",
 			"gear":    "floats",
-			"acLink":  "",
 			"acDesc":  ""
 		},		
 		{
@@ -790,7 +730,6 @@
 			"zip":     "http://liveries.flightgear.org/download/Douglas/DC-3/BFL.zip",
 			"texture": "../data/aircraft/DC-3/textures/BFL/",
 			"gear":    "",
-			"acLink":  "",
 			"acDesc":  ""
 		},
 		{
@@ -803,7 +742,6 @@
 			"zip":     "../data/aircraft/DC-3/downloads/C-FDTH.zip",
 			"texture": "../data/aircraft/DC-3/textures/C-FDTH/",
 			"gear":    "",
-			"acLink":  "",
 			"acDesc":  ""
 		},
 		{
@@ -816,7 +754,6 @@
 			"zip":     "../data/aircraft/DC-3/downloads/CPC_Canadian_Pacific.zip",
 			"texture": "../data/aircraft/DC-3/textures/CPC_Canadian_Pacific/",
 			"gear":    "",
-			"acLink":  "",
 			"acDesc":  ""
 		},
 		{
@@ -829,7 +766,6 @@
 			"zip":     "http://liveries.flightgear.org/download/Douglas/DC-3/CPC.zip",
 			"texture": "../data/aircraft/DC-3/textures/CPC/",
 			"gear":    "",
-			"acLink":  "",
 			"acDesc":  ""
 		},
 		{
@@ -842,7 +778,6 @@
 			"zip":     "http://liveries.flightgear.org/download/Douglas/DC-3/C-GWIR.zip",
 			"texture": "../data/aircraft/DC-3/textures/C-GWIR/",
 			"gear":    "",
-			"acLink":  "",
 			"acDesc":  ""
 		},
 		{
@@ -855,7 +790,6 @@
 			"zip":     "../data/aircraft/DC-3/downloads/PWA_old.zip",
 			"texture": "../data/aircraft/DC-3/textures/PWA_old/",
 			"gear":    "",
-			"acLink":  "",
 			"acDesc":  ""
 		},
 		{
@@ -868,7 +802,6 @@
 			"zip":     "../data/aircraft/DC-3/downloads/PWA_new.zip",
 			"texture": "../data/aircraft/DC-3/textures/PWA_new/",
 			"gear":    "",
-			"acLink":  "",
 			"acDesc":  ""
 		},
 		{
@@ -881,7 +814,6 @@
 			"zip":     "../data/aircraft/DC-3/downloads/CF-HCF.zip",
 			"texture": "../data/aircraft/DC-3/textures/CF-HCF/",
 			"gear":    "",
-			"acLink":  "",
 			"acDesc":  ""
 		},
 		{
@@ -894,7 +826,6 @@
 			"zip":     "../data/aircraft/DC-3/downloads/RCAF_CAF.zip",
 			"texture": "../data/aircraft/DC-3/textures/RCAF_CAF/",
 			"gear":    "",
-			"acLink":  "",
 			"acDesc":  ""
 		},
 		{
@@ -907,7 +838,6 @@
 			"zip":     "../data/aircraft/DC-3/downloads/ACA_TCA.zip",
 			"texture": "../data/aircraft/DC-3/textures/ACA_TCA/",
 			"gear":    "",
-			"acLink":  "",
 			"acDesc":  ""
 		},
 		{
@@ -920,7 +850,6 @@
 			"zip":     "http://liveries.flightgear.org/download/McDonnellDouglas/DC-10-30/CPC.zip",
 			"texture": "../data/aircraft/DC-10-30/textures/CPC/",
 			"gear":    "",
-			"acLink":  "",
 			"acDesc":  ""
 		},
 		{
@@ -933,7 +862,6 @@
 			"zip":     "included",
 			"texture": "../data/aircraft/DC-10-30/textures/CDN/",
 			"gear":    "",
-			"acLink":  "",
 			"acDesc":  ""
 		},
 		{
@@ -946,7 +874,6 @@
 			"zip":     "http://liveries.flightgear.org/download/Embraer/ERJ-190/ACA.zip",
 			"texture": "",
 			"gear":    "",
-			"acLink":  "",
 			"acDesc":  ""
 		},
 		{
@@ -959,7 +886,6 @@
 			"zip":     "../data/aircraft/G-21/downloads/Goose_RCMP.zip",
 			"texture": "../data/aircraft/G-21/textures/RCMP/",
 			"gear":    "",
-			"acLink":  "",
 			"acDesc":  ""
 		},
 		{
@@ -972,7 +898,6 @@
 			"zip":     "included",
 			"texture": "../data/aircraft/F-18/textures/RCAF_80/",
 			"gear":    "",
-			"acLink":  "",
 			"acDesc":  ""
 		},
 		{
@@ -985,7 +910,6 @@
 			"zip":     "http://liveries.flightgear.org/download/NorthAmericanAviation/T-6/20372.zip",
 			"texture": "",
 			"gear":    "",
-			"acLink":  "",
 			"acDesc":  ""
 		},
 		{
@@ -998,7 +922,6 @@
 			"zip":     "http://liveries.flightgear.org/download/RoyalAircraftFactory/S.E.5/caf_g-cybp.zip",
 			"texture": "../data/aircraft/SE5/textures/RCAF/",
 			"gear":    "",
-			"acLink":  "",
 			"acDesc":  ""
 		}
 	]

@@ -77,13 +77,13 @@ function loadLiveryData(dataLoadedCallback)
 			liveryTypeIndex.sort(function (a, b) {
 				return a.toLowerCase().localeCompare(b.toLowerCase());
 			});
-			
+
 			operatorIndex.sort(function (a, b) {
 				return a.toLowerCase().localeCompare(b.toLowerCase());
 			});
 			// we want "other" to be at the end of the list for display
 			operatorIndex.push("other");
-			
+
 			authorIndex.sort(function (a, b) {
 				return a.toLowerCase().localeCompare(b.toLowerCase());
 			});
@@ -192,7 +192,7 @@ function getLiveriesByAuthor()
 function getTypeDataForAcId(acId)
 {
     var returnType = null;
-    
+
 	$.each(types, function(key, thisType)
 	{
 		if (thisType.id == acId)
@@ -200,9 +200,41 @@ function getTypeDataForAcId(acId)
 			returnType = thisType;
             return;
 		}
-	}); 
-	
+	});
+
     return returnType;
+}
+
+function doesTypeSupport3D(acId)
+{
+	var returnValue = false;
+
+	$.each(liveries, function(key, thisLivery)
+	{
+		if ((thisLivery.typeId == acId) &&
+		    (thisLivery.texture != ""))
+		{
+			returnValue = true;
+            return;
+		}
+	});
+
+    return returnValue;
+}
+
+function getLiveriesForType(acId)
+{
+	var liveriesForType = [];
+
+	$.each(liveries, function(key, thisLivery)
+	{
+		if (thisLivery.typeId == acId)
+		{
+			liveriesForType.push(thisLivery);
+		}
+	});
+
+    return liveriesForType;
 }
 
 

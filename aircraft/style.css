@@ -10,26 +10,14 @@ li.liveryGroup h3 {
 	display       : inline-block;
 }
 
-li.liveryGroup h3.liveryCount {
-	margin-right  : 20px;
-	min-width     : 30px;
-	text-align    : right;
-	font-weight   : normal;
-}
-
 li.liveryGroup a.link3D {
-	margin-right  : 20px;
-	min-width     : 20px;
 	font-weight   : normal;
 	color		  : #ff0000;
-	display       : inline-block;
+	background-color: #dddddd;
 }
 
-li.liveryGroup a.link3DDisabled {
-	margin-right   : 20px;
-	min-width      : 20px;
-	pointer-events : none;
-	display        : inline-block;
+li.liveryGroup a.link3D:hover {
+	font-weight   : bold;
 }
 
 ul li.livery {
@@ -57,7 +45,7 @@ li.livery div:after {
 	clear : left;
 }
 
-li.livery a {
+li.livery a.button {
 
 	background-color: #585858;
 	background-image: -webkit-gradient(linear, left top, left bottom, from(#585858), to(#3d3d3d));
@@ -75,7 +63,7 @@ li.livery a {
     padding: 4px 10px;
 }
 
-li.livery a:hover {
+li.livery a.button:hover {
 
 	background : #276194;
 

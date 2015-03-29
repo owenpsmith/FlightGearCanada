@@ -14,22 +14,19 @@ var displayAircraft = function()
 		var thisTypeData = getDataForType(thisType);
 
 		typeHTML += "\t\t\t\t\t\t<li class=\"livery\"><img src=\"" + thisTypeData.thumb    + "\" /><div>\n";
-//		typeHTML += "\t\t\t\t\t\t\t<p><b>Operator:</b>"            + thisOperator.operator + "</p>\n";
 		typeHTML += "\t\t\t\t\t\t\t<p><b>Author  :</b>"            + thisTypeData.author   + "</p>\n";
-//		typeHTML += "\t\t\t\t\t\t\t<p><b>Updated :</b>"            + thisOperator.updated  + "</p>\n";
-//		typeHTML += "\t\t\t\t\t\t\t<br>\n";
-//		typeHTML += "\t\t\t\t\t\t\t<a class=\"link\" href=\""      + thisOperator.zip + "\">Download</a>\n";
+		typeHTML += "\t\t\t\t\t\t\t<p><b>Updated :</b>"            + thisTypeData.updated  + "</p>\n";
+		typeHTML += "\t\t\t\t\t\t\t<br>\n";
+		if (doesTypeSupport3D(thisType) == true)
+		{
+			typeHTML += "<a class=\"link3D\" href=\"#\">View in 3D</a>";
+		}
 		typeHTML += "\t\t\t\t\t\t</div>\n";
 
 		// data for generating 3D gallery upon selection
 		typeHTML += "\t\t\t\t\t\t<div class=\"metaData\">\n";
-		typeHTML += "\t\t\t\t\t\t\t<p class=\"acId\"     >" + thisType[0].modelId   + "</p>\n";
+		typeHTML += "\t\t\t\t\t\t\t<p class=\"acId\"     >" + thisTypeData.id   + "</p>\n";
 		typeHTML += "\t\t\t\t\t\t</div></li>\n";
-
-//			if (thisOperator.texture != "")
-//			{
-//				supports3D = true;
-//			}
 
 		// livery header
 		newHTML += "\t\t\t\t<li class=\"liveryGroup\">";
@@ -66,34 +63,34 @@ var displayAircraft = function()
 
 var switchTo3DView = function($this)
 {
+	console.log("HELLO 1");
+
 	$('section#welcome').hide();
 	$('section#3D').show();
-	$('section#3D div#gallery').show();
+	$('section#3D canvas#canvas').show();
 	$('section#3D div#text').show();
+	$('section#3D div#close').show();
+	$('section#3D div#gallery').show();
 
-	$this.next().next().children().each(function()
+	var $metaData = $this.parent().parent().children("div.metaData");
+
+	console.log("element type = " + $this.parent().parent().attr("tagName"));
+
+	var acId      = $metaData.children("p.acId").first().text();
+	console.log("acId = " + acId);
+
+	var liveriesForType = getLiveriesForType(acId);
+
+	$.each(liveriesForType, function(key, thisLivery)
 	{
-
-		var $metaData = $(this).children("div.metaData");
-
-		var acId      = $metaData.children("p.acId").first().text();
-		var operator  = $metaData.children("p.operator").first().text();
-		var thumbPath = $metaData.children("p.thumbPath").first().text();
-		var livPath   = $metaData.children("p.livPath").first().text();
-		var modAuthor = $metaData.children("p.modAuthor").first().text();
-		var livAuthor = $metaData.children("p.livAuthor").first().text();
-		var livGear   = $metaData.children("p.livGear").first().text();
-
-		var typeData = getTypeDataForAcId(acId);
-
 		// append landing gear variant if applicable
-		var modelPath = typeData.modelPath;
-		if (livGear != "")
+		var modelPath = thisLivery.modelPath;
+		if (thisLivery.gear != "")
 		{
 			// select the appropriate model file
 			modelPath = modelPath.substring(0, modelPath.length - 3);
 
-			modelPath += "_" + livGear + ".ac";
+			modelPath += "_" + thisLivery.gear + ".ac";
 
 //			if (livGear == "floats")
 //			{
@@ -104,17 +101,17 @@ var switchTo3DView = function($this)
 
 		var addToDisplay3D =
 		{
-			acName     : typeData.modelName,
-			operator   : operator,
-			thumbPath  : thumbPath,
+			acName     : thisLivery.modelName,
+			operator   : thisLivery.operator,
+			thumbPath  : thisLivery.thumb,
 			modelPath  : modelPath,
-			liveryPath : livPath,
-			setup      : typeData.setup,
-			modAuthor  : modAuthor,
-			livAuthor  : livAuthor
+			liveryPath : thisLivery.texture,
+			setup      : thisLivery.modelSetup,
+			modAuthor  : thisLivery.modelAuthor,
+			livAuthor  : thisLivery.author
 		}
 
-		if (livPath != "")
+		if (thisLivery.texture != "")
 		{
 			toDisplay3D.push(addToDisplay3D);
 		}
@@ -129,6 +126,22 @@ var switchTo3DView = function($this)
 	load3D(toDisplay3D);
 }
 
+var switchToLiveryView = function($this)
+{
+	$('section#3D').hide();
+	$('section#3D canvas#canvas').hide();
+	$('section#3D div#text').hide();
+	$('section#3D div#close').hide();
+	$('section#3D div#gallery').hide();
+	$('section#3D div#gallery').empty();
+	$('img.thumbnail').hide();
+	$('section#welcome').show();
+}
+
+$('div#close img').click(function(e)
+{
+	switchToLiveryView($(this));
+});
 
 $(document).ready( function()
 {

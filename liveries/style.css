@@ -24,6 +24,10 @@ li.liveryGroup a.link3D {
 	display       : inline-block;
 }
 
+li.liveryGroup a.link3D:hover {
+	font-weight   : bold;
+}
+
 li.liveryGroup h3 {
 	margin-top    : 0px;
 	margin-bottom : 0px;
