@@ -45,7 +45,7 @@ function initMap()
         markers.push(marker);
     });
 
-    $('#map').show();
+    $('#mapContainer').show();
     $('#legendContainer').show();
 }
 
@@ -72,6 +72,7 @@ function loadLocations(dataLoadedCallback)
 $(document).ready( function()
 {
 	$('#noJS').hide();
+	$('div#loading').show();
 
 
 	// load marker data
