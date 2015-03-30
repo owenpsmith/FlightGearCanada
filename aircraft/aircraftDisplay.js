@@ -20,7 +20,10 @@ var displayAircraft = function()
 		if (doesTypeSupport3D(thisType) == true)
 		{
 			typeHTML += "<a class=\"link3D\" href=\"#\">View in 3D</a>";
+			typeHTML += "\t\t\t\t\t\t\t<br>\n";
+			typeHTML += "\t\t\t\t\t\t\t<br>\n";
 		}
+		typeHTML += "\t\t\t\t\t\t\t<a class=\"link\" href=\""    + thisTypeData.acLink + "\">Download</a>\n";
 		typeHTML += "\t\t\t\t\t\t</div>\n";
 
 		// data for generating 3D gallery upon selection
@@ -71,6 +74,8 @@ var switchTo3DView = function($this)
 	$('section#3D div#text').show();
 	$('section#3D div#close').show();
 	$('section#3D div#gallery').show();
+
+	toDisplay3D.length = 0;
 
 	var $metaData = $this.parent().parent().children("div.metaData");
 
