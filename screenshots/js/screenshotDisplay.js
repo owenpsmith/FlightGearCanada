@@ -56,7 +56,9 @@ $(document).ready( function()
 		displayImageThumbnails();
 	});
 
-	$('div.hide-no-js').show();
+	// reveal elements which are only available if JS enabled
+	$('.hide-no-js').removeClass("hide-no-js");
+
 	$('section#thumbnailContainer').show();
 	$('section#slideshowContainer').hide();
 });

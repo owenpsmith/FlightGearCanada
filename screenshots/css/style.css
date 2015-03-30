@@ -123,6 +123,10 @@ a.captionOrange:hover
     background: url(../img/browser-icons.png);
 }
 
+.hide-no-js {
+	display : none !important;
+}
+
 @media screen and (max-width : 1391px) {
 
 	div#fixedButtons {
