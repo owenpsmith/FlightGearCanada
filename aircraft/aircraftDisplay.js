@@ -34,14 +34,6 @@ var displayAircraft = function()
 
 		// livery header
 		newHTML += "\n\t\t\t\t<li class=\"liveryGroup\">";
-		if (supports3D)
-		{
-			newHTML += "<a class=\"link3D\" href=\"#\">3D</a>";
-		}
-		else
-		{
-			newHTML += "<a class=\"link3DDisabled\" href=\"#\"></a>";
-		}
 		newHTML += "<h3>" + thisTypeData.modelName + "</h3>\n";
 		newHTML += "\t\t\t\t\t<ul>\n";
 

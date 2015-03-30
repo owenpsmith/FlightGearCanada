@@ -365,6 +365,11 @@ $('div#close img').click(function(e)
 
 $(document).ready( function()
 {
+	$('#noJS').hide();
+
+	// clear static content
+	$('ul#liveryContainer').empty();
+
 	// reveal elements which are only available if JS enabled
 	$('.hide-no-js').removeClass("hide-no-js");
 
