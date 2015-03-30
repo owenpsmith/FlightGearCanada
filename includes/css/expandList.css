@@ -23,6 +23,14 @@
     background-repeat: no-repeat;
 }
 
+ul.expList > li {
+    line-height:140%;
+    text-indent:0px;
+    background-position: 1px 8px;
+    padding-left: 20px;
+    background-repeat: no-repeat;
+}
+
 li.liveryGroup.expanded {
 	margin-bottom : 20px;
 }
@@ -65,4 +73,17 @@ li.liveryGroup.expanded {
 
 .listControl a:hover {
 	background : #276194;
+}
+
+
+@media screen and (max-width : 780px) {
+
+	ul.expList {
+		padding-left : 0px;
+	}
+
+	.expList li {
+		padding-left: 0px;
+	}
+
 }

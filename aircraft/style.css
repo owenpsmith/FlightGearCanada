@@ -102,7 +102,7 @@ section#3D {
 	display    : none;
 	background : #aaaaaa;
 }
-	
+
 .hide-no-js {
 	display : none !important;
 }
@@ -112,6 +112,10 @@ section#3D {
 	ul li.livery > div {
 		width : 354px;
 		height : auto;
+	}
+
+	li.liveryGroup ul {
+		margin-left : 0px;
 	}
 
 	li.liveryGroup a.link3D {

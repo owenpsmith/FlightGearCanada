@@ -129,6 +129,14 @@ section#3D {
 		height : auto;
 	}
 
+	li.liveryGroup ul {
+		margin-left : 0px;
+	}
+
+	li.liveryGroup .liveryCount {
+		display : none;
+	}
+
 	li.liveryGroup a.link3D {
 		display : none;
 	}
