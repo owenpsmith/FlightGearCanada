@@ -23,7 +23,7 @@ var displayAircraft = function()
 		{
 			typeHTML += "\t\t\t\t\t\t\t<br>\n";
 			typeHTML += "\t\t\t\t\t\t\t<br>\n";
-			typeHTML += "<a class=\"link3D\" href=\"#\">View in 3D</a>";
+			typeHTML += "\t\t\t\t\t\t\t<a class=\"link3D\" href=\"#\">View in 3D</a>\n";
 		}
 		typeHTML += "\t\t\t\t\t\t</div>\n";
 
@@ -33,7 +33,7 @@ var displayAircraft = function()
 		typeHTML += "\t\t\t\t\t\t</div></div></li>\n";
 
 		// livery header
-		newHTML += "\t\t\t\t<li class=\"liveryGroup\">";
+		newHTML += "\n\t\t\t\t<li class=\"liveryGroup\">";
 		if (supports3D)
 		{
 			newHTML += "<a class=\"link3D\" href=\"#\">3D</a>";
@@ -151,6 +151,14 @@ $('div#close img').click(function(e)
 
 $(document).ready( function()
 {
+	$('#noJS').hide();
+
+	// clear static content
+	$('ul#liveryContainer').empty();
+
+	// reveal elements which are only available if JS enabled
+	$('.hide-no-js').removeClass("hide-no-js");
+
 	loadLiveryData(function()
 	{
 		displayAircraft();

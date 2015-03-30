@@ -87,3 +87,11 @@ li.liveryGroup.expanded {
 	}
 
 }
+
+@media screen and (max-width : 390px) {
+
+	ul.expList > li {
+		line-height:120%;
+	}
+
+}
