@@ -56,8 +56,6 @@ div.thumbnail p {
 	}
 }
 
-.
-
 img#slideshow {
 	width        : 60%;
 	margin-left  : 20%;
@@ -124,7 +122,7 @@ a.captionOrange:hover
 		width        : 1032px;
 	}
 
-	section#thumbnails {
+	section#thumbnailContainer {
 		width        : 1032px;
 	}
 
@@ -136,7 +134,7 @@ a.captionOrange:hover
 		width        : 688px;
 	}
 
-	section#thumbnails {
+	section#thumbnailContainer {
 		width        : 688px;
 	}
 
@@ -148,7 +146,7 @@ a.captionOrange:hover
 		width        : 344px;
 	}
 
-	section#thumbnails {
+	section#thumbnailContainer {
 		width        : 344px;
 	}
 
