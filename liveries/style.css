@@ -162,4 +162,20 @@ section#3D {
 	}
 }
 
+@media screen and (max-width : 390px) {
+
+	li.liveryGroup h3 {
+		font-size     : 10pt;
+	}
+
+	ul li.livery > div {
+		width : 283px;
+	}
+
+	li.livery > div > img {
+		width  : 279px;
+		height : 201px;
+	}
+}
+
 
