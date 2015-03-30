@@ -122,7 +122,7 @@ section#3D {
 	display : none !important;
 }
 
-@media screen and (max-width : 704px) {
+@media screen and (max-width : 780px) {
 
 	ul li.livery > div {
 		width : 354px;

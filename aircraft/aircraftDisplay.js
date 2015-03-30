@@ -13,7 +13,8 @@ var displayAircraft = function()
 
 		var thisTypeData = getDataForType(thisType);
 
-		typeHTML += "\t\t\t\t\t\t<li class=\"livery\"><img src=\"" + thisTypeData.thumb    + "\" /><div>\n";
+		typeHTML += "\t\t\t\t\t\t<li class=\"livery\"><div class=\"clearfix\">";
+		typeHTML += "<img src=\"" + thisTypeData.thumb    + "\" /><div>\n";
 		typeHTML += "\t\t\t\t\t\t\t<p><b>Author  :</b>"            + thisTypeData.author   + "</p>\n";
 		typeHTML += "\t\t\t\t\t\t\t<p><b>Updated :</b>"            + thisTypeData.updated  + "</p>\n";
 		typeHTML += "\t\t\t\t\t\t\t<br>\n";
@@ -29,7 +30,7 @@ var displayAircraft = function()
 		// data for generating 3D gallery upon selection
 		typeHTML += "\t\t\t\t\t\t<div class=\"metaData\">\n";
 		typeHTML += "\t\t\t\t\t\t\t<p class=\"acId\"     >" + thisTypeData.id   + "</p>\n";
-		typeHTML += "\t\t\t\t\t\t</div></li>\n";
+		typeHTML += "\t\t\t\t\t\t</div></div></li>\n";
 
 		// livery header
 		newHTML += "\t\t\t\t<li class=\"liveryGroup\">";
