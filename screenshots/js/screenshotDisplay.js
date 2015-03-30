@@ -45,6 +45,9 @@ $('#slidesBtn').click(function()
 
 $(document).ready( function()
 {
+	$('#noJS').hide();
+	$('section#thumbnailContainer').empty();
+
 	loadScreenshotData(function(imageData)
 	{
 		images = imageData;
@@ -53,6 +56,7 @@ $(document).ready( function()
 		displayImageThumbnails();
 	});
 
+	$('div.hide-no-js').show();
 	$('section#thumbnailContainer').show();
 	$('section#slideshowContainer').hide();
 });

@@ -1,7 +1,11 @@
+#noJS {
+  margin-left : 40px;
+  margin-top  : 20px;
+}
 
 div#buttons {
 	margin-top   : 10px;
-	width        : 200px;
+	width        : 210px;
 	margin-left  : auto;
 	margin-right : auto;
 }
@@ -10,12 +14,16 @@ button#thumbsBtn {
 	width        : 90px;
 	margin-left  : 4px;
 	margin-right : 4px;
+	padding-left  : 4px;
+	padding-right : 4px;
 }
 
 button#slidesBtn {
 	width        : 90px;
 	margin-left  : 4px;
 	margin-right : 4px;
+	padding-left  : 4px;
+	padding-right : 4px;
 }
 
 section#thumbnailContainer {
@@ -30,7 +38,7 @@ div.thumbnail {
 	margin     : 5px;
 	padding    : 14px;
 	background : #444444;
-	min-height : 280px;
+	min-height : 210px;
 }
 
 div.thumbnail img {
@@ -114,7 +122,6 @@ a.captionOrange:hover
 {
     background: url(../img/browser-icons.png);
 }
-
 
 @media screen and (max-width : 1391px) {
 
