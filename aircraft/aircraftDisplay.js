@@ -17,13 +17,13 @@ var displayAircraft = function()
 		typeHTML += "\t\t\t\t\t\t\t<p><b>Author  :</b>"            + thisTypeData.author   + "</p>\n";
 		typeHTML += "\t\t\t\t\t\t\t<p><b>Updated :</b>"            + thisTypeData.updated  + "</p>\n";
 		typeHTML += "\t\t\t\t\t\t\t<br>\n";
+		typeHTML += "\t\t\t\t\t\t\t<a class=\"link\" href=\""    + thisTypeData.acLink + "\">Download</a>\n";
 		if (doesTypeSupport3D(thisType) == true)
 		{
+			typeHTML += "\t\t\t\t\t\t\t<br>\n";
+			typeHTML += "\t\t\t\t\t\t\t<br>\n";
 			typeHTML += "<a class=\"link3D\" href=\"#\">View in 3D</a>";
-			typeHTML += "\t\t\t\t\t\t\t<br>\n";
-			typeHTML += "\t\t\t\t\t\t\t<br>\n";
 		}
-		typeHTML += "\t\t\t\t\t\t\t<a class=\"link\" href=\""    + thisTypeData.acLink + "\">Download</a>\n";
 		typeHTML += "\t\t\t\t\t\t</div>\n";
 
 		// data for generating 3D gallery upon selection

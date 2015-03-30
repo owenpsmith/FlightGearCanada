@@ -10,13 +10,13 @@ li.liveryGroup h3 {
 	display       : inline-block;
 }
 
-li.liveryGroup a.link3D {
+li.livery div a.link3D {
 	font-weight   : normal;
 	color		  : #ff0000;
 	background-color: #dddddd;
 }
 
-li.liveryGroup a.link3D:hover {
+li.livery div a.link3D:hover {
 	font-weight   : bold;
 }
 
@@ -45,7 +45,7 @@ li.livery div:after {
 	clear : left;
 }
 
-li.livery a.button {
+li.livery div a.link {
 
 	background-color: #585858;
 	background-image: -webkit-gradient(linear, left top, left bottom, from(#585858), to(#3d3d3d));
@@ -61,6 +61,14 @@ li.livery a.button {
     height: 1.5em;
     line-height: 1.5em;
     padding: 4px 10px;
+	height       : 30px;
+	font-family  : Arial,Helvetica,sans-serif;
+	font-size    : 14px;
+	font-weight  : 700;
+	border-width : 2px;
+	border-color : #ffffff;
+	border-style : outset;
+	border-radius: 7px;
 }
 
 li.livery a.button:hover {
@@ -82,5 +90,35 @@ div.metaData {
 section#3D {
 	display    : none;
 	background : #aaaaaa;
+.hide-no-js {
+	display : none !important;
+}
+
+@media screen and (max-width : 704px) {
+
+	ul li.livery > div {
+		width : 354px;
+		height : auto;
+	}
+
+	li.liveryGroup a.link3D {
+		display : none;
+	}
+
+	li.livery > div > img {
+		border-right : none;
+		border-bottom : 2px solid black;
+	}
+
+
+	li.livery > div > div {
+		clear : left;
+		float : left;
+		padding : 20px;
+	}
+
+	li.livery:after {
+		clear : left;
+	}
 }
 
