@@ -11,7 +11,7 @@ var displayImageThumbnails = function()
 	$.each(images, function(key, thisImage)
 	{
 		newHTML += "<div class=\"thumbnail\">\n";
-		newHTML +=     "<a href=\"images\\" + thisImage.id + ".jpg\"><img src=\"images\\thumbs\\" + thisImage.id + ".jpg\" /></a>\n";
+		newHTML +=     "<a href=\"images\/" + thisImage.id + ".jpg\"><img src=\"images\/thumbs\/" + thisImage.id + ".jpg\" /></a>\n";
 //		newHTML +=     "<p>" + thisImage.desc + "<\p>\n";
 		newHTML += "</div>\n";
 	});
