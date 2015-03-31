@@ -37,9 +37,27 @@
 			"marker" : "favoriteAirport"
 		},
 		{
-			"name"   : "Toronto",
+			"name"   : "Prince George, BC",
+			"lat"    : 53.889078,
+			"lon"    : -122.675514,
+			"marker" : "enhancedScenery"
+		},
+		{
+			"name"   : "Toronto, ON",
 			"lat"    : 43.6425,
 			"lon"    : -79.387222,
+			"marker" : "enhancedScenery"
+		},
+		{
+			"name"   : "Alert, NU",
+			"lat"    : 82.499176, 
+			"lon"    : -62.350633,
+			"marker" : "enhancedScenery"
+		},
+		{
+			"name"   : "Cambridge Bay, NU",
+			"lat"    : 69.116107, 
+			"lon"    : -105.119769,
 			"marker" : "enhancedScenery"
 		}
     ]
