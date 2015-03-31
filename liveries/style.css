@@ -122,6 +122,10 @@ section#3D {
 	display : none !important;
 }
 
+.hide-if-js {
+	display : none !important;
+}
+
 @media screen and (max-width : 780px) {
 
 	ul li.livery > div {

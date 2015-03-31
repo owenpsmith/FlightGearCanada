@@ -365,7 +365,7 @@ $('div#close img').click(function(e)
 
 $(document).ready( function()
 {
-	$('#noJS').hide();
+	$('.noJS').addClass("hide-if-js");
 
 	// clear static content
 	$('ul#liveryContainer').empty();
