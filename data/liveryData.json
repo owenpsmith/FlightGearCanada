@@ -819,6 +819,18 @@
 		{
 			"operator":"Royal Canadian Air Force",
 			"typeId":  "DC-3",
+			"author":  "Brett Harrison",
+			"updated": "2015-04-02",
+			"desc":    "Maritime Air Command",
+			"thumb":   "http://liveries.flightgear.org/thumbs/1234.jpg",
+			"zip":     "http://liveries.flightgear.org/download/Douglas/DC-3/KN451.zip",
+			"texture": "../data/aircraft/DC-3/textures/RCAF_MAC/",
+			"gear":    "",
+			"acDesc":  ""
+		},
+		{
+			"operator":"Royal Canadian Air Force",
+			"typeId":  "DC-3",
 			"author":  "Owen Smith",
 			"updated": "2015-02-01",
 			"desc":    "Post-unification",
