@@ -95,7 +95,7 @@ li.livery:after {
 }
 
 div.metaData {
-	display : none;
+	display : none !important;
 }
 
 section#3D {
