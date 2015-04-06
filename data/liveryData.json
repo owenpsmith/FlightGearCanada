@@ -853,6 +853,18 @@
 			"acDesc":  ""
 		},
 		{
+			"operator":"other",
+			"typeId":  "DC-3",
+			"author":  "Brett Harrison",
+			"updated": "2015-04-02",
+			"desc":    "Arctic 7",
+			"thumb":   "http://liveries.flightgear.org/thumbs/1235.jpg",
+			"zip":     "http://liveries.flightgear.org/download/Douglas/DC-3/CF-CSC.zip",
+			"texture": "../data/aircraft/DC-3/textures/Arctic7/",
+			"gear":    "",
+			"acDesc":  ""
+		},
+		{
 			"operator":"CP Air",
 			"typeId":  "DC-10-30",
 			"author":  "Emmanuel Savage",
