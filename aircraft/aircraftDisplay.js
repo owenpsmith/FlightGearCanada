@@ -34,6 +34,15 @@ var displayAircraft = function()
 
 		// livery header
 		newHTML += "\n\t\t\t\t<li class=\"liveryGroup\">";
+		if (thisTypeData.wishlist)
+		{
+			newHTML += "<img class=\"wishlist\" src=\"../includes/images/wishlist.png\"</img>";
+		}
+		else
+		{
+			newHTML += "<img class=\"wishlist\" src=\"../includes/images/wishlistblank.png\"</img>";
+		}
+
 		newHTML += "<h3>" + thisTypeData.modelName + "</h3>\n";
 		newHTML += "\t\t\t\t\t<ul>\n";
 

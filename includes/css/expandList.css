@@ -36,15 +36,16 @@ li.liveryGroup.expanded {
 }
 
 
-
 /* Collapsed state for list element */
 .expList .collapsed {
     background-image: url(../images/collapsed.png);
+    margin-right : 10px;
 }
 /* Expanded state for list element
 /* NOTE: This class must be located UNDER the collapsed one */
 .expList .expanded {
     background-image: url(../images/expanded.png);
+    margin-right : 10px;
 }
 .expList {
     clear: both;

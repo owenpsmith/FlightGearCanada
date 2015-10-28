@@ -9,7 +9,8 @@
 			"modelPath" : "",
 			"setup"     : "",
 			"acLink"    : "",
-			"canadian"  : false		
+			"canadian"  : false,		
+			"wishlist"  : false		
 		},
 		{
 			"id"        : "A330-343",
@@ -20,7 +21,8 @@
 			"modelPath" : "",
 			"setup"     : "",
 			"acLink"    : "",
-			"canadian"  : false		
+			"canadian"  : false,		
+			"wishlist"  : false		
 		},
 		{
 			"id"        : "CF-100",
@@ -31,7 +33,20 @@
 			"modelPath" : "../data/aircraft/CF-100/CF-100.ac",
 			"setup"     : { "eye": [-10.0, 40.0, -70.0], "poi": [9.0, 0.0, 0.0], "up":[0.0, 1.0, 0.0], "fov": 9},
 			"acLink"    : "http://sites.google.com/site/ctopshangar/downloads/CF-100.zip",
-			"canadian"  : true		
+			"canadian"  : true,		
+			"wishlist"  : false
+		},
+		{
+			"id"        : "C-102",
+			"modelName" : "Avro Canada C-102 Jetliner",
+			"author"    : "Owen Smith",
+			"updated"   : "2015-10-28",
+			"thumb"     : "../data/aircraft/C-102/thumbs/C-102.jpg",
+			"modelPath" : "../data/aircraft/C-102/C-102.ac",
+			"setup"     : { "eye": [-10.0, 40.0, -70.0], "poi": [9.0, 0.0, 0.0], "up":[0.0, 1.0, 0.0], "fov": 12},
+			"acLink"    : "",
+			"canadian"  : true,		
+			"wishlist"  : true		
 		},
 		{
 			"id"        : "CF-105",
@@ -42,7 +57,8 @@
 			"modelPath" : "../data/aircraft/CF-105/CF-105.ac",
 			"setup"     : { "eye": [-40.0, 20.0, -50.0], "poi": [0.5, 0.0, 0.0], "up":[0.0, 1.0, 0.0], "fov": 13},
 			"acLink"    : "ftp://mirrors.ibiblio.org/pub/mirrors/flightgear/ftp/Aircraft-3.2/Avro-Arrow_20120506.zip",
-			"canadian"  : true		
+			"canadian"  : true,		
+			"wishlist"  : false		
 		},
 		{
 			"id"        : "B1900D",
@@ -53,7 +69,8 @@
 			"modelPath" : "../data/aircraft/B1900D/B1900D.ac",
 			"setup"     : { "eye": [-50.0, -14.0, -50.0], "poi": [1.5, 0.0, 0.0], "up":[0.0, 1.0, 0.0], "fov": 10.0},
 			"acLink"    : "",
-			"canadian"  : false		
+			"canadian"  : false,		
+			"wishlist"  : false		
 		},
 		{
 			"id"        : "T-6-II",
@@ -64,7 +81,8 @@
 			"modelPath" : "",
 			"setup"     : "",
 			"acLink"    : "",
-			"canadian"  : false		
+			"canadian"  : false,		
+			"wishlist"  : false		
 		},
 		{
 			"id"        : "UH-1",
@@ -75,7 +93,8 @@
 			"modelPath" : "../data/aircraft/UH-1/UH-1.ac",
 			"setup"     : { "eye": [-50.0, -14.0, -50.0], "poi": [-3.0, 0.0, 0.0], "up":[0.0, 1.0, 0.0], "fov": 8.0},
 			"acLink"    : "",
-			"canadian"  : false		
+			"canadian"  : false,		
+			"wishlist"  : false		
 		},
 		{
 			"id"        : "707",
@@ -86,7 +105,8 @@
 			"modelPath" : "../data/aircraft/707/707.ac",
 			"setup"     : { "eye": [-150.0, -40.0, -150.0], "poi": [0.0, 1.0, 0.0], "up":[0.0, 1.0, 0.0], "fov": 7},
 			"acLink"    : "",
-			"canadian"  : false		
+			"canadian"  : false,		
+			"wishlist"  : false		
 		},
 		{
 			"id"        : "737-200",
@@ -97,7 +117,8 @@
 			"modelPath" : "",
 			"setup"     : "",
 			"acLink"    : "",
-			"canadian"  : false		
+			"canadian"  : false,		
+			"wishlist"  : false		
 		},
 		{
 			"id"        : "737-600",
@@ -108,7 +129,8 @@
 			"modelPath" : "../data/aircraft/737-600/737-600.ac",
 			"setup"     : { "eye": [-150.0, -40.0, -150.0], "poi": [0.0, 1.0, 0.0], "up":[0.0, 1.0, 0.0], "fov": 7},
 			"acLink"    : "",
-			"canadian"  : false		
+			"canadian"  : false,		
+			"wishlist"  : false		
 		},
 		{
 			"id"        : "737-800",
@@ -119,7 +141,8 @@
 			"modelPath" : "../data/aircraft/737-800/737-800.ac",
 			"setup"     : { "eye": [-150.0, -40.0, -150.0], "poi": [0.0, 1.0, 0.0], "up":[0.0, 1.0, 0.0], "fov": 7},
 			"acLink"    : "",
-			"canadian"  : false		
+			"canadian"  : false,		
+			"wishlist"  : false		
 		},
 		{
 			"id"        : "747-400",
@@ -130,7 +153,8 @@
 			"modelPath" : "",
 			"setup"     : "",
 			"acLink"    : "",
-			"canadian"  : false		
+			"canadian"  : false,		
+			"wishlist"  : false		
 		},
 		{
 			"id"        : "767-300",
@@ -141,7 +165,8 @@
 			"modelPath" : "../data/aircraft/767-300/767-300.ac",
 			"setup"     : { "eye": [-150.0, -40.0, -150.0], "poi": [0.0, 0.0, 0.0], "up":[0.0, 1.0, 0.0], "fov": 10},
 			"acLink"    : "",
-			"canadian"  : false		
+			"canadian"  : false,		
+			"wishlist"  : false		
 		},
 		{
 			"id"        : "777-200LR",
@@ -152,7 +177,8 @@
 			"modelPath" : "",
 			"setup"     : "",
 			"acLink"    : "",
-			"canadian"  : false		
+			"canadian"  : false,		
+			"wishlist"  : false		
 		},
 		{
 			"id"        : "787",
@@ -163,7 +189,8 @@
 			"modelPath" : "../data/aircraft/787/787.ac",
 			"setup"     : { "eye": [-150.0, -40.0, -150.0], "poi": [3.0, 0.0, 0.0], "up":[0.0, 1.0, 0.0], "fov": 10},
 			"acLink"    : "",
-			"canadian"  : false		
+			"canadian"  : false,		
+			"wishlist"  : false		
 		},
 		{
 			"id"        : "C-17",
@@ -174,7 +201,8 @@
 			"modelPath" : "",
 			"setup"     : "",
 			"acLink"    : "",
-			"canadian"  : false		
+			"canadian"  : false,		
+			"wishlist"  : false		
 		},
 		{
 			"id"        : "CRJ-200",
@@ -185,7 +213,8 @@
 			"modelPath" : "",
 			"setup"     : "",
 			"acLink"    : "ftp://ftp.kingmont.com/flightsims/flightgear/Aircraft-3.2/CRJ-200_2.zip",
-			"canadian"  : true		
+			"canadian"  : true,		
+			"wishlist"  : false		
 		},
 		{
 			"id"        : "CRJ-700ER",
@@ -196,7 +225,8 @@
 			"modelPath" : "",
 			"setup"     : "",
 			"acLink"    : "ftp://ftp.kingmont.com/flightsims/flightgear/Aircraft-3.2/CRJ700-family_1.1.0.zip",
-			"canadian"  : true		
+			"canadian"  : true,		
+			"wishlist"  : false		
 		},
 		{
 			"id"        : "CRJ-900",
@@ -207,7 +237,20 @@
 			"modelPath" : "",
 			"setup"     : "",
 			"acLink"    : "ftp://ftp.kingmont.com/flightsims/flightgear/Aircraft-3.2/CRJ700-family_1.1.0.zip",
-			"canadian"  : true		
+			"canadian"  : true,		
+			"wishlist"  : false		
+		},
+		{
+			"id"        : "CL-41",
+			"modelName" : "Canadair CL-41 Tutor",
+			"author"    : "Anyone interested?",
+			"updated"   : "0000-00-00",
+			"thumb"     : "../data/aircraft/CL-41/thumbs/CL-41.jpg",
+			"modelPath" : "",
+			"setup"     : { "eye": [-10.0, 40.0, -70.0], "poi": [9.0, 0.0, 0.0], "up":[0.0, 1.0, 0.0], "fov": 12},
+			"acLink"    : "",
+			"canadian"  : true,		
+			"wishlist"  : true		
 		},
 		{
 			"id"        : "CL-415",
@@ -218,7 +261,8 @@
 			"modelPath" : "../data/aircraft/CL-415/CL-415.ac",
 			"setup"     : { "eye": [-75.0, -21.0, -75.0], "poi": [0.0, 0.0, 0.0], "up":[0.0, 1.0, 0.0], "fov": 10},
 			"acLink"    : "ftp://ftp.de.flightgear.org/pub/fgfs/Aircraft-3.2/Bombardier-415_20131203.zip",
-			"canadian"  : true		
+			"canadian"  : true,		
+			"wishlist"  : false		
 		},
 		{
 			"id"        : "DHC-1",
@@ -229,7 +273,8 @@
 			"modelPath" : "",
 			"setup"     : "",
 			"acLink"    : "http://ftp.igh.cnrs.fr/pub/flightgear/ftp/Aircraft-3.2/dhc1_20120506.zip",
-			"canadian"  : true		
+			"canadian"  : true,		
+			"wishlist"  : false		
 		},
 		{
 			"id"        : "DHC-2",
@@ -240,7 +285,8 @@
 			"modelPath" : "../data/aircraft/DHC-2/DHC-2.ac",
 			"setup"     : { "eye": [-50.0, 14.0, -50.0], "poi": [1.5, 0.0, 0.0], "up":[0.0, 1.0, 0.0], "fov": 7},
 			"acLink"    : "ftp://ftp.kingmont.com/flightsims/flightgear/Aircraft-3.2/dhc2_20130315.zip",
-			"canadian"  : true		
+			"canadian"  : true,		
+			"wishlist"  : false		
 		},
 		{
 			"id"        : "DHC-3",
@@ -251,7 +297,8 @@
 			"modelPath" : "../data/aircraft/DHC-3/DHC-3.ac",
 			"setup"     : { "eye": [-50.0, 14.0, -50.0], "poi": [0.0, 0.0, 0.0], "up":[0.0, 1.0, 0.0], "fov": 9},
 			"acLink"    : "http://ftp.linux.kiev.ua/pub/fgfs/Aircraft-3.2/dhc3_20120506.zip",
-			"canadian"  : true		
+			"canadian"  : true,		
+			"wishlist"  : false		
 		},
 		{
 			"id"        : "DHC-4",
@@ -262,7 +309,20 @@
 			"modelPath" : "",
 			"setup"     : "",
 			"acLink"    : "ftp://mirrors.ibiblio.org/pub/mirrors/flightgear/ftp/Aircraft-3.2/dhc4_20101230.zip",
-			"canadian"  : true		
+			"canadian"  : true,		
+			"wishlist"  : false		
+		},
+		{
+			"id"        : "DHC-5",
+			"modelName" : "DeHavilland Canada DHC-5 Buffalo",
+			"author"    : "Anyone interested?",
+			"updated"   : "0000-00-00",
+			"thumb"     : "../data/aircraft/DHC-5/thumbs/DHC-5.jpg",
+			"modelPath" : "",
+			"setup"     : { "eye": [-10.0, 40.0, -70.0], "poi": [9.0, 0.0, 0.0], "up":[0.0, 1.0, 0.0], "fov": 12},
+			"acLink"    : "",
+			"canadian"  : true,		
+			"wishlist"  : true		
 		},
 		{
 			"id"        : "DHC-6",
@@ -273,7 +333,20 @@
 			"modelPath" : "../data/aircraft/DHC-6/DHC-6.ac",
 			"setup"     : { "eye": [-50.0, 14.0, -50.0], "poi": [1.0, 0.5, 0.0], "up":[0.0, 1.0, 0.0], "fov": 10},
 			"acLink"    : "ftp://mirrors.ibiblio.org/pub/mirrors/flightgear/ftp/Aircraft-3.2/dhc6_20130202.zip",
-			"canadian"  : true
+			"canadian"  : true,		
+			"wishlist"  : false
+		},
+		{
+			"id"        : "DHC-7",
+			"modelName" : "DeHavilland Canada DHC-7 Dash 7",
+			"author"    : "Anyone interested?",
+			"updated"   : "0000-00-00",
+			"thumb"     : "../data/aircraft/DHC-7/thumbs/DHC-7.jpg",
+			"modelPath" : "",
+			"setup"     : { "eye": [-10.0, 40.0, -70.0], "poi": [9.0, 0.0, 0.0], "up":[0.0, 1.0, 0.0], "fov": 12},
+			"acLink"    : "",
+			"canadian"  : true,		
+			"wishlist"  : true		
 		},
 		{
 			"id"        : "DHC-8",
@@ -284,7 +357,8 @@
 			"modelPath" : "",
 			"setup"     : "",
 			"acLink"    : "http://ftp.linux.kiev.ua/pub/fgfs/Aircraft-3.2/dhc8_20120714.zip",
-			"canadian"  : true		
+			"canadian"  : true,		
+			"wishlist"  : false		
 		},
 		{
 			"id"        : "DC-3",
@@ -295,7 +369,8 @@
 			"modelPath" : "../data/aircraft/DC-3/DC-3.ac",
 			"setup"     : { "eye": [-50.0, 10.0, -40.0], "poi": [0.0, 0.0, 0.0], "up":[0.0, 1.0, 0.0], "fov": 15},
 			"acLink"    : "",
-			"canadian"  : false		
+			"canadian"  : false,		
+			"wishlist"  : false		
 		},
 		{
 			"id"        : "DC-10-30",
@@ -306,7 +381,8 @@
 			"modelPath" : "../data/aircraft/DC-10-30/DC-10-30.ac",
 			"setup"     : { "eye": [-150.0, -40.0, -150.0], "poi": [0.0, 0.0, 0.0], "up":[0.0, 1.0, 0.0], "fov": 10},
 			"acLink"    : "",
-			"canadian"  : false		
+			"canadian"  : false,		
+			"wishlist"  : false		
 		},
 		{
 			"id"        : "DC-10-30ER",
@@ -317,7 +393,8 @@
 			"modelPath" : "../data/aircraft/DC-10-30/DC-10-30.ac",
 			"setup"     : { "eye": [-150.0, -40.0, -150.0], "poi": [0.0, 0.0, 0.0], "up":[0.0, 1.0, 0.0], "fov": 10},
 			"acLink"    : "",
-			"canadian"  : false		
+			"canadian"  : false,		
+			"wishlist"  : false		
 		},
 		{
 			"id"        : "ERJ-190",
@@ -328,7 +405,8 @@
 			"modelPath" : "",
 			"setup"     : "",
 			"acLink"    : "",
-			"canadian"  : false		
+			"canadian"  : false,		
+			"wishlist"  : false		
 		},
 		{
 			"id"        : "G-21",
@@ -339,7 +417,8 @@
 			"modelPath" : "../data/aircraft/G-21/G-21.ac",
 			"setup"     : { "eye": [-44.0, -13.0, -35.0], "poi": [6.0, 1.0, 0.0], "up":[0.0, 1.0, 0.0], "fov": 8},
 			"acLink"    : "",
-			"canadian"  : false		
+			"canadian"  : false,		
+			"wishlist"  : false		
 		},
 		{
 			"id"        : "F-104",
@@ -350,7 +429,8 @@
 			"modelPath" : "",
 			"setup"     : "",
 			"acLink"    : "",
-			"canadian"  : false		
+			"canadian"  : false,		
+			"wishlist"  : false		
 		},
 		{
 			"id"        : "F-18",
@@ -361,7 +441,20 @@
 			"modelPath" : "../data/aircraft/F-18/F-18.ac",
 			"setup"     : { "eye": [-54.0, -10.0, -33.0], "poi": [0.0, 0.0, 0.0], "up":[0.0, 1.0, 0.0], "fov": 9},
 			"acLink"    : "",
-			"canadian"  : false		
+			"canadian"  : false,		
+			"wishlist"  : false		
+		},
+		{
+			"id"        : "Norseman",
+			"modelName" : "Noorduyn Norseman",
+			"author"    : "Anyone interested?",
+			"updated"   : "0000-00-00",
+			"thumb"     : "../data/aircraft/Norseman/thumbs/Norseman.jpg",
+			"modelPath" : "",
+			"setup"     : { "eye": [-10.0, 40.0, -70.0], "poi": [9.0, 0.0, 0.0], "up":[0.0, 1.0, 0.0], "fov": 12},
+			"acLink"    : "",
+			"canadian"  : true,		
+			"wishlist"  : true		
 		},
 		{
 			"id"        : "T-6",
@@ -372,7 +465,8 @@
 			"modelPath" : "",
 			"setup"     : "",
 			"acLink"    : "",
-			"canadian"  : false		
+			"canadian"  : false,		
+			"wishlist"  : false		
 		},
 		{
 			"id"        : "SE5",
@@ -383,7 +477,8 @@
 			"modelPath" : "../data/aircraft/SE5/SE5.ac",
 			"setup"     : { "eye": [35.0, 20.0, -25.0], "poi": [0.0, 0.5, 0.0], "up":[0.0, 1.0, 0.0], "fov": 8},
 			"acLink"    : "",
-			"canadian"  : false		
+			"canadian"  : false,		
+			"wishlist"  : false		
 		}
 	]
 }
