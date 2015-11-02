@@ -25,6 +25,7 @@ var displayAircraft = function()
 			typeHTML += "\t\t\t\t\t\t\t<br>\n";
 			typeHTML += "\t\t\t\t\t\t\t<a class=\"link3D\" href=\"#\">View in 3D</a>\n";
 		}
+		typeHTML += "\t\t\t\t\t\t\t<p>" + thisTypeData.comment  + "</p>\n";
 		typeHTML += "\t\t\t\t\t\t</div>\n";
 
 		// data for generating 3D gallery upon selection
