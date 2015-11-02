@@ -295,6 +295,20 @@
 			"comment"   : "Owen Smith is interested in developing this one but needs to finish a few other project first, any takers in the meantime?"		
 		},
 		{
+			"id"        : "B170",
+			"modelName" : "Bristol 170 Freighter",
+			"author"    : "Owen Smith",
+			"updated"   : "2015-11-03",
+			"thumb"     : "../data/aircraft/B170/thumbs/B170.jpg",
+			"modelPath" : "../data/aircraft/B170/B170.ac",
+			"setup"     : { "eye": [-10.0, 40.0, -70.0], "poi": [9.0, 0.0, 0.0], "up":[0.0, 1.0, 0.0], "fov": 24},
+			"acLink"    : "",
+			"license"   : "GPL",
+			"canadian"  : false,		
+			"wishlist"  : false,
+			"comment"   : "Owen Smith is developing this one, it is in early development"		
+		},
+		{
 			"id"        : "CL-415",
 			"modelName" : "Canadair CL-415",
 			"author"    : "Emmanuel Baranger",
