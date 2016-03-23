@@ -30,6 +30,7 @@ function initMap()
     markerIcons.set("enhancedAirport", new google.maps.MarkerImage("markers/enhancedAirport.png")  );
     markerIcons.set("favoriteAirport", new google.maps.MarkerImage("markers/favoriteAirport.png") );
     markerIcons.set("enhancedScenery", new google.maps.MarkerImage("markers/enhancedScenery.png")  );
+    markerIcons.set("windFarm",        new google.maps.MarkerImage("markers/windFarm.png")  );
 
     // add markers top map
 	$.each(locations, function(key, thisLocation)

@@ -7,12 +7,6 @@
 			"marker" : "developer"
 		},
 		{
-			"name"   : "Max Ward",
-			"lat"    : 49.853822,
-			"lon"    : -97.1522251,
-			"marker" : "user"
-		},
-		{
 			"name"   : "Terrace, BC (CYXT)",
 			"lat"    : 54.46639,
 			"lon"    : -128.5797005,
@@ -22,6 +16,12 @@
 			"name"   : "Vancouver, BC (CYVR)",
 			"lat"    : 49.1943914,
 			"lon"    : -123.1802675,
+			"marker" : "enhancedAirport"
+		},
+		{
+			"name"   : "108 Mile, BC (CZML)",
+			"lat"    : 51.742496,
+			"lon"    : -121.336269,
 			"marker" : "enhancedAirport"
 		},
 		{
@@ -37,15 +37,21 @@
 			"marker" : "favoriteAirport"
 		},
 		{
-			"name"   : "Prince George, BC",
-			"lat"    : 53.889078,
-			"lon"    : -122.675514,
+			"name"   : "Vancouver, BC",
+			"lat"    : 49.281020,
+			"lon"    : -123.124123,
 			"marker" : "enhancedScenery"
 		},
 		{
 			"name"   : "Toronto, ON",
 			"lat"    : 43.6425,
 			"lon"    : -79.387222,
+			"marker" : "enhancedScenery"
+		},
+		{
+			"name"   : "Prince Rupert, BC",
+			"lat"    : 54.294288,
+			"lon"    : -130.357246,
 			"marker" : "enhancedScenery"
 		},
 		{
@@ -59,6 +65,42 @@
 			"lat"    : 69.116107, 
 			"lon"    : -105.119769,
 			"marker" : "enhancedScenery"
+		},
+		{
+			"name"   : "Bear Mountain, BC",
+			"lat"    : 55.699453, 
+			"lon"    : -120.428009,
+			"marker" : "windFarm"
+		},
+		{
+			"name"   : "Eye of the Wind, BC",
+			"lat"    : 49.387373, 
+			"lon"    : -123.073912,
+			"marker" : "windFarm"
+		},
+		{
+			"name"   : "Dokie Ridge, BC",
+			"lat"    : 55.805140, 
+			"lon"    : -122.265472,
+			"marker" : "windFarm"
+		},
+		{
+			"name"   : "Quality Wind, BC",
+			"lat"    : 55.190726, 
+			"lon"    : -120.853043,
+			"marker" : "windFarm"
+		},
+		{
+			"name"   : "Cape Scott, BC",
+			"lat"    : 50.776636, 
+			"lon"    : -128.008232,
+			"marker" : "windFarm"
+		},
+		{
+			"name"   : "Meikle Wind, BC",
+			"lat"    : 55.278626, 
+			"lon"    : -121.469994,
+			"marker" : "windFarm"
 		}
     ]
 }
