@@ -101,6 +101,12 @@
 			"lat"    : 55.278626, 
 			"lon"    : -121.469994,
 			"marker" : "windFarm"
+		},
+		{
+			"name"   : "Amaranth Wind, BC",
+			"lat"    : 44.108542, 
+			"lon"    : -80.302677,
+			"marker" : "windFarm"
 		}
     ]
 }
