@@ -52,8 +52,8 @@ li.livery > div > div {
 
 li.livery > div > div > p {
     display : block;
-    word-break: break-all;
     white-space: normal;
+    max-width : 400px;
 }
 
 
@@ -112,7 +112,7 @@ section#3D {
 	display : none !important;
 }
 
-@media screen and (max-width : 780px) {
+@media screen and (max-width : 950px) {
 
 	ul li.livery > div {
 		width : 354px;

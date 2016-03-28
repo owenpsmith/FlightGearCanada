@@ -721,6 +721,42 @@
 			"acDesc":  ""
 		},		
 		{
+			"operator":"ALCI",
+			"typeId":  "DC-3",
+			"author":  "Gilberto Agostinho",
+			"updated": "2015-12-13",
+			"desc":    "",
+			"thumb":   "http://liveries.flightgear.org/thumbs/1307.jpg",
+			"zip":     "http://liveries.flightgear.org/download/Douglas/DC-3/ALCI-Mia.zip",
+			"texture": "../data/aircraft/DC-3/textures/ALCI-Mia/",
+			"gear":    "",
+			"acDesc":  ""
+		},
+		{
+			"operator":"ALCI",
+			"typeId":  "DC-3",
+			"author":  "Gilberto Agostinho",
+			"updated": "2015-12-14",
+			"desc":    "",
+			"thumb":   "http://liveries.flightgear.org/thumbs/1308.jpg",
+			"zip":     "http://liveries.flightgear.org/download/Douglas/DC-3/ALCI-Lidia-restaurated.zip",
+			"texture": "../data/aircraft/DC-3/textures/ALCI-Lidia-restaurated/",
+			"gear":    "",
+			"acDesc":  ""
+		},
+		{
+			"operator":"ALCI",
+			"typeId":  "DC-3",
+			"author":  "Gilberto Agostinho",
+			"updated": "2015-12-14",
+			"desc":    "",
+			"thumb":   "http://liveries.flightgear.org/thumbs/1309.jpg",
+			"zip":     "http://liveries.flightgear.org/download/Douglas/DC-3/ALCI-Lidia.zip",
+			"texture": "../data/aircraft/DC-3/textures/ALCI-Lidia/",
+			"gear":    "",
+			"acDesc":  ""
+		},
+		{
 			"operator":"Buffalo Airways",
 			"typeId":  "DC-3",
 			"author":  "Brett Harrison",
