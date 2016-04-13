@@ -103,11 +103,54 @@
 			"marker" : "windFarm"
 		},
 		{
-			"name"   : "Amaranth Wind, BC",
+			"name"   : "Amaranth Wind, ONT",
 			"lat"    : 44.108542, 
 			"lon"    : -80.302677,
+			"marker" : "windFarm"
+		},
+		{
+			"name"   : "North Cape Wind, PEI",
+			"lat"    : 47.048612, 
+			"lon"    : -63.998399,
+			"marker" : "windFarm"
+		},
+		{
+			"name"   : "Norway Wind, PEI",
+			"lat"    : 47.010439, 
+			"lon"    : -64.024513,
+			"marker" : "windFarm"
+		},
+		{
+			"name"   : "WEICan R&D Wind Farm, PEI",
+			"lat"    : 47.035635, 
+			"lon"    : -64.013248,
+			"marker" : "windFarm"
+		},
+		{
+			"name"   : "West Cape Wind, PEI",
+			"lat"    : 46.68358856, 
+			"lon"    : -64.38595744,
+			"marker" : "windFarm"
+		},
+		{
+			"name"   : "Summerside Wind, PEI",
+			"lat"    : 46.436032, 
+			"lon"    : -63.799153,
+			"marker" : "windFarm"
+		},
+		{
+			"name"   : "Hermanville/Clearspring Wind, PEI",
+			"lat"    : 46.452594, 
+			"lon"    : -62.304002,
+			"marker" : "windFarm"
+		},
+		{
+			"name"   : "Eastern Kings Wind, PEI",
+			"lat"    : 46.455578, 
+			"lon"    : -62.047369,
 			"marker" : "windFarm"
 		}
     ]
 }
+
 
