@@ -103,6 +103,12 @@
 			"marker" : "windFarm"
 		},
 		{
+			"name"   : "St. Joseph Wind Farm, MAN",
+			"lat"    : 49.143276, 
+			"lon"    : -97.389853,
+			"marker" : "windFarm"
+		},
+		{
 			"name"   : "Amaranth Wind, ONT",
 			"lat"    : 44.108542, 
 			"lon"    : -80.302677,
@@ -152,5 +158,3 @@
 		}
     ]
 }
-
-
