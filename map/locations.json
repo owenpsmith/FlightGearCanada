@@ -109,6 +109,30 @@
 			"marker" : "windFarm"
 		},
 		{
+			"name"   : "Baie-des-Sables Wind Farm, QUE",
+			"lat"    : 48.702854, 
+			"lon"    : -67.875566,
+			"marker" : "windFarm"
+		},
+		{
+			"name"   : "Jardin d'Eole Wind Farm, QUE",
+			"lat"    : 48.731627, 
+			"lon"    : -67.650118,
+			"marker" : "windFarm"
+		},
+		{
+			"name"   : "Le Nordais (Mantane), QUE",
+			"lat"    : 48.778503, 
+			"lon"    : -67.584521,
+			"marker" : "windFarm"
+		},
+		{
+			"name"   : "Le Nordais (Cap-Chat), QUE",
+			"lat"    : 49.063431, 
+			"lon"    : -66.755901,
+			"marker" : "windFarm"
+		},
+		{
 			"name"   : "Amaranth Wind, ONT",
 			"lat"    : 44.108542, 
 			"lon"    : -80.302677,
@@ -158,3 +182,4 @@
 		}
     ]
 }
+
