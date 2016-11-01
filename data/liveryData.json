@@ -217,18 +217,6 @@
 			"acDesc":  ""
 		},
 		{
-			"operator":"Royal Canadian Air Force",
-			"typeId":  "707",
-			"author":  "Brett Harrison",
-			"updated": "2010-07-11",
-			"desc":    "Requires update",
-			"thumb":   "http://liveries.flightgear.org/thumbs/258.jpg",
-			"zip":     "http://liveries.flightgear.org/download/Boeing/707/RCAF.zip",
-			"texture": "../data/aircraft/707/textures/RCAF/",
-			"gear":    "",
-			"acDesc":  ""
-		},
-		{
 			"operator":"WestJet",
 			"typeId":  "737-600",
 			"author":  "Innis Cunningham",
