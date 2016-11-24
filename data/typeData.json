@@ -29,13 +29,27 @@
 			"comment"   : ""		
 		},
 		{
+			"id"        : "BristolFreighter",
+			"modelName" : "Bristol Freighter Mk.31",
+			"author"    : "Owen Smith",
+			"updated"   : "2016-12-18",
+			"thumb"     : "../data/aircraft/BristolFreighter/thumbs/BristolFreighter_TPA.jpg",
+			"modelPath" : "../data/aircraft/BristolFreighter/BristolFreighter.ac",
+			"setup"     : { "eye": [-40.0, -10.0, 70.0], "poi": [0.0, 3.5, 0.0], "up":[0.0, 1.0, 0.0], "fov": 9},
+			"acLink"    : "../data/aircraft/BristolFreighter/downloads/BristolFreighter.zip",
+			"license"   : "",
+			"canadian"  : false,		
+			"wishlist"  : false,
+			"comment"   : ""
+		},
+		{
 			"id"        : "CF-100",
 			"modelName" : "Avro Canada CF-100 Canuck",
 			"author"    : "Connor Toppings",
 			"updated"   : "2011-04-28",
 			"thumb"     : "../data/aircraft/CF-100/thumbs/CF-100_black.jpg",
 			"modelPath" : "../data/aircraft/CF-100/CF-100.ac",
-			"setup"     : { "eye": [-10.0, 40.0, -70.0], "poi": [9.0, 0.0, 0.0], "up":[0.0, 1.0, 0.0], "fov": 9},
+			"setup"     : { "eye": [-40.0, -10.0, 70.0], "poi": [0.0, 3.5, 0.0], "up":[0.0, 1.0, 0.0], "fov": 9},
 			"acLink"    : "http://sites.google.com/site/ctopshangar/downloads/CF-100.zip",
 			"license"   : "",
 			"canadian"  : true,		

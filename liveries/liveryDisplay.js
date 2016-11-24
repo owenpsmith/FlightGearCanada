@@ -276,6 +276,7 @@ var switchTo3DView = function($this)
 		var livAuthor = $metaData.children("p.livAuthor").first().text();
 		var livGear   = $metaData.children("p.livGear").first().text();
 
+
 		var typeData = getTypeDataForAcId(acId);
 
 		console.log(acId);
@@ -295,6 +296,11 @@ var switchTo3DView = function($this)
 //				typeData.setup.poi[1] -= 1;
 //			}
 		}
+
+console.log("aircraft");
+console.log(modelPath);
+console.log(livPath);
+
 
 		var addToDisplay3D =
 		{

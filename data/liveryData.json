@@ -49,6 +49,30 @@
 			"acDesc":  ""
 		},
 		{
+			"operator":"Trans-Provincial",
+			"typeId":  "BristolFreighter",
+			"author":  "Owen Smith",
+			"updated": "2016-12-18",
+			"desc":    "Doors closed",
+			"thumb":   "../data/aircraft/BristolFreighter/thumbs/BristolFreighter.jpg",
+			"zip":     "included",
+			"texture": "../data/aircraft/BristolFreighter/textures/TPA/",
+			"gear":    "",
+			"acDesc":  ""
+		},
+		{
+			"operator":"Trans-Provincial",
+			"typeId":  "BristolFreighter",
+			"author":  "Owen Smith",
+			"updated": "2016-12-18",
+			"desc":    "Doors open",
+			"thumb":   "../data/aircraft/BristolFreighter/thumbs/BristolFreighter_open.jpg",
+			"zip":     "included",
+			"texture": "../data/aircraft/BristolFreighter/textures/TPA/",
+			"gear":    "open",
+			"acDesc":  ""
+		},
+		{
 			"operator":"Royal Canadian Air Force",
 			"typeId":  "CF-100",
 			"author":  "Connor Toppings",
